@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS directive Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="../lib/js/jquery.js"></script>
+    <script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container" data-ng-app="docsTemplateUrlDirective">
+    <div data-ng-controller="Controller">
+        <h3>Directive learning</h3>
+        <div my-customer></div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="../lib/js/angular.min.js"></script>
+<script type="text/javascript">
+    (function (){
+        angular.module('docsTemplateUrlDirective', [])
+                .controller('Controller', function ($scope){
+                    $scope.customer = {
+                        name: 'Naomi',
+                        address: '1600 Amphitheatre'
+                    };
+                })
+                .directive("myCustomer", function (){
+                    return {
+                        restrict: "AE",
+                        templateUrl: "my-customer.html"
+                    };
+                });
+    })();
+</script>
+</html>
