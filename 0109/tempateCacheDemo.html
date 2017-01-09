@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS directive Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="../lib/js/jquery.js"></script>
+    <script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container" data-ng-app="myApp">
+    <div data-ng-controller="Controller">
+        <h3>Learning Directive</h3>
+        <div my-directive></div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="../lib/js/angular.min.js"></script>
+<script type="text/javascript" src="$templateCache.js"></script>
+<script type="text/javascript">
+    //需要引入templateCache.js
+    (function (){
+        angular.module("myApp", [])
+                //注射器加载完所有模块,此方法只执行一次
+                .run(function ($templateCache){
+                    $templateCache.put("hello.html", "<div>Hello Angular Directive!!!</div>");
+                })
+                .controller("Controller", function (){
+
+                })
+                .directive("myDirective", function (){
+                    return {
+                        restrict: "ACME",
+                        tempate: $templateCache.get("hello.html"),
+                        replace: true
+                    };
+                });
+    })();
+</script>
+</html>

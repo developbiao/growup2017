@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS directive Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="../lib/js/jquery.js"></script>
+    <script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container" data-ng-app="myApp">
+    <div data-ng-controller="Controller">
+        <h3>Learning Directive</h3>
+        <!-- 使用transclude把嵌套的内容放到data-ng-transclude的位置上 -->
+        <div my-directive><h3>我在努力的学习</h3></div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="../lib/js/angular.min.js"></script>
+<script type="text/javascript">
+    (function (){
+        angular.module("myApp", [])
+                .controller("Controller", function (){
+
+                })
+                .directive("myDirective", function (){
+                    return {
+                        restrict: "AE",
+                        transclude: true,
+                        template: "<div>Hello everyone angular js!<div style='color:red' data-ng-transclude></div></div>"
+                    };
+                });
+    })();
+</script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS directive Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="../lib/js/jquery.js"></script>
+    <script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container" data-ng-app="docsTransclusionDirective">
+    <div data-ng-controller="Controller">
+        <h3>Create a Directive that Manipulates the DOM</h3>
+        <my-dialog>Check out hte contents {{ name }}!</my-dialog>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="../lib/js/angular.min.js"></script>
+<script type="text/javascript">
+    (function (){
+        angular.module('docsTransclusionDirective', [])
+                .controller('Controller', function ($scope){
+                    $scope.name = 'Tobias';
+                })
+                .directive('myDialog', function (){
+                    return {
+                        restrict: 'E',
+                        transclude: true,
+                        scope: {},
+                        templateUrl: 'my-dialog.html',
+                        link: function ($scope){
+                            $scope.name = 'Jeff';
+                        }
+                    };
+                })
+    })();
+</script>
+</html>
