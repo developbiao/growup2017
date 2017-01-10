@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS directive Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="../lib/js/jquery.js"></script>
+    <script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <style type="text/css">
+       .load_div{
+           width:200px;
+           height:100px;
+           border:2px solid black;
+       }
+    </style>
+</head>
+<body>
+<div class="container" data-ng-app="myApp">
+    <div data-ng-controller="myCtrl">
+        <h3>Learning Directive</h3>
+        <div loader  howToLoad="loadData()" class="load_div">滑动加载数据</div>
+    </div>
+    <div data-ng-controller="myCtrl2">
+        <div loader howToLoad="loadData2()" class="load_div">滑动加载数据2</div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="../lib/js/angular.min.js"></script>
+<script type="text/javascript">
+    (function (){
+        var myModule = angular.module("myApp", []);
+        myModule.controller("myCtrl", function ($scope){
+            $scope.loadData = function (){
+                console.log("Loading data...1111");
+            };
+        });
+
+        myModule.controller("myCtrl2", function ($scope){
+           $scope.loadData2 = function (){
+               console.log(">>Loading data...22222");
+           };
+        });
+
+        //不同controller里面指令的复用
+        myModule.directive("loader", function (){
+            return {
+                restrict: "AE",
+                link: function (scope, element, attr){
+                    element.bind("mouseenter", function (){
+                        //scope.loadData();
+                        // scope.$apply("loadData()");
+                        // 注意这里属性中的howTOLoad会被转成小定的howtoload
+                        scope.$apply(attr.howtoload);
+                    });
+                }
+            };
+        })
+
+    })();
+</script>
+</html>

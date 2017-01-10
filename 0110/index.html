@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS directive Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="../lib/js/jquery.js"></script>
+    <script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container" data-ng-app="myApp">
+    <div data-ng-controller="myCtrl">
+        <h3>Learning Directive</h3>
+        <greeting greet="sayHello(name)"></greeting><br/>
+        <greeting greet="sayHello(name)"></greeting><br/>
+        <greeting greet="sayHello(name)"></greeting><br/>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="../lib/js/angular.min.js"></script>
+<script type="text/javascript">
+    (function (){
+        var myModule = angular.module("myApp", []);
+        myModule.controller("myCtrl", function ($scope){
+            $scope.sayHello = function (name){
+               alert("Hello " + name);
+            };
+        });
+
+        //& 符号传递一个父元素的函数稍后调用
+        myModule.directive("greeting", function (){
+            return {
+                restrict: "AE",
+                template: "<input type='text' data-ng-model='userName' />" +
+                            "<button class='btn btn-default' data-ng-click='greet({name:userName})'>Say</button>",
+                scope: {
+                    greet:'&'
+                }
+            };
+        })
+
+    })();
+</script>
+</html>

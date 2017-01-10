@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS directive Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="../lib/js/jquery.js"></script>
+    <script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container" data-ng-app="myApp">
+    <div data-ng-controller="myCtrl">
+        <h3>Learning Directive</h3>
+        <drink flavor="{{ctrlFlavor}}"></drink>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="../lib/js/angular.min.js"></script>
+<script type="text/javascript">
+    (function (){
+        var myModule = angular.module("myApp", []);
+        myModule.controller("myCtrl", function ($scope){
+            $scope.ctrlFlavor = "可口可乐";
+        });
+
+        myModule.directive("drink", function (){
+            return {
+                restrict: "AE",
+                template: "<div>{{flavor}}</div>",
+                scope: {
+                   flavor: '@' //@把当前属性做为字符串传递绑定
+                }
+                /*
+                link: function (scope, element, attr){
+                   scope.flavor = attr.flavor; // 把属性的flavor赋值给了scope的flavor
+                }
+                */
+            };
+        })
+
+    })();
+</script>
+</html>

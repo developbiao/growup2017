@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS directive Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="../lib/js/jquery.js"></script>
+    <script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container" data-ng-app="myApp">
+    <div data-ng-controller="supermanCtrl">
+        <h3>Learning Directive</h3>
+        <div class="row">
+           <div class="col-md-3" >
+               <superman strength>动感超人---力量</superman>
+           </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <superman strength speed>动感超人2---力量+敏捷</superman>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <superman strength speed light>动感超人3---力量+敏捷+发光</superman>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="../lib/js/angular.min.js"></script>
+<script type="text/javascript">
+    /*Demo 指令与指令之前的交互 动感超人示例*/
+    (function (){
+        var myModule = angular.module("myApp", []);
+        // superman controller
+        myModule.controller("supermanCtrl", function ($scope){
+
+        });
+
+        // define super man directive
+        myModule.directive("superman", function (){
+            return {
+                scope: {},
+                restrict: "AE",
+                controller: function ($scope){ //这是控制器里面的controller,于由暴露出一组方法给外部使用的
+                    $scope.abilities = [];
+                    this.addStrength = function (){
+                        $scope.abilities.push("strength");
+                    };
+                    this.addSpeed = function (){
+                        $scope.abilities.push("speed");
+                    };
+                    this.addLight = function (){
+                        $scope.abilities.push("light");
+                    };
+                },
+                link: function (scope, element, attr){
+                   element.addClass('btn btn-primary');
+                   element.bind("mouseenter", function (){
+                      console.log(scope.abilities);
+                   }) ;
+                }
+            }
+        });
+
+        // strength
+        myModule.directive("strength", function (){
+            return {
+                require: '^superman',
+                link: function (scope, element, attr, supermanCtrl){
+                     supermanCtrl.addStrength();
+                }
+            };
+        });
+
+        // speed
+        myModule.directive("speed", function (){
+            return {
+                require: '^superman',
+                link: function (scope, element, attr, supermanCtrl){
+                    supermanCtrl.addSpeed();
+                }
+            };
+        });
+
+        // light
+        myModule.directive("light", function (){
+            return {
+                require: '^superman', //require依赖与上面的superman指令
+                link: function (scope, element, attr, supermanCtrl){
+                   supermanCtrl.addLight();
+                }
+            }
+
+        });
+    })();
+</script>
+</html>
