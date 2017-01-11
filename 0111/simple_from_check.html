@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS directive Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="../lib/js/jquery.js"></script>
+    <script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container" data-ng-app="myApp">
+    <div data-ng-controller="myCtrl">
+        <h3>Learning Directive</h3>
+        <form name="myForm" data-ng-submit="save()">
+            <input name="userName" type="text" data-ng-model="user.UserName" required />
+            <input name="password" type="password" data-ng-model="user.password" required />
+            <input type="submit"  value="提交" data-ng-disabled="myForm.$invalid" />
+        </form>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="../lib/js/angular.min.js"></script>
+<script type="text/javascript">
+    (function (){
+        var myModule = angular.module("myApp", []);
+        myModule.controller("myCtrl", function ($scope){
+                $scope.user = {
+                    userName: 'GongBiao',
+                    password: ''
+                };
+                $scope.save = function (){
+                    alert('数据保存成功');
+                };
+        });
+
+    })();
+</script>
+</html>

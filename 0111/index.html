@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS directive Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="../lib/js/jquery.js"></script>
+    <script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+<div class="container" data-ng-app="expanderModule">
+    <div data-ng-controller="accordinController">
+        <h3>Learning Directive</h3>
+        <according>
+            <expander class="expander" data-ng-repeat="expander in expanders" expander-title="expander.title">
+                {{expander.title}}
+            </expander>
+        </according>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="../lib/js/angular.min.js"></script>
+<script type="text/javascript">
+    //TODO:: fix directive bug
+    (function (){
+        var expanderModule = angular.module("expanderModule", []);
+        expanderModule.controller("accordinControll", function ($scope){
+           $scope.expanders = [
+               {
+                   title: 'Click me to expand',
+                   text: 'Hi here folks, I am the content that was hidden but is now show'
+               },
+               {
+                   title: 'Click this',
+                   text: 'I am even better text than you have seen previously'
+               }
+           ];
+        });
+
+        expanderModule.directive('accordin', function (){
+           return {
+               restrict: "AE",
+               replace: true,
+               transclude: true,
+               template: '<div data-ng-transclude></div>',
+               controller: function (){
+                   var expanders = [];
+                   this.gotOpened = function (selectedExpander){
+                        angular.forEach(expanders, function (expander){
+                           if(selectedExpander != expander){
+                               expander.showMe = false;
+                           }
+                        })
+                   };
+
+                   this.addExpander = function (expander){
+                       expanders.push(expander);
+                   }
+               }
+           };
+        });
+
+        expanderModule.directive("expander", function (){
+            return {
+                restrict: "AE",
+                replace: true,
+                transclude: true,
+                require: '^accordion',
+                scope: {
+                    title: '=expanderTitle'
+                },
+                template: '<div>'
+                        + '<div class="title" data-ng-click="toggle()">{{title}}</div>'
+                        + '<div class="body" data-ng-show="showMe" data-ng-transclude></div>'
+                        + '</div>',
+                link: function (scope, element, attrs, accordionController){
+                    scope.showMe = false;
+                    accordionController.addExpander(scope);
+                    scope.toggle = function (){
+                        scope.showMe = ! scope.showMe;
+                        accordionController.gotOpened(scope);
+                    };
+                }
+
+            };
+        });
+
+    })();
+</script>
+</html>
