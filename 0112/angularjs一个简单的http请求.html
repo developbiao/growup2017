@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS directive Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="../lib/js/jquery.js"></script>
+    <script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+<div class="container" data-ng-app="myApp">
+    <h3>Angular Directive Learning</h3>
+    <div data-ng-controller="myCtrl">
+        <ul>
+           <li data-ng-repeat="user in users">
+               {{user.name}}
+           </li>
+        </ul>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="../lib/js/angular.min.js"></script>
+<script type="text/javascript">
+    (function (){
+        var myApp = angular.module("myApp", []);
+        myApp.controller("myCtrl", function ($scope, $http){
+            $http({
+               method: 'GET',
+               url: 'data.php'
+            }).success(function (data, status, headers, config){
+                console.log("success");
+                console.log("status:" + status);
+                console.log("headers:" + headers);
+                console.log("config:" + config );
+                console.log(data);
+                $scope.users = data;
+            }).error(function (data, status, headers, config){
+                console.log("Request error....");
+            });
+
+        });
+
+    })();
+</script>
+</html>
