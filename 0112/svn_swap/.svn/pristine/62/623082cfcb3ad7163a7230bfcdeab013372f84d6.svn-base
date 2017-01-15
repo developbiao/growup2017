@@ -1,0 +1,68 @@
+﻿package com.woogienglish.eslvid8
+{
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["Thank you for coming, Holmes.", null],
+			["Tell me, Wiggson, what has happened here?", null],
+			["A very big cookie is missing.", [["very", "very"], ["big", "big"]]],
+			["Egad! Not the Maltese Cookie!?", null],
+			["Only small crumbs are left.", [["small"]]],
+			["This table is quite tall...", [["tall"]]],
+			["So the cookie thief must be tall too!", [["tall"]]],
+			["Precisely, dear Wiggson.", null],
+			["Then it\'s not Short Stack, or Small Potato.", [["Short", "short"], ["Small", "small"]]],
+			["And what is this? A hair!", null],
+			["So it cannot be Ugly Stick.", [["Ugly", "ugly"]]],
+			["No, this hair is very beautiful, dear Wiggson.", [["beautiful", "beautiful"]]],
+			["Is it a blonde hair?", [["blonde"]]],
+			["No, the hair is black and looks old...", [["old"]]],
+			["Then the thief is not Pretty Pink or Young Buck.", [["Young", "young"]]],
+			["And this chair...it is kind of close to the table...", [["kind of", "kind of"]]],
+			["So the thief is thin!", [["thin"]]],
+			["Precisely, dear Wiggson.", null],
+			["Then it cannot be Fat Chance!", [["Fat", "fat"]]],
+			["Can you describe our cookie thief to me now?", [["describe", "to describe"]]],
+			["It is a tall, thin person with black hair.", [["tall"], ["thin"]]],
+			["That looks like you, Holmes!", [["looks like", "to look like"]]],
+			["Precisely, dear Wiggson!", null]	
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["谢谢你过来, 福尔摩斯.", null],
+			["告诉我, Wiggson,这里发生了什么事?", null],
+			["不见了一个非常大的曲奇.", [["非常", "very"], ["大", "big"]]],
+			["天哪! 不会是玛尔济斯曲奇吧!?", null],
+			["只剩下一些小碎末.", [["小"]]],
+			["这张桌子很高...", [["高"]]],
+			["所以偷曲奇的小偷也很高!", [["高"]]],
+			["的确如此, 亲爱的Wiggson.", null],
+			["那么就不会是矮个子, 或者小个子.", [["矮", "short"], ["小", "small"]]],
+			["这是什么? 一根头发!", null],
+			["所以不会是又老又丑.", [["丑", "ugly"]]],
+			["不会, 这头发很美, 亲爱的Wiggson.", [["美", "beautiful"]]],
+			["头发是金色的吗?", [["金色的"]]],
+			["不是, 这根头发是黑色的，而且看起来有点老...", [["老"]]],
+			["那么小偷就不会是妙龄女郎或年轻人.", [["年轻", "young"]]],
+			["这个椅子...有点靠近桌子...", [["有点", "kind of"]]],
+			["所以小偷很瘦!", [["瘦"]]],
+			["的确如此, 亲爱的Wiggson.", null],
+			["那么也不会是胖的人!", [["胖", "fat"]]],
+			["现在你可以给我描述曲奇小偷是什么样子了吗?", [["描述", "to describe"]]],
+			["是一个又高又瘦有黑头发的人.", [["高"], ["瘦"]]],
+			["看起来像是你, 福尔摩斯!", [["看起来像", "to look like"]]],
+			["的确如此, 亲爱的Wiggson!", null]			
+										];
+	}
+
+}

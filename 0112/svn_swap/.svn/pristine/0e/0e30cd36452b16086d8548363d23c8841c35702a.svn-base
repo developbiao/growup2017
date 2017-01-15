@@ -1,0 +1,153 @@
+﻿package com.woogienglish.base
+{
+    import flash.display.MovieClip;
+    import flash.text.TextField;
+    import flash.external.ExternalInterface;
+    import flash.text.TextFormat;
+
+    dynamic public class Subtitles extends MovieClip
+    {
+		public static var BOTTOM_LINE_Y = 450;
+		public static var TEXT_WIDTH = 660;
+		public static var TEXT_HEIGHT = 60;
+        public var txt_subs1:TextField;
+		public var txt_subs2:TextField;
+        public var subtitlesEn:String;
+		public var subtitlesCn:String;
+		private var format1:TextFormat;
+		private var format2:TextFormat;
+		private var subFontSize:int;
+        public function Subtitles()
+        {
+            addFrameScript(0, this.frame1);
+            return;
+        }
+		
+		public function setFontSize(size:int):void
+		{
+			subFontSize = size;
+			if(format1 == null)
+				format1 = new TextFormat();
+			format1.size = subFontSize;
+			if(format2 == null)
+				format2 = new TextFormat();
+			format2.size = subFontSize;
+			txt_subs1.wordWrap = true;
+			txt_subs1.multiline = true;
+			txt_subs1.autoSize = "left";
+			txt_subs2.wordWrap = true;
+			txt_subs2.multiline = true;
+			txt_subs2.autoSize = "left";
+		}
+
+        public function setSubtitle(enArr:Array, otherArr:Array = null):void
+		{
+			var enStr:String = "";
+			var cnStr:String = "";
+			subtitlesEn = "";
+			subtitlesCn = "";
+			if (enArr != null)
+			{
+				subtitlesEn = enArr[0];
+				enStr = subtitlesEn;
+				enStr = createHtmlText(enStr, enArr);
+			}
+			if (otherArr != null)
+			{
+				subtitlesCn = otherArr[0];
+				cnStr = subtitlesCn;
+				cnStr = createHtmlText(cnStr, otherArr);
+			}
+			//trace("subtitles:" + enStr + "\n" + cnStr);
+			txt_subs1.width = TEXT_WIDTH;
+			txt_subs1.height = TEXT_HEIGHT;
+			txt_subs1.x = 0;
+			txt_subs2.width = TEXT_WIDTH;
+			txt_subs2.height = TEXT_HEIGHT;
+			txt_subs2.x = 0;
+			txt_subs1.htmlText = enStr;			
+			txt_subs2.htmlText = cnStr;
+			txt_subs1.setTextFormat(format1);
+			txt_subs2.setTextFormat(format2);
+			var offsetY = txt_subs1.height;
+			if (otherArr != null)
+			{
+				txt_subs2.y = offsetY;
+				this.y = BOTTOM_LINE_Y - offsetY - txt_subs2.height;
+			}
+			else
+			{
+				this.y = BOTTOM_LINE_Y - offsetY;
+			}
+			
+			findTheBestWidth(txt_subs1);
+			findTheBestWidth(txt_subs2);
+		} 
+		
+		private function findTheBestWidth(_tf:TextField):void
+		{
+			var lines:int = _tf.numLines;
+			if(lines == 1)return;
+			while (_tf.numLines == lines)
+			{
+				_tf.width -= 1;
+			}
+			_tf.width += 2;
+			_tf.x = (TEXT_WIDTH - _tf.width) / 2;
+		}
+		
+		private function createHtmlText(_str:String, subtitleArr:Array):String
+		{
+			var len:int = subtitleArr.length;
+			var highlightArr:Array;
+			var index:int;
+			if (len > 1)
+			{
+				highlightArr = subtitleArr[1];
+				if (highlightArr)
+				{
+					for (var cv in highlightArr)
+					{
+						var word:String = highlightArr[cv][0];
+						index= _str.indexOf(word);
+						if (index > -1)
+						{
+							_str = _str.substr(0, index) + "<font color='#ffff00'>" + word + "</font>" + _str.substr(index + word.length);
+						}
+					}
+				}
+			}
+			if (len > 2)
+			{
+				highlightArr = subtitleArr[2];
+				if (highlightArr)
+				{
+					for (var vv in highlightArr)
+					{
+						var phrase:String = highlightArr[vv][0];
+						index = _str.indexOf(phrase);
+						if (index > -1)
+						{
+							_str = _str.substr(0, index) + "<font color='#00ffff'>" + phrase + "</font>" + _str.substr(index + phrase.length);
+						}
+					}
+				}
+			}
+			return _str;
+		}
+		
+        public function getSubtitle():String
+        {
+            return this.subtitlesEn;
+        }
+		
+        function frame1():void
+        {
+			this.mouseEnabled = this.mouseChildren = false;
+			format1 = new TextFormat();
+			format2 = new TextFormat();
+            return;
+        }
+
+    }
+}

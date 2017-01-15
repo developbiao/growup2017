@@ -1,0 +1,355 @@
+﻿package com.woogienglish
+{
+    import flash.display.MovieClip;
+	import flash.events.Event;
+	import flash.system.System;
+	import scaleform.gfx.Extensions;
+	import flash.external.ExternalInterface;
+	import flash.utils.setTimeout;
+	
+    public class EslvidMain extends MovieClip
+    {
+		public var ispaused:Boolean;
+        public var mod:int = -1;
+		public var languageId:int = -1;
+        public var chapterlist:Array;
+        public var realroot:MovieClip;
+        public var reref:MovieClip;
+		public var subs:MovieClip;
+        public var vid:MovieClip;
+        public var ob:Object;
+		
+		public var firstLanguage:Array = null;
+		public var secondLanguage:Array = null;
+		public var vSoundPath:String = "";
+        public function EslvidMain()
+        {
+			addEventListener(Event.ADDED_TO_STAGE, configUI);
+            return;
+        }
+		
+		private function configUI(evt:Event):void
+        {
+			System.useCodePage = true;
+			removeEventListener(Event.ADDED_TO_STAGE, configUI);
+			realroot = stage.getChildAt(0) as MovieClip;
+			reref = this as MovieClip;
+			ExternalInterface.call("OnRegisterSWFCallback", this);
+			Extensions.enabled = true;
+			Extensions.noInvisibleAdvance = true;
+			/*if (realroot == reref)
+			{
+				init( {languageId:2, subtitleFontSize:25} );
+			}*/
+            return;
+        }
+		
+		public function init(_ob:Object):void
+        {
+			ob = _ob;
+			if(ob.hasOwnProperty("mod"))
+				this.mod = ob.mod;
+			
+			if(ob.hasOwnProperty("languageId"))
+				this.languageId = int(ob.languageId);
+			this.gotoAndStop(2);
+			if(ob.hasOwnProperty("subtitleFontSize"))
+				setSubtitleFontSize(int(ob.subtitleFontSize));
+			setVideoValue(ob);
+            return;
+        }
+		
+		public function initData(_mod:int, _languageId:int, _fontSizeid:int = 0):void
+        {
+			ob = {mod:_mod, languageId:_languageId};
+			this.mod = _mod;			
+			this.languageId = _languageId;
+			this.gotoAndStop(2);
+			setVideoValue(ob);
+			setSubtitleFontSize(_fontSizeid);
+            return;
+        }
+		
+		private function setSubtitleFontSize(_size:int):void
+		{
+			this.subs.setFontSize(_size);
+			/*if(_sizeId == -2)
+				this.subs.setFontSize(12);
+			else if(_sizeId == -1)
+				this.subs.setFontSize(18);
+			else if(_sizeId == 0)
+				this.subs.setFontSize(25);
+			else if(_sizeId == 1)
+				this.subs.setFontSize(32);
+			else if(_sizeId == 2)
+				this.subs.setFontSize(40);*/
+			return;
+		}
+		
+		public function setVideoValue(_ob:Object):void
+		{
+			this.vid.ob = _ob;
+			if (this.languageId == -1)//disappear
+			{
+				firstLanguage = null;
+				secondLanguage = null;
+			}
+			else if (this.languageId == 0)//english
+			{
+				firstLanguage = this.vid.languageList.LANGUAGE_EN;
+				secondLanguage = null;
+			}
+			else if (this.languageId == 1)//chinese
+			{
+				firstLanguage = null;
+				secondLanguage = this.vid.languageList.LANGUAGE_CN;
+			}
+			else if (this.languageId == 2)// english and chinese
+			{
+				firstLanguage = this.vid.languageList.LANGUAGE_EN;
+				secondLanguage = this.vid.languageList.LANGUAGE_CN;
+			}
+			this.vid.setCallBack(playSubtitle, playQueuedSound);
+			vSoundPath = this.vid.eslvidVPath;
+            if (!this.vid.hasEventListener(Event.COMPLETE))
+            {
+               this.vid.addEventListener(Event.COMPLETE, this.comp, false, 0, true);
+            }
+			this.chapterlist = this.getChapterList();
+		}
+		
+		//------------------------------------------------------------------------
+		
+		private function comp(evt:Event):void
+        {
+            dispatchEvent(new Event(Event.COMPLETE));
+            return;
+        }
+		
+		public function soundPlayOver():void
+        {
+            return;
+        }
+		
+		public function playSubtitle(_subId:int):void
+        {
+			if (_subId == -1)
+				this.subs.setSubtitle(null, null);
+			else
+			{
+				var arr1:Array = null;
+				var arr2:Array = null;
+				if (null != firstLanguage)
+					arr1 = firstLanguage[_subId];
+				if (null != secondLanguage)
+					arr2 = secondLanguage[_subId];
+				this.subs.setSubtitle(arr1, arr2);
+			}
+            return;
+        }
+		
+		public function playQueuedSound(a:int, tframe:String = null, force:Boolean = false):void
+        {
+            if (this.ispaused && !force)
+            {
+                return;
+            }
+            try
+            {
+                if (this.mod == 0 || this.mod == 8)
+                {
+                    if (this.mod == 8)
+                    {
+                        this.mod = 1;
+                    }
+                    ExternalInterface.call("SoundRecordingReplayById", String(a), "soundPlayOver");
+           			//ExternalInterface.call("Trace", "frame:"+a+"   end flog:"+tframe);
+                }
+                else
+                {
+                    ExternalInterface.call("PlayAS3Sound", "eslvids/" + vSoundPath + "v" + a + ".mp3");
+                    //ExternalInterface.call("Trace", "eslvids/" + vSoundPath + "v" + a + ".mp3");
+                }
+            }
+            catch (e:Error)
+            {
+				trace("PLAY SOUND ERROR " + e);
+            }
+            return;
+        }
+		
+		public function stopQueuedSound():void
+		{
+			return;
+		}
+		
+		public function nextChapter():int
+        {
+            var cf:int = vid.currentFrame;
+			for (var cv:int = 0;cv < chapterlist.length; cv++)
+			{
+				if (cf < chapterlist[cv])
+				{
+					jumpToFrame(chapterlist[cv]);
+					return cv;
+				}
+			}
+			jumpToFrame(0);
+			return 0;
+        }
+
+        public function prevChapter():int
+        {
+            var cf:int = vid.currentFrame;
+			for (var cv:int = chapterlist.length-1; cv >= 0;cv--)
+			{
+				trace("cf " + cf + " " + chapterlist[cv]);
+				if (cf > chapterlist[cv])
+				{
+					trace("JUMP PREV");
+					if (cf - chapterlist[cv] > 20)
+					{
+						jumpToFrame(chapterlist[cv]);
+						return cv;
+					}
+					else if (cv == 0)
+					{
+						jumpToFrame(chapterlist[chapterlist.length-1]);
+						return chapterlist.length-1;
+					}
+					else
+					{
+						jumpToFrame(chapterlist[cv-1]);
+						return cv-1;
+					}
+				}
+			}
+			jumpToFrame(chapterlist[chapterlist.length-1]);
+			return chapterlist.length-1;
+        }
+
+        public function getChapterList():Array
+        {
+			var ret:Array = [];
+			var ff:Array = vid.currentLabels;
+			
+			for (var cv:int = 0; cv < ff.length; cv++)
+			{
+				var nam:String = ff[cv].name;
+				var frame:int = ff[cv].frame;
+				if (nam.substr(0, 7) == "chapter")
+				{
+					var id = Number(nam.substr(7));
+					ret[id] = frame;
+				}
+			}
+			return ret;
+        }
+		
+		public function getFrameList():Array
+        {
+            var ret:Array = [];
+			var ff:Array = vid.currentLabels;
+			
+			for (var cv:int = 0; cv < ff.length; cv++)
+			{		
+				var id:int; 
+				var nam:String = ff[cv].name;
+				var frame:int = ff[cv].frame;
+				if (nam.substr(0, 4) == "talk")
+				{
+					id = Number(nam.substr(4));
+					if (!ret[id])
+						ret[id] = { };
+					ret[id].start = frame;
+				}
+				else if (nam.substr(0, 7) == "endtalk")
+				{
+					id = Number(nam.substr(7));
+					if (!ret[id])
+						ret[id] = { };
+					ret[id].end = frame-1;
+				}
+			}
+			return ret;
+        }
+
+        public function jumpToFrame(obj:Object):void
+        {
+			playSubtitle(-1);
+            showSubtitle();
+            ispaused = false;
+            vid.gotoAndPlay(obj);
+            return;
+        }
+		
+		public function smartPlay():void
+        {
+            //see if it's in the middle of a talking clip or not
+			ispaused = false;
+			/*var frl:Array = getFrameList();
+			var cf:int = vid.currentFrame;
+			for (var cv=0;cv<frl.length;cv++)
+			{
+				if (frl[cv].start <= cf && cf <= frl[cv].end)
+				{
+					jumpToFrame(frl[cv].start);
+					return;
+				}
+			}
+			*/
+			vid.play();
+            return;
+        }
+		
+		public function pauseFrame():void
+        {
+            ispaused = true;
+            vid.stop();
+            return;
+        }
+		
+		public function getChar():MovieClip
+        {
+            return new mc_char();
+        }
+		
+		public function getVid():MovieClip
+        {
+            return this.vid;
+        }
+
+        public function getSubtitle():String
+        {
+            return this.subs.getSubtitle();
+        }
+		
+		public function getModelSound(id:int)
+        {
+           return null;
+        }
+		
+        public function getSoundPath(_id:int):String
+        {
+            return "eslvids/" + vSoundPath + "v" + _id + ".mp3";
+        }
+
+        public function hideSubtitle():void
+        {
+            this.subs.visible = false;
+            return;
+        }
+
+        public function showSubtitle():void
+        {
+            this.subs.visible = true;
+            return;
+        }
+		
+        public function changeMode(_mod:int):void
+        {
+            this.mod = _mod;
+            return;
+        }
+    }
+}

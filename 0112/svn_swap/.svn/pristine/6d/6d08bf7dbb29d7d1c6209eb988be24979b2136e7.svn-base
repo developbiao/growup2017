@@ -1,0 +1,74 @@
+﻿package com.woogienglish.eslvid14
+{
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["It is Reading Time, boys and girls. Open your books.  ", [["Reading", "to read"], ["open", "to open"]], [["Open your books", "open your books"]]],
+			["What book are we reading? ", [["book"], ["reading", "to read"]]],
+			["Today’s book title is “Iron Head.” ", [["book"], ["title"]]],
+			["That book has no pictures! ", [["book"], ["pictures", "picture"]]],
+			["Pictures are for babies! ", [["Pictures", "picture"]]],
+			["Is this a chapter book? ", [["chapter"], ["book"]]],
+			["Yes! The chapters are long and the text is hard! ", [["chapters", "chapter"], ["text", "text"]]],
+			["How many chapters are in the book? ", [["chapters", "chapter"], ["book"]]],
+			["More chapters than you can count, little girl! ", [["chapters", "chapter"], ["dinner"]]],
+			["Who is the author? ", [["author"], ["eat", "to east"], ["lunch"]]],
+			["The author’s name is on the cover. ", [["author"], ["cover"]]],
+			["Is it on the front cover or the back cover?  ", [["front"], ["cover"], ["back"]]],
+			["The author is on the front and the back cover! Look! ", [["author"], ["front"], ["back"], ["cover"]]],
+			["That picture looks like you! ", [["picture", "picture"]]],
+			["It is me. In books, the author RULES! ", [["books", "book"], ["author"]]],
+			["Now open your books, boys and girls.", null, [["open your books", "open your books"]]],
+			["What page are we reading? ", [["page", "page"], ["reading", "to read"]]],
+			["Turn to page 1. You do not start at the end of a book! ", [["Turn to", "turn to"], ["page"], ["book"]]],
+			["Where is the page number? ", [["page", "page"]]],
+			["It is at the top of the page! Do you not know how to read?! ", [["page", "page"], ["read", "to read"]]],
+			["Reading is power, little girl! ", [["Reading", "to read"]]],
+			["I can read books!", [["read", "to read"], ["Picture", "picture"], ["books", "book"], ["chapter"]]],
+			["Picture books, chapter books... ", [["read", "to read"], ["Picture", "picture"], ["books", "book"], ["chapter"]]],
+			["This book. Take it! Read it! ", [["book", "book"], ["read", "to read"]]],
+			["Everybody, open your books to page 1! ", [["page", "page"]], [["open your books", "open your books"]]],
+			["I guess Reading Time is over... ", [["Reading", "to read"]]]
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["阅读时间到, 男孩女孩们. 打开书.  ", [["阅读", "to read"], ["打开", "to open"]], [["打开书", "open your books"]]],
+			["我们要看什么书? ", [["书"], ["看", "to read"]]],
+			["今天的书的书名是“钢铁头.” ", [["书"], ["书名"]]],
+			["那本书没有图片! ", [["书"], ["图片", "picture"]]],
+			["图片是给小宝宝看的! ", [["图片", "picture"]]],
+			["这是一本章节书吗? ", [["章节"], ["书"]]],
+			["是的! 章节很长，内容很难! ", [["章节", "chapter"], ["内容", "text"]]],
+			["这本书有多少章节? ", [["章节", "chapter"], ["书"]]],
+			["多到你数不完, 小女孩! ", [["章节", "chapter"], ["dinner"]]],
+			["作者是谁? ", [["作者"], ["eat", "to east"], ["lunch"]]],
+			["作者的名字在封面上. ", [["作者"], ["封面"]]],
+			["在前面的封面还是在后面的封面?  ", [["前面的"], ["封面"], ["后面的"]]],
+			["前面和后面的封面上都有作者! 看! ", [["作者"], ["前面的"], ["后面的"], ["封面"]]],
+			["这张照片看起来像你! ", [["照片", "picture"]]],
+			["这就是我. 书上都有作者! ", [["书", "book"], ["作者"]]],
+			["现在打开你们的书, 男孩女孩们.", null, [["打开你们的书", "open your books"]]],
+			["我们看哪一页? ", [["页", "page"], ["看", "to read"]]],
+			["翻到第1页. 你不会从书的结尾开始看! ", [["翻到", "turn to"], ["页"], ["书"]]],
+			["页码在哪儿? ", [["页", "page"]]],
+			["在书页的顶部! 你不知道怎么看书吗?! ", [["页", "page"], ["看", "to read"]]],
+			["阅读是力量, 小女孩! ", [["阅读", "to read"]]],
+			["我会看书啊!", [["看", "to read"], ["Picture", "picture"], ["books", "book"], ["chapter"]]],
+			["图片书, 章节书... ", [["read", "to read"], ["图片", "picture"], ["书", "book"], ["章节"]]],
+			["这本书. 拿着! 去看! ", [["书", "book"], ["看", "to read"]]],
+			["大家都翻到第1页! ", [["页", "page"]], [["open your books", "open your books"]]],
+			["看来阅读时间结束了... ", [["阅读", "to read"]]]
+										];
+	}
+
+}

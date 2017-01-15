@@ -1,0 +1,88 @@
+﻿package com.woogienglish.eslvid18
+{
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["What\'s wrong, Mandy?", null],
+			["My dog ate my homework, Doc.", null],
+			["Great Spot! When did your dog eat it?", [["When", "when"]]],
+			["This morning...", [["morning"], ["o\' clock"]]],
+			["at 8 o\' clock.", [["morning"], ["o\' clock"]]],
+			["Quick! Get in my time machine!", [["time"]]],
+			["You made a time machine...", [["time"]]],
+			["out of a refrigerator?", [["time"]]],
+			["We\'ll set the hour to 8 and minutes to 0!", [["hour", "hour"], ["minutes", "minute"]]],
+			["That time is before my dog eats my homework.", [["time"], ["before"]]],
+			["Precisely! Into the time machine, Mandy!", [["time"]]],
+			["It\'s night, Doc!", [["night", "night"]]],
+			["But why?!", null],
+			["Of course! It\'s 8 PM!", [["PM", "pm"]]],
+			["My homework, Doc!", [["after"]]],
+			["It\'s after school!", [["after"]]],
+			["I know, Mandy. Set the time switch to AM.", [["time"], ["AM", "am"]]],
+			["The time is now set to AM.", [["time"], ["AM", "am"]]],
+			["Here we go!", null],
+			["It\'s morning again, Doc!", [["morning"]]],
+			["Quick! Your homework! There’s only 1 minute before your dog eats it.", [["minute"]]],
+			["I know!", [["time"]]],
+			["I have it this time!", [["time"]]],
+			["What time is it, Doc?", [["time"]]],
+			["It\'s almost noon, Mandy!", [["noon", "afternoon"]]],
+			["We\'re in the afternoon?", [["afternoon"]]],
+			["In a few minutes, your teacher will enter the room.", [["minutes", "minute/minutes"]]],
+			["Right!", [["when"]]],
+			["I\'ll give this to her when she enters.", [["when"]]],
+			["Precisely!", null],
+			["Thanks, Mandy! But... How?", null],
+			["Is it too late?", null],
+			["No, it\'s too early. This homework is from next month!", null]	
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["怎么了, Mandy?", null],
+			["我的狗狗把我的作业吃掉了, 博士.", null],
+			["完美现场! 你的狗狗什么时候吃的?", [["什么时候", "when"]]],
+			["今天早上...", [["早上"], ["o\' clock"]]],
+			["8点.", [["morning"], ["8点"]]],
+			["快点! 快到时间机器里来!", [["时间"]]],
+			["你做了一个时间机器...", [["时间"]]],
+			["用一个冰箱?", [["time"]]],
+			["我们把小时调到8, 分钟调到0!", [["小时", "hour"], ["分钟", "minute"]]],
+			["那个时间是在我的狗狗吃掉作业之前.", [["时间"], ["之前"]]],
+			["正确! 快到时间机器里来, Mandy!", [["时间"]]],
+			["这是晚上, 博士!", [["晚上", "night"]]],
+			["但是怎么会?!", null],
+			["当然了! 现在是下午8点!", [["下午", "pm"]]],
+			["我的作业, 博士!", [["after"]]],
+			["放学之后!", [["之后"]]],
+			["我知道, Mandy. 把时间调到上午.", [["时间"], ["上午", "am"]]],
+			["现在时间调成上午了.", [["时间"], ["上午", "am"]]],
+			["我们走!", null],
+			["又是早上了, 博士!", [["早上"]]],
+			["快点! 你的作业! 离你的狗狗吃掉作业还有一分钟.", [["分钟"]]],
+			["我知道!", [["time"]]],
+			["这次一定可以!", [["次"]]],
+			["现在是什么时间, 博士?", [["time"]]],
+			["快中午了, Mandy!", [["中午", "afternoon"]]],
+			["我们在下午吗?", [["下午"]]],
+			["几分钟后, 你的老师会进教室.", [["分钟", "minute/minutes"]]],
+			["是的!", [["when"]]],
+			["当她进来时我就把作业给她.", [["when"]]],
+			["正确!", null],
+			["谢谢你, Mandy! 不过... 怎么会这样?", null],
+			["太晚了吗?", null],
+			["不是, 是太早了. 这是下个月的作业!", null]
+										];
+	}
+
+}

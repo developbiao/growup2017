@@ -1,0 +1,64 @@
+﻿package com.woogienglish.eslvid9
+{
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["Magic Mirror, can you hear me?", [["hear", "to hear"]]],
+			["My ears can hear you, princess.", [["hear", "to hear"], ["ears", "ear"]]],
+			["I\'m dreaming... of the prince I...", null],
+			["What do you want to see, princess?", [["see", "to see"]]],
+			["I want to see the face of my handsome prince.", [["face", "face"]]],
+			["What does his face look like?", [["face", "face"]]],
+			["His face has blue eyes, like the ocean.", [["face", "face"], ["eyes", "eye"]]],
+			["Does he have two blue eyes?", [["eyes", "eye"]]],
+			["Of course! And beautiful hair on his head.", [["hair"], ["head"]]],
+			["Does he have brown hair like you?", [["hair"]]],
+			["Oh, yes! And he has a perfect mouth like mine!", [["mouth"]]],
+			["What other body parts does he have?", [["body"]]],
+			["My prince has big arms to carry me!", [["arms", "arm"]]],
+			["Does your prince have hands?", [["hands", "hand"]]],
+			["Yes, my prince\'s hands are soft to the touch.", [["hands", "hand"], ["touch", "to touch"]]],
+			["Does he have legs and feet too?", [["legs", "leg"], ["feet", "foot"]]],
+			["My prince has strong legs and fast feet to climb this tower.", [["legs", "leg"], ["feet", "foot"]]],
+			["With all these body parts...", [["these"], ["body"]]],
+			["Show me my prince, Magic Mirror!", null],
+			["Your prince is here, fair maiden!", null],
+			["Oh, my prince! You are perfect!", null]
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["魔镜, 你能听见我的声音吗?", [["听", "to hear"]]],
+			["我的耳朵听得见, 公主.", [["听", "to hear"], ["耳朵", "ear"]]],
+			["我梦想... 一个王子...", null],
+			["你想看什么, 公主?", [["看", "to see"]]],
+			["我想看我的英俊王子的脸.", [["脸", "face"]]],
+			["他的脸长什么样子?", [["脸", "face"]]],
+			["他的脸有蓝色的眼睛, 像大海一样.", [["脸", "face"], ["眼睛", "eye"]]],
+			["他有两只蓝色的眼睛吗?", [["眼睛", "eye"]]],
+			["当然了! 头上还有美丽的头发.", [["头发"], ["头"]]],
+			["和你一样的棕色头发吗?", [["头发"]]],
+			["噢, 是的! 而且他和我一样有一个完美的嘴巴!", [["嘴巴"]]],
+			["他有其他身体部分吗?", [["身体"]]],
+			["我的王子拥有粗壮的手臂可以抱起我!", [["手臂", "arm"]]],
+			["你的王子有手吗?", [["手", "hand"]]],
+			["是的, 我的王子的手摸起来很柔软.", [["手", "hand"], ["摸", "to touch"]]],
+			["他有腿和脚吗?", [["腿", "leg"], ["脚", "foot"]]],
+			["我的王子有强壮的腿和脚，可以爬上这座塔.", [["腿", "leg"], ["脚", "foot"]]],
+			["所有这些身体部分...", [["这些"], ["body"]]],
+			["给我看我的王子, 魔镜!", null],
+			["你的王子在这里, 美丽的女士!", null],
+			["哦, 我的王子! 你太完美了!", null]
+										];
+	}
+
+}

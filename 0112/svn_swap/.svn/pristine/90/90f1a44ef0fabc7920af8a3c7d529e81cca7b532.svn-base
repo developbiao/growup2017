@@ -1,0 +1,100 @@
+﻿package com.woogienglish.eslvid21
+{
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["Every animal on this farm needs food.", [["Every", "every"]]],
+			["How much food?", [["much"]]],
+			["The food is different for each animal.", [["each"]]],
+			["Some animals get more food than other animals? ", [["Some", "some"], ["more", "more"]]],
+			["Yes.", [[]]],
+			["This pig gets a few apples.", [["few"]]],
+			["Does the horse get a few apples?", [["few"]]],
+			["No.", [[]]],
+			["The horse gets a lot of apples.", [["a lot"]]],
+			["The horse and the pigs both get apples?", [["both"]]],
+			["Yes, but the horse gets more apples than the pigs.", [["more", "more"]]],
+			["How many apples do the chickens get?", [["many"]]],
+			["Chickens don\'t eat any apples.", [["any"]]],
+			["Then that\'s less apples than the pigs!", [["less", "less"]]],
+			["Chickens eat another food -- seeds.", [["another"]]],
+			["Each chicken gets one seed?", [["Each", "each"]]],
+			["No, every chicken gets a lot of seeds.", [["a lot"]]],
+			["Do the sheep get more seeds than the chickens?", [["more", "more"]]],
+			["No, the sheep eat apples.", [[]]],
+			["How many apples?", [["many"]]],
+			["The sheep eat several apples.", [["several"]]],
+			["Does every animal eat apples?", [["every"]]],
+			["No, only a few animals.", [["few"]]],
+			["Look!", [[]]],
+			["There are a lot of ducks!", [["a lot"]]],
+			["There are less ducks than chickens.", [["less"]]],
+			["Both animals are birds.", [["Both", "both"]]],
+			["You\'re right!", [[]]],
+			["Now all the animals need some food.", [["all"], ["some"]]],
+			["Any problems?", [["Any", "any"]]],
+			["No,", [[]]],
+			["all the animals got their food.", [["all"]]],
+			["The birds!", [[]]],
+			["Several apples for every bird!", [["Several", "several"], ["every"]]],
+			["The pigs!", [[]]],
+			["My horse!", [[]]],
+			["Yes!", [[]]],
+			["The horse got more seeds than the pigs.", [["more", "more"]]],
+			["I think I need another farm!", [["another"]]]
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["在这个农场每个动物都需要食物.", [["每个", "every"]]],
+			["多少食物呢", [["多少"]]],
+			["每种动物需要食物的量不同.", [["每种"]]],
+			["一些动物需要比别的动物更多的食物? ", [["一些", "some"], ["更多", "more"]]],
+			["是的.", [[]]],
+			["这头猪只吃一点点苹果.", [["一点点"]]],
+			["马也只吃一点点苹果吗?", [["一点点"]]],
+			["不.", [[]]],
+			["马需要吃很多的苹果.", [["很多"]]],
+			["马和猪都吃苹果?", [["都"]]],
+			["是的，但是马比猪吃更多的苹果.", [["更多", "more"]]],
+			["鸡需要吃多少苹果呢?", [["多少"]]],
+			["鸡不吃任何苹果.", [["任何"]]],
+			["那么鸡比猪吃更少的苹果!", [["更少", "less"]]],
+			["鸡吃另外的食物--种子 .", [["另外"]]],
+			["每只鸡吃一粒种子?", [["每只", "each"]]],
+			["不，每一只鸡吃很多的种子.", [["很多 "]]],
+			["羊比鸡吃更多的种子吗?", [["更多", "more"]]],
+			["不，羊吃苹果.", [[]]],
+			["吃多少苹果?", [["多少"]]],
+			["羊吃几个果.", [["几个"]]],
+			["每种动物都吃苹果吗?", [["每种"]]],
+			["不，仅仅是一些动物.", [["一些"]]],
+			["看!", [[]]],
+			["那里有很多的鸭子!", [["很多 "]]],
+			["鸭子比鸡更少.", [["更少"]]],
+			["两种动物都是鸟类 .", [["两种", "both"]]],
+			["你是正确的!", [[]]],
+			["所有的动物都需要一些食物 .", [["所有的"], ["某种"]]],
+			["还有任何问题吗?", [["任何", "any"]]],
+			["没有了,", [[]]],
+			["所有动物都有了他们的食物 .", [["所有"]]],
+			["鸟!", [[]]],
+			["每只鸟都吃了几个苹果!", [["几个", "several"], ["每只"]]],
+			["猪!", [[]]],
+			["我的马!", [[]]],
+			["是的!", [[]]],
+			["马比猪吃了更多的种子.", [["更多", "more"]]],
+			["我想我需要另外一个农场!", [["另外"]]]
+										];
+	}
+
+}

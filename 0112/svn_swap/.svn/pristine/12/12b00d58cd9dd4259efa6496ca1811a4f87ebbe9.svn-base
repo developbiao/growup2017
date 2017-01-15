@@ -1,0 +1,72 @@
+﻿package com.woogienglish.eslvid2
+{
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["Hello, students.  I am your new teacher.", [["students", "student"], ["teacher"]]],
+			["Teacher, I REALLY need to...", [["Teacher", "teacher"]]],
+			["Raise your hand, please.", null, [["Raise your hand", "raise your hand"]]],
+			["What is this?", null, [["What is this?", "What is this?"]]],
+			["It was a wall...", [["wall"]]],
+			["And now it is a door.", [["door"]]],
+			["Teacher, I really need...", [["Teacher", "teacher"]]],
+			["No talking, please.", null, [["No talking", "no talking"]]],
+			["Arnold, sit down.", null, [["sit down", "sit down"]]],
+			["I broke the chair.", [["chair"]]],
+			["You broke the floor.", [["floor"]]],
+			["Stand up, Arnold.", null, [["Stand up", "stand up"]]],
+			["I feel light headed.", [["light"]]],
+			["Students, line up at my desk.", [["Students", "student"], ["desk", "desk"]], [["line up", "line up"]]],
+			["Under the clock?", [["clock"]]],
+			["By the map?", [["map"]]],
+			["Teacher, I really...", [["Teacher", "teacher"]]],
+			["Next to the computer.", [["computer"]]],
+			["Computer?  The machines must be stopped!", [["Computer", "computer"]]],
+			["Uhh..."],
+			["I\'ll be back."],
+			["Teacher!", [["Teacher", "teacher"]]],
+			["Yes, student?", [["student"]]],
+			["I really need to... um, I forgot."],
+			["Goodbye, class!", null, [["Goodbye", "goodbye"]]]
+		];
+											
+		public var LANGUAGE_CN:Array = [ 
+			["学生们，你们好！我是你们的新老师.", [["学生们", "student"], ["老师"]]],
+			["老师，我要去...", [["老师", "teacher"]]],
+			["请举手.", null, [["举手", "raise your hand"]]],
+			["这是什么", null, [["这是什么?", "What is this?"]]],
+			["刚才是一面墙...", [["墙"]]],
+			["现在是一扇门.", [["门"]]],
+			["老师, 我要去...", [["老师", "teacher"]]],
+			["请不要讲话.", null, [["不要讲话", "no talking"]]],
+			["Arnold, 坐下.", null, [["坐下", "sit down"]]],
+			["我把椅子弄坏了.", [["椅子"]]],
+			["你把地板也弄坏了.", [["地板"]]],
+			["站起来, Arnold.", null, [["站起来", "stand up"]]],
+			["我头晕.", [["light"]]],
+			["学生们,来我桌子这里排队.", [["学生们", "student"], ["桌子", "desk"]], [["排队", "line up"]]],
+			["在钟底下?", [["钟"]]],
+			["地图旁边?", [["地图"]]],
+			["老师, 我要去", [["老师", "teacher"]]],
+			["电脑旁边.", [["电脑"]]],
+			["电脑?  所有的机器都必须停止！", [["电脑", "computer"]]],
+			["啊..."],
+			["我会回来的."],
+			["老师!", [["老师", "teacher"]]],
+			["这位学生，你有什么事?", [["学生"]]],
+			["我要去... 嗯, 我忘了."],
+			["再见, 同学们!", null, [["再见", "goodbye"]]]
+		];
+	}
+
+}

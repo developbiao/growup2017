@@ -1,0 +1,70 @@
+﻿package com.woogienglish.eslvid7
+{
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["Hello, aunt and uncle! ", [["aunt"], ["uncle"]]],
+			["Can you watch your cousin, Jackson, for us?", [["cousin"], ["your"]]],
+			["Please?", null],
+			["What about his brother or sister?", [["his"], ["brother"], ["sister"]]],
+			["His brother and sister are coming with us.", [["His", "his"], ["brother"], ["sister"]]],
+			["What about grandfather or grandmother?", [["grandfather", "grandfather"], ["grandmother", "grandmother"]]],
+			["Your grandfather and grandmother are tired.", [["Your", "your"], ["grandfather", "grandfather"], ["grandmother", "grandmother"]]],
+			["OK. I have a book for my cousin.", [["my"], ["cousin"]]],
+			["Good!", null],
+			["Bye!", null],
+			["This is my book of our family.", [["my"], ["family"]]],
+			["This is my father and my mother.", [["my"], ["father"], ["mother"]]],
+			["My mother and your mother are sisters.", [["My", "my"], ["mother"], ["sisters", "sister"]]],
+			["Come here, cousin! ", [["cousin"]]],
+			["No boys in a girl\'s bedroom!", [["boys", "boy"], ["girl\'s", "girl"]]],
+			["Your sister\'s dress! Your father and mother will be very mad!", [["Your", "your"], ["sister\'s", "sister"], ["father"], ["mother"]]],
+			["Grandfather! Your hair!", [["Grandfather", "grandfather"], ["Your", "your"]]],
+			["Jackson!", null],
+			["Your mother and father are home!", [["Your", "your"], ["mother"], ["father"]]],
+			["This is for my good little boy!", [["my"], ["boy"]]],
+			["My dress! ", [["My", "my"]]],
+			["My hair! ", [["My", "my"]]],
+			["My book!", [["My", "my"]]],
+			["JACKSON!!!", null]
+		];
+											
+		public var LANGUAGE_CN:Array = [ 
+			["你们好, 舅舅和舅妈! ", [["舅妈"], ["舅舅"]]],
+			["你可以帮我们照看你的表弟Jackson吗?", [["表弟"], ["你的"]]],
+			["可以吗?", null],
+			["他的哥哥和姐姐呢?", [["他的"], ["哥哥"], ["姐姐"]]],
+			["他的哥哥和姐姐和我们一起走.", [["他的", "his"], ["哥哥"], ["姐姐"]]],
+			["那外公和外婆呢?", [["外公", "grandfather"], ["外婆", "grandmother"]]],
+			["你的外公和外婆累了.", [["你的", "your"], ["外公", "grandfather"], ["外婆", "grandmother"]]],
+			["好吧. 我给我的表弟带了一本书.", [["我的"], ["表弟"]]],
+			["太好了!", null],
+			["再见!", null],
+			["这本书是关于我的家人.", [["我的"], ["家人"]]],
+			["这是我的爸爸和妈妈.", [["我的"], ["爸爸"], ["妈妈"]]],
+			["我的妈妈和你的妈妈是姐妹.", [["我的", "my"], ["妈妈"], ["姐妹", "sister"]]],
+			["过来, 表弟! ", [["表弟"]]],
+			["女孩子的卧室男孩子不能进!", [["男孩子", "boy"], ["女孩子的", "girl"]]],
+			["你的姐姐的裙子! 你爸爸和妈妈会很生气的!", [["你的", "your"], ["姐姐的", "sister"], ["爸爸"], ["妈妈"]]],
+			["外公! 你的头发!", [["外公", "grandfather"], ["你的", "your"]]],
+			["Jackson!", null],
+			["你妈妈和爸爸回来了!", [["你的", "your"], ["妈妈"], ["爸爸"]]],
+			["这是给我的乖乖宝贝的!", [["我的"], ["boy"]]],
+			["我的裙子! ", [["我的", "my"]]],
+			["我的头发! ", [["我的", "my"]]],
+			["我的书!", [["我的", "my"]]],
+			["JACKSON!!!", null]
+		];
+	}
+
+}

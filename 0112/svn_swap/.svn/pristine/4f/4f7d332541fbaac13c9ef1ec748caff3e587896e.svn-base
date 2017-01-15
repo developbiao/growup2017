@@ -1,0 +1,84 @@
+﻿package com.woogienglish.eslvid10
+{
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["Who are you? ", null],
+			["I am your new...", null],
+			["This is “Clothes” Magazine. ", [["Clothes", "clothes"]]],
+			["I know.", [["Clothes", "clothes"]]],
+			["“Clothes” Magazine is... ", [["Clothes", "clothes"]]],
+			["What are you wearing? ", [["wearing", "to wear"]]],
+			["I am wearing a red shirt and blue pants.", [["wearing", "to wear"], ["shirt"], ["pants"]]],
+			["No. What are you wearing on your face? ", [["wearing", "to wear"]]],
+			["I wear glasses.", [["wearing", "to wear"], ["glasses"]]],
+			["There are no glasses at “Clothes” magazine! ", [["glasses"], ["Clothes", "clothes"]]],
+			["But you are wearing glasses.", [["wearing", "to wear"], ["glasses"]]],
+			["No, I am not!", null],
+			["And what are you wearing on your feet?", [["wearing", "to wear"]]],
+			["I am wearing brown shoes. ", [["wearing", "to wear"], ["shoes"]]],
+			["And what is in your shoes? ", [["shoes"]]],
+			["I have a pair of green socks.", [["pair"], ["socks"]]],
+			["We do not wear green socks and brown shoes at “Clothes” Magazine!", [["wear", "to wear"], ["socks"], ["shoes"], ["Clothes", "clothes"]]],
+			["Can I wear my red shirt?", [["shirt"]]],
+			["My assistants do not wear shirts or pants.", [["wear", "to wear"], ["shirts", "shirt"], ["pants"]]],
+			["What are you wearing?!", [["wearing", "to wear"]]],
+			["My underwear.", [["underwear"]]],
+			["Oh, dear! Wear this!", [["Wear", "to wear"]]],
+			["But that is a dress!", [["dress"]]],
+			["All my other assistants wear dresses.", [["wear", "to wear"], ["dresses", "dress"]]],
+			["They wear dresses because they are girls! ", [["wear", "to wear"], ["dresses", "dress"]]],
+			["So?", null],
+			["I am a boy."],
+			["I wear shirts and pairs of pants.", [["wear", "to wear"], ["shirts", "shirt"], ["pairs", "pair"], ["pants"]]],
+			["Not if you are my assistant... And not at “Clothes” Magazine... ", [["Clothes", "clothes"]]],
+			["“Clothes” Magazine.", [["Clothes", "clothes"]]],
+			["How can I help you? ", [["Clothes", "clothes"]]]
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["你是谁? ", null],
+			["我是你的新...", null],
+			["这里是“服装”杂志. ", [["服装", "clothes"]]],
+			["我知道.", [["Clothes", "clothes"]]],
+			["“服装” 杂志是... ", [["Clothes", "clothes"]]],
+			["你穿着什么? ", [["穿着", "to wear"]]],
+			["我穿着一件红色衬衫和一条蓝色长裤.", [["穿着", "to wear"], ["衬衫"], ["长裤"]]],
+			["不. 你脸上戴着什么? ", [["戴着", "to wear"]]],
+			["我戴着眼镜.", [["戴着", "to wear"], ["眼镜"]]],
+			["在“服装” 杂志不允许戴眼镜! ", [["眼镜"], ["服装", "clothes"]]],
+			["但是你就戴着眼镜.", [["戴着", "to wear"], ["眼镜"]]],
+			["不, 我没有!", null],
+			["你脚上穿着什么?", [["穿着", "to wear"]]],
+			["我穿着棕色的鞋子. ", [["穿着", "to wear"], ["鞋子"]]],
+			["鞋子里面是什么? ", [["鞋子"]]],
+			["一双绿色的袜子.", [["一双"], ["袜子"]]],
+			["在“服装” 杂志，我们不允许穿绿色袜子和棕色鞋子!", [["穿", "to wear"], ["袜子"], ["shoes"], ["服装", "clothes"]]],
+			["我可以穿我的红衬衫吗?", [["衬衫"]]],
+			["我的助理不穿衬衫也不穿长裤.", [["穿", "to wear"], ["衬衫", "shirt"], ["长裤"]]],
+			["你穿着什么?!", [["穿着", "to wear"]]],
+			["我的内裤.", [["内裤"]]],
+			["噢, 天哪! 穿这个!", [["穿", "to wear"]]],
+			["但这是裙子!", [["裙子"]]],
+			["我其他的助理都穿裙子.", [["穿", "to wear"], ["裙子", "dress"]]],
+			["她们穿裙子是因为她们是女孩子! ", [["穿", "to wear"], ["裙子", "dress"]]],
+			["所以呢?", null],
+			["我是男孩子."],
+			["我穿衬衫和长裤.", [["穿", "to wear"], ["衬衫", "shirt"], ["pairs", "pair"], ["长裤"]]],
+			["在“服装” 杂志...只要你是我的助理，就不行...", [["服装", "clothes"]]],
+			["这里是“服装” 杂志.", [["服装", "clothes"]]],
+			["有什么可以帮助你的吗? ", [["服装", "clothes"]]]
+										];
+	}
+
+}

@@ -1,0 +1,78 @@
+﻿package com.woogienglish.eslvid33
+{
+	/**
+	 * ...
+	 * @author YeJing
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["Welcome to your first day of school.", [[]]],
+			["I would like to learn everything here!", [["would like to"], ["learn", "to learn"]]],
+			["Very good, what would you like to learn first?", [["learn", "to learn"]]],
+			["I would like to learn reading.", [["learn", "to learn"], ["reading"]]],
+			["I used to read this book when I was young.", [["used to"]]],
+			["I would like to read more books please!", [["would like to"]]],
+			["Good for you, but what is that?", [[]]],
+			["I like writing books too.", [["writing"]]],
+			["What other school subject would you like to learn?", [["learn", "to learn"]]],
+			["I would like to learn music!", [["music"], ["learn", "to learn"]]],
+			["Have you played an instrument before?", [[]]],
+			["I used to play the keyboard.", [["used to"]]],
+			["I used to play this violin!", [["used to"]]],
+			["I see.  What would you like to learn now?", [["learn", "to learn"], ["would you like to", "would like to"]]],
+			["Can I go to art class?", [["art"]]],
+			["I used to enjoy looking at art in the museum.", [["used to"], ["art"]]],
+			["It\'s very nice...", [[]]],
+			["I would like to learn math next.", [["learn", "to learn"], ["would like to"], ["math"]]],
+			["Did you know that I used to sleep during math?", [["used to"], ["math"]]],
+			["Can I learn history now?", [["learn", "to learn"], ["history"]]],
+			["Geography looks fun too!", [["Geography", "geography"]]],
+			["I would like to learn science.", [["learn", "to learn"], ["would like to"], ["science"]]],
+			["It\'s time to go home now.", [[]]],
+			["But I would like to learn more...", [["learn", "to learn"], ["would like to"]]],
+			["You learned everything you can in this school.", [["learned", "to learn"]]],
+			["Not everything...", [[]]],
+			["What do you still need to learn?", [["learn", "to learn"]]],
+			["Recess!", [["Recess!", "recess"]]]
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["欢迎第一天入学.", [[]]],
+			["我想要在这里学习所有的东西!", [["想要"], ["学习", "学习"]]],
+			["非常好, 你首先想学什么?", [["学", "学"]]],
+			["我想要学习阅读.", [["学习", "学习"], ["阅读"]]],
+			["我年轻的时候常常读这本书.", [["以前常常"]]],
+			["我很乐意读更多的书!", [["乐意"]]],
+			["对你有益, 但是那是什么?", [[]]],
+			["我也喜欢写书.", [["写"]]],
+			["你还喜欢学习其他什么学校课程?", [["学习", "学习"]]],
+			["我想要学习音乐!", [["音乐"], ["学习", "学习"]]],
+			["你以前玩过什么乐器吗?", [[]]],
+			["我以前常常电子琴.", [["以前常常"]]],
+			["我以前常常拉这个小提琴!", [["以前常常"]]],
+			["我明白.  你现在想要学习什么?", [["学习", "学习"], ["想要", "想要"]]],
+			["我可以参加艺术课吗?", [["艺术"]]],
+			["我以前常常很享受去博物馆看艺术品.", [["以前常常"], ["艺术"]]],
+			["非常棒...", [[]]],
+			["下一步我想学习数学.", [["学习", "学习"], ["想要"], ["数学"]]],
+			["你知道我已经常常在数学课上睡觉吗?", [["以前常常"], ["数学"]]],
+			["我现在可以学习历史吗?", [["学习", "学习"], ["历史"]]],
+			["地理看起来也很有趣!", [["地理", "地理"]]],
+			["我想要学习科学.", [["学习", "学习"], ["想要"], ["科学"]]],
+			["现在该回家了.", [[]]],
+			["但是我想要学习更多...", [["学习", "学习"], ["想要"]]],
+			["你在学校学习了所有你能学的.", [["学习", "学习"]]],
+			["不是每一样东西...", [[]]],
+			["什么是你仍然需要学习的呢?", [["学习", "学习"]]],
+			["休息!", [["休息!", "休息"]]]
+										];
+	}
+
+}

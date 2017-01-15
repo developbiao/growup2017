@@ -1,0 +1,68 @@
+﻿package com.woogienglish.eslvid23
+{
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["We\'re in the museum!", [["in"]]],
+			["You move left", [["move", "to move"], ["left"]]],
+			["and I\'ll move right", [["right"]]],
+			["okay?", []],
+			["Okay. ", [[]]],
+			["I said \"move left!\"", [["move", "to move"], ["left"]]],
+			["Is someone in here?", [[]]],
+			["Move behind that statue!", [["behind"]]],
+			["Which painting do I put in the bag? ", [[" in", "in"]]],
+			["The one in front of us.", [["in front of"]]],
+			["The painting at the top of the wall?", [["top"]]],
+			["No, it\'s between the blue paintings.", [["between"]]],
+			["This one above the clock painting?", [["above"]]],
+			["No, it is below the clock painting.", [["below"]]],
+			["At the bottom of the wall?", [["bottom"]]],
+			["It\'s not on the bottom of the wall.", [["bottom"]]],
+			["Could the painting be on this side of the room?", [["side"]]],
+			["Someone is in the museum!", [["in"]]],
+			["Put the painting into the bag now!", [["into"]]],
+			["Painting? Which painting?", [["red"], ["arrows", "arrow"]]],
+			["Over here!", [[]]],
+			["This one by me!", [["by"]]],
+			["You two are under arrest! Don\'t move!", [[], ["move", "to move"]]]
+										];						
+										
+		public var LANGUAGE_CN:Array = [
+			["我们在博物馆!", [["在"]]],
+			["你走左边", [["移动", "移动"], ["左边"]]],
+			["我走右边", [["右边"]]],
+			["好吗?", []],
+			["好的. ", [[]]],
+			["我说“走左边!\"", [["移动", "移动"], ["左边"]]],
+			["这里有人吗?", [[]]],
+			["快到雕像后面!", [["后面"]]],
+			["我放哪一幅油画在袋子里? ", [[" 在", "in"]]],
+			["在我们前面的那幅.", [["前面"]]],
+			["是墙顶部那幅油画吗?", [["顶部"]]],
+			["不, 在蓝色油画之间那幅.", [["之间"]]],
+			["是时钟油画上面这个吗?", [["上面"]]],
+			["不, 它在时钟油画下面.", [["下面"]]],
+			["是在墙的底部吗?", [["底部"]]],
+			["它不在墙的底部.", [["底部"]]],
+			["油画会在房间的这边吗?", [["边"]]],
+			["有人在博物馆!", [["在"]]],
+			["现在把油画放进袋子里!", [["里"]]],
+			["油画? 哪幅油画?", [["red"], ["arrows", "arrow"]]],
+			["这里!", [[]]],
+			["在我旁边这幅!", [["by"]]],
+			["你俩被逮捕了! 不许动!", [[], ["动move", "动to move"]]]
+										];
+	}
+
+}

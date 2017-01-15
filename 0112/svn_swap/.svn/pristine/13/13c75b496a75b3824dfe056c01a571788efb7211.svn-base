@@ -1,0 +1,94 @@
+﻿package com.woogienglish.eslvid19
+{
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["When are we, Doc?", null],
+			["Today is Monday, Mandy.", [["Today", "today"], ["Monday"]]],
+			["Isn\'t today Tuesday?", [["today"], ["Tuesday"]]],
+			["Yesterday was Monday.", [["Yesterday", "yesterday"], ["Monday"]]],
+			["This time machine took us to yesterday. ", [["yesterday"]]],
+			["But time is hours and minutes... ", null],
+			["Yes, but time can also be days and weeks and months!", [["days", "day"], ["weeks", "week"], ["months", "month"]]],
+			["Then how do we get back to tomorrow?", [["tomorrow"]]],
+			["If today is Monday, then tomorrow is...", [["today"], ["Monday"], ["tomorrow"]]],
+			["Tuesday.", [["Tuesday"]]],
+			["Yes, yes! And if tomorrow is Tuesday, then the day after tomorrow is...", [["tomorrow"], ["Tuesday"]]],
+			["It\'s Wednesday.", [["Wednesday"]]],
+			["Then it\'s Thursday and Friday.", [["Thursday"], ["Friday"]]],
+			["So what?", null],
+			["Into the time machine, Mandy!", null],
+			["Where are we going, Doc?", null],
+			["Back to tomorrow!", [["tomorrow"]]],
+			["When are we now, Doc?", [["morning"]]],
+			["No, no, no!", null],
+			["It looks like December or January.", [["December"], ["January"]]],
+			["You\'re right. It is January. ", [["January"]]],
+			["This isn\'t tomorrow!", [["tomorrow"]]],
+			["It\'s a different month! ", [["month"]]],
+			["Time travel isn\'t perfect. Hold on!", null],
+			["Now it looks like June or July or August!", [["June"], ["July"], ["August"]]],
+			["This is not the right month...", [["month"]]],
+			["But there\'s no school in July!", [["July"]]],
+			["That\'s precisely why we need to go back to March, Mandy.", [["March"]]],
+			["March? It was April, Doc! ", [["March"], ["April"]]],
+			["April?! That changes everything!", [["April"]]],
+			["Just the day and month.", [["day"], ["month"]]],
+			["The day is Tuesday and the month is April. We are back, Mandy! ", [["day"], ["Tuesday"], ["month"], ["April"]]],
+			["Can the time machine be wrong, Doc?", null],
+			["No... I don\'t think so. Why?", null],
+			["This looks like the right month,", [["month"]]],
+			["but I don\'t think it\'s the right year!", [["year"]]]			
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["现在是什么时候, 博士?", null],
+			["今天是周一, Mandy.", [["今天", "today"], ["周一"]]],
+			["今天不是周二吗?", [["今天"], ["周二"]]],
+			["昨天是周一.", [["昨天", "yesterday"], ["周一"]]],
+			["时间机器把我们带回到了昨天. ", [["昨天"]]],
+			["但时间是小时和分钟... ", null],
+			["是的, 但时间也可以是天，周和月!", [["天", "day"], ["周", "week"], ["月", "month"]]],
+			["那我们怎么回到明天呢?", [["明天"]]],
+			["如果今天是周一, 那明天就是...", [["今天"], ["周一"], ["明天"]]],
+			["周二.", [["周二"]]],
+			["对, 对! 如果明天是周二, 那么后天是...", [["明天"], ["周二"]]],
+			["周三.", [["周三"]]],
+			["然后是周四和周五.", [["周四"], ["周五"]]],
+			["所以呢?", null],
+			["快进来, Mandy!", null],
+			["我们去哪儿, 博士?", null],
+			["回到明天!", [["明天"]]],
+			["我们现在在什么时间, 博士?", [["morning"]]],
+			["不, 不, 不!", null],
+			["看起来像12月或者1月.", [["12月"], ["1月"]]],
+			["是的. 现在是1月. ", [["1月"]]],
+			["不是明天!", [["明天"]]],
+			["我们在另一个月! ", [["月"]]],
+			["时间穿梭还不完美. 坐稳了!", null],
+			["现在看起来像6月7月或者8月了!", [["6月"], ["7月"], ["8月"]]],
+			["这不是正确的月份...", [["月份"]]],
+			["但是7月不上学啊!", [["7月"]]],
+			["那就是为什么我们要回到3月, Mandy.", [["3月"]]],
+			["3月? 是4月, 博士! ", [["3月"], ["4月"]]],
+			["4月?! 那一切都错了!", [["4月"]]],
+			["只是天和月错了.", [["天"], ["月"]]],
+			["天是周二，月是4月，我们回来了，Mandy! ", [["天"], ["周二"], ["月"], ["4月"]]],
+			["时间机器会出错吗, 博士?", null],
+			["不会... 我不这么认为. 怎么了?", null],
+			["这看起来是正确的月份,", [["月"]]],
+			["但是我不认为是正确的年份!", [["年"]]]	
+										];
+	}
+
+}

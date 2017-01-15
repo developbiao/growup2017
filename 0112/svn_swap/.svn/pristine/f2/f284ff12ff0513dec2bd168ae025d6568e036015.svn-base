@@ -1,0 +1,84 @@
+﻿package com.woogienglish.eslvid24
+{
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["Tracy, I need you to find a man in your neighborhood.  His name is Funny Face.", [["neighborhood"]]],
+			["Yes, sir.  Where should I start?", [[]]],
+			["Ask around the school, Tracy.  Go now!", [["school"], ["Go", "to go"]]],
+			["Excuse me.  Do you know this Woogi?", [[]]],
+			["Yes, I do.", []],
+			["Go to the park to see him.", [["Go", "to go"], ["park"]]],
+			["The park!  Thanks for your help!", [["park"]]],
+			["Hello ma\'am.  Do you know this Woogi?", [[]]],
+			["Yes.", []],
+			["He is at the grocery store.", [["grocery store"]]],
+			["The grocery store!  Thanks!", [["grocery store"]]],
+			["Do you know this Woogi?", [[]]],
+			["Yes.", []],
+			["Go to the bank to find him.", [["Go", "to go"], ["bank"]]],
+			["Where is the bank?", [["bank"]]],
+			["The bank is on the corner,", [["bank"], ["corner"]]],
+			["next to the church.", [["church"]]],
+			["Thanks!", [[]]],
+			["Do you know where this Woogi is?", [["bottom"]]],
+			["Maybe I do.", [[]]],
+			["Maybe I don\'t.", [[]]],
+			["Which is it?", [[]]],
+			["Go to the movie theater and see.", [["movie theater"]]],
+			["Have you seen this Woogi?", [[]]],
+			["Yes, I have.", [["library"], ["street", "street"]]],
+			["He\'s at the library across the street.", [["library"], ["street"]]],
+			["Hi, do you know...", [[]]],
+			["Shhhhhhhh!", [[]]],
+			["Surprise!", [[]]],
+			["But, chief... What about Funny Face?", [[]]],
+			["Happy birthday from the neighborhood.", [[]]]
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["Tracy, 我需要你从你的邻居里找一个男人. 他的名字叫Funny Face.", [["邻居"]]],
+			["是的, 先生.  我应该从哪里开始?", [[]]],
+			["在学校周围问问, Tracy.  现在就去!", [["学校"], ["去", "去"]]],
+			["你好.  你知道这个Woogi吗?", [[]]],
+			["是的，我知道.", []],
+			["去公园找他.", [["去", "去"], ["公园"]]],
+			["公园! 谢谢你的帮助!", [["公园"]]],
+			["你好，女士.你知道这个Woogi吗?", [[]]],
+			["是的.", []],
+			["他在食品杂货店.", [["食品杂货店"]]],
+			["食品杂货店!谢谢!", [["食品杂货店"]]],
+			["你知道这个Woogi?", [[]]],
+			["是的.", []],
+			["去银行找到.", [["去", "去"], ["银行"]]],
+			["银行在哪里?", [["银行"]]],
+			["银行在那个拐角,", [["银行"], ["拐角"]]],
+			["教堂旁边.", [["教堂h"]]],
+			["谢谢!", [[]]],
+			["你知道这个Woogi在哪里吗?", [["bottom"]]],
+			["也许我知道.", [[]]],
+			["也许我不知道.", [[]]],
+			["哪一个?", [[]]],
+			["去电影院看看.", [["电影院"]]],
+			["你见过这个Woogi了吗?", [[]]],
+			["是的，我看见过.", [["library"], ["street", "street"]]],
+			["他在街道那边的图书馆里.", [["图书馆"], ["街道"]]],
+			["Hi，你知道...", [[]]],
+			["Shhhhhhhh!", [[]]],
+			["惊喜!", [[]]],
+			["但是, 主管... Funny Face怎么办?", [[]]],
+			["来自邻居的生日祝福.", [[]]]
+										];
+	}
+
+}

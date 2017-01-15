@@ -1,0 +1,108 @@
+﻿package com.woogienglish.eslvid20
+{
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["With this machine, I control the seasons, Mr. Woog.", [["seasons", "season"]]],
+			["What seasons?", [["seasons", "season"]]],
+			["You know... Winter, spring, summer, and fall.", [["Winter", "winter"], ["spring"], ["summer"], ["fall"]]],
+			["You change the world\'s weather?", [["weather"]]],
+			["More than that. I change the seasons themselves!", [["seasons", "season"]]],
+			["I want to see the seasons then.", [["seasons", "season"]]],
+			["Very well, Mr. Woog. Have a nice fall!", [["fall", "fall"]]],
+			["You call this fall?", [["fall", "fall"]]],
+			["Why? Do you want more clouds? ", [["clouds", "cloud"]]],
+			["It is cloudy.", [["cloudy"]]],
+			["Do you want more wind? ", [["wind"]]],
+			["It isn\'t fall without some wind.", [["fall", "fall"], ["wind"]]],
+			["Are you cold yet, Mr. Woog?", [["cold"]]],
+			["I am not cold.", [["cold"]]],
+			["It isn\'t winter.", [["winter"]]],
+			["Very well. Here is your winter!", [["winter"]]],
+			["If this is winter, then where is the snow?", [["winter"], ["snow"]]],
+			["The snow is coming. You\'ll see... ", [["snow"]]],
+			["A snowy winter is easy to make.", [["snowy"], ["winter"]]],
+			["Why do you say that? ", null],
+			["Snow is just cold water on a cloudy day.", [["Snow", "snow"], ["cold"], ["cloudy"]]],
+			["What about warm water on a cloudy day?", [["warm"], ["cloudy"]]],
+			["Rain.", [["Rain", "rain"]]],
+			["It\'s raining.", [["raining", "rain"]]],
+			["Yes, it\'s a rainy day!", [["rainy"]]],
+			["What season do you think it is now, Mr. Woog? ", [["season"]]],
+			["It\'s spring.", [["spring"]]],
+			["Right! Spring!", [["Spring", "spring"]]],
+			["A warm rain will not stop me.", [["warm"], ["rain"]]],
+			["No, but this will!", null],
+			["Summer is my favorite season!", [["Summer", "summer"], ["season"]]],
+			["It\'s too sunny...", [["sunny"]]],
+			["Have some more sun!", [["sun"]]],
+			["This summer sun is too hot!", [["summer"], ["sun"], ["hot"]]],
+			["Even you cannot stop the sun, Mr. Woog.", [["sun"]]],
+			["I can\'t stop the sun,", [["sun"]]],
+			["but I can stop you!", null],
+			["This will warm things up!", [["warm"]]],
+			["It\'s too hot in here!", [["hot"]]],
+			["This time you\'re sunny side up.", [["sunny"]]],
+			["My machine!", null],
+			["Sorry, but I must spring.", [["spring"]]],
+			["Have a great fall!", [["fall", "fall"]]]	
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["用这个机器, 我可以控制季节,Woog先生.", [["季节", "season"]]],
+			["什么季节?", [["季节", "season"]]],
+			["你知道... 冬天,春天,夏天,和冬天.", [["冬天", "winter"], ["春天"], ["夏天"], ["冬天"]]],
+			["你改变这个世界的天气?", [["天气"]]],
+			["比那个更厉害. 我改变的是季节本身!", [["季节", "season"]]],
+			["那么我想看看季节的改变.", [["季节", "season"]]],
+			["很好, Woog先生. 祝你秋天愉快!", [["秋天", "fall"]]],
+			["你把这个叫秋天?", [["秋天", "fall"]]],
+			["怎么了? 你想要更多云? ", [["云", "cloud"]]],
+			["现在是阴天.", [["阴天"]]],
+			["要更多风吗? ", [["风"]]],
+			["没有风就不是秋天.", [["秋天", "fall"], ["风"]]],
+			["你觉得冷了吗, Woog先生?", [["冷"]]],
+			["我不冷.", [["冷"]]],
+			["现在不是冬天.", [["冬天"]]],
+			["很好. 给你冬天!", [["冬天"]]],
+			["如果这是冬天, 雪在哪里?", [["冬天"], ["雪"]]],
+			["雪马上就来了. 你等着吧... ", [["雪"]]],
+			["下雪的冬天很容易制造出来.", [["下雪的"], ["冬天"]]],
+			["你为什么这么说? ", null],
+			["雪只是阴天里冷的水.", [["雪", "snow"], ["冷"], ["阴天"]]],
+			["那么阴天里暖的水是什么?", [["暖的"], ["阴天"]]],
+			["雨.", [["雨", "rain"]]],
+			["下雨了.", [["下雨", "rain"]]],
+			["是的, 现在是雨天!", [["雨天"]]],
+			["你觉得现在是什么季节, Woog先生? ", [["季节"]]],
+			["是春天.", [["春天"]]],
+			["对! 春天!", [["春天", "spring"]]],
+			["一场暖和的雨不能阻止我.", [["暖和的"], ["雨"]]],
+			["是不会, 但这个会!", null],
+			["夏天是我最喜欢的季节!", [["夏天", "summer"], ["季节"]]],
+			["太阳太大了...", [["sunny"]]],
+			["太阳再大点!", [["太阳"]]],
+			["这个夏天的太阳太热了!", [["夏天"], ["太阳"], ["热"]]],
+			["就算是你也没法阻止太阳，Mr. Woog先生.", [["太阳"]]],
+			["我不能阻止太阳,", [["太阳"]]],
+			["但我能阻止你!", null],
+			["这个可以使物体升温!", [["warm"]]],
+			["这里太热了!", [["热"]]],
+			["这次该你热得煎鸡蛋了.", [["sunny"]]],
+			["我的机器!", null],
+			["不好意思，我得走了.", [["spring"]]],
+			["祝你愉快降落!", [["fall", "fall"]]]	
+										];
+	}
+
+}

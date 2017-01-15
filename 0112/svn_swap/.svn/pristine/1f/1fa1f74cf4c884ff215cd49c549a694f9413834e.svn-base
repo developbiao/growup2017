@@ -1,0 +1,70 @@
+﻿package com.woogienglish.eslvid22
+{
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["This grape is so big! Yum!", [["big"]]],
+			["It\'s big, but this grape is bigger!", [["big"], ["bigger"]]],
+			["The grapes look bigger in my soft chair.", [["bigger"], ["soft"]]],
+			["My chair is softer than that chair.", [["softer"]]],
+			["It is not!  Your chair is harder than that rock!", [["harder"]]],
+			["The hard rock by your small pyramid?", [["hard"], ["small"]]],
+			["My pyramid is very big!", [["big"]]],
+			["It\'s smaller than mine.", [["smaller"]]],
+			["My pyramid is taller than your pyramid.", [["taller"]]],
+			["No, I have the tallest pyramid.", [["tallest"]]],
+			["At least my boat is longer than your boat!", [["longer"]]],
+			["That short boat?", [["short"]]],
+			["Your boat is shorter!", [["shorter"]]],
+			["This is my shortest boat.", [["shortest"]]],
+			["It gives me more sun.", [[]]],
+			["My boat gets the most sun.", [[]]],
+			["But the sun is hotter on my side.", [["hotter"]]],
+			["You\'re wrong. This is the hottest side...", [["hottest"]]],
+			["...And that\'s why my summer is longer than your summer!", [["longer"]]],
+			["It\'s cold.", [["cold"]]],
+			["Where are we?", [[]]],
+			["I don\'t know, but it\'s colder than Egypt.", [["colder"]]],
+			["Is this the coldest place on Earth?", [["coldest"]]],
+			["I think it is the coldest place on Earth.", [["coldest"]]]
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["这个葡萄真大，哇!", [["大"]]],
+			["它是很大，但是这个葡萄更大!", [["大"], ["更大"]]],
+			["这些葡萄在我的软椅上看着更大.", [["更大"], ["软"]]],
+			["我的椅子比那张椅子更软.", [["更软"]]],
+			["不是的！你的椅子比那块石头更硬!", [["更硬"]]],
+			["是你的小金字塔旁边的那块坚硬石头吗?", [["坚硬"], ["小"]]],
+			["我的金字塔非常大!", [["大"]]],
+			["比我的更小.", [["更小"]]],
+			["我的金字塔比你的金字塔更高.", [["更高"]]],
+			["不，我的金字塔最高.", [["最高"]]],
+			["至少我的船比你的船更长!", [["更长"]]],
+			["那艘短的船吗?", [["短的"]]],
+			["你的船更短!", [["更短"]]],
+			["这是我最短的船.", [["最短"]]],
+			["它给我更多的阳光.", [[]]],
+			["我的船拥有大部分的阳光.", [[]]],
+			["但是在我这边的阳光更热.", [["更热"]]],
+			["你错了. 这是最热的一边...", [["最热"]]],
+			["...那是为什么我的夏天比你的夏天更长!", [["更长"]]],
+			["好冷.", [["冷"]]],
+			["我们在哪里?", [[]]],
+			["我不知道, 但是这里比埃及更冷.", [["更冷"]]],
+			["这是地球上最冷的地方吗?", [["最冷"]]],
+			["我想它是地球上最冷的地方.", [["最冷"]]]
+										];
+	}
+
+}

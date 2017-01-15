@@ -1,0 +1,80 @@
+﻿package com.woogienglish.eslvid6
+{
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["There is the yellow triangle! ", [["yellow"], ["triangle"]]],
+			["The lost pyramid! This way. ", null],
+			["It is dark in here! ", [["dark"]]],
+			["Now it is light, but how do we open this door? ", [["light"]]],
+			["Look! There are shapes in here. ", [["shapes", "shape"]]],
+			["These shapes... These colors... They mean something. ", [["shapes", "shape"], ["colors", "color"]]],
+			["This one is a red arrow. ", [["red"], ["arrow"]]],
+			["Don’t touch it! ", null],
+			["A red arrow. It matches this color and shape! ", [["red"], ["arrow"], [" color ", "color"], ["shape"]]],
+			["Is there a triangle? ", [["triangle"]]],
+			["Good idea! This pyramid is a triangle shape! ", [["triangle"], ["shape"]]],
+			["This is a gray triangle. ", [["gray"], ["triangle"]]],
+			["But the pyramid is a yellow triangle... ", [["yellow"]]],
+			["Those spikes are gray triangles! ", [["gray"], ["triangles", "triangle"]]],
+			["Here is an orange oval! ", [["orange"], ["oval"]]],
+			["The orange ovals are... balloons? ", [["orange"], ["ovals", "oval"]]],
+			["What shape now? ", [["shape"]]],
+			["Any shape! Any color!", [[" shape"], [" color!", "color"]]],
+			["Here is a brown circle. ", [["brown"], ["circle"]]],
+			["If the red arrows were red arrows... ", [["red"], ["arrows", "arrow"]]],
+			["And the gray triangles were gray spikes... ", [["gray"], ["triangles", "triangle"]]],
+			["Then the brown circle is... ", [["brown"], ["circle"]]],
+			["It is a big brown circle! ", [["brown"], ["circle"]]],
+			["Quick! Touch another shape! ", [["shape"]]],
+			["The green square or the blue rectangle? ", [["green"], ["square"], ["blue"], ["rectangle"]]],
+			["Green or blue! Just hurry! ", [["Green", "green"], ["blue"]]],
+			["A blue rectangle for a blue door! ", [["blue"], ["rectangle"]]],
+			["Look! White stars! ", [["White", "white"], ["stars", "star"]]],
+			["Take me home. I’ve had enough shapes for one day! ", [["shapes", "shape"]]]
+		];
+											
+		public var LANGUAGE_CN:Array = [ 
+			["这儿就是黄色三角形! ", [["黄色"], ["三角形"]]],
+			["迷失的金字塔! 这边走. ", null],
+			["这里太黑了! ", [["黑"]]],
+			["现在有光了, 不过这扇门怎么打开? ", [["光"]]],
+			["看! 这里有一些形状. ", [["形状", "shape"]]],
+			["这些形状... 这些颜色... 他们肯定有什么意义. ", [["形状", "shape"], ["颜色", "color"]]],
+			["这是个红色箭头. ", [["红色"], ["箭头"]]],
+			["不要碰! ", null],
+			["红色的箭. 它是和这个颜色和形状匹配的! ", [["红色"], ["箭头"], [" 颜色 ", "color"], ["形状"]]],
+			["这里有三角形吗? ", [["三角形"]]],
+			["好主意! 这个金字塔就是三角形的形状! ", [["三角形"], ["形状"]]],
+			["这是一个灰色的三角形. ", [["灰色"], ["三角形"]]],
+			["但是金字塔是黄色的三角形... ", [["黄色"]]],
+			["这些尖刺是灰色的三角形! ", [["灰色"], ["三角形", "triangle"]]],
+			["这里有个桔黄色的椭圆形! ", [["桔黄色"], ["椭圆形"]]],
+			["这些桔黄色的椭圆形是... 气球? ", [["桔黄色"], ["椭圆形", "oval"]]],
+			["现在该什么形状? ", [["形状"]]],
+			["任何一个形状! 任何一个颜色!", [[" 形状"], [" 颜色!", "color"]]],
+			["这里有个棕色的圆形. ", [["棕色"], ["圆形"]]],
+			["如果红色箭头是红色的箭... ", [["红色"], ["箭头", "arrow"]]],
+			["灰色的三角形是灰色的尖刺... ", [["灰色"], ["三角形", "triangle"]]],
+			["那么棕色圆形应该是... ", [["棕色"], ["圆形"]]],
+			["是一个巨大的棕色圆形! ", [["棕色"], ["圆形"]]],
+			["快点! 按另一个形状! ", [["形状"]]],
+			["绿色正方形还是蓝色长方形? ", [["绿色"], ["正方形"], ["蓝色"], ["长方形"]]],
+			["绿色或者蓝色! 快点! ", [["绿色", "green"], ["蓝色"]]],
+			["蓝色长方形是一扇蓝色的门! ", [["蓝色"], ["长方形"]]],
+			["看! 白色的星星! ", [["白色", "white"], ["星星", "star"]]],
+			["带我回家. 再也受不了这些形状了! ", [["形状", "shape"]]]
+		];
+	}
+
+}

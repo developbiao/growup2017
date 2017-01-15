@@ -1,0 +1,78 @@
+﻿package com.woogienglish.eslvid30
+{
+	/**
+	 * ...
+	 * @author YeJing
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["And that\'s how I rode around the world in eighty days!", [["rode", "to ride"]]],
+			["Eighty days? I can do it faster!", [[]]],
+			["You can ride around the world in less than eighty days? ", [["ride", "to ride"]]],
+			["Yes, I will start by riding in this train!", [["riding", "to ride"], ["train"]]],
+			["Then we will see you in seventy-nine days!", [[]]],
+			["I can\'t ride a train on the ocean.", [["ride", "to ride"], ["train"]]],
+			["You need a boat.", [["boat"]]],
+			["I need a boat!", [["boat"]]],
+			["Do you have something I can ride in?", [["ride", "to ride"]]],
+			["Well, I have this horse...", [[]]],
+			["...and this rocket.", [["rocket"]]],
+			["I\'ll take the rocket!", [["rocket"]]],
+			["Riding in a plane is a lot better than riding on a rocket!", [["Riding", "to ride"], ["plane"], ["rocket"]]],
+			["Now what will I ride around the world?", [["ride", "to ride"]]],
+			["I need your bicycle, please!", [["bicycle"]]],
+			["I\'m tired of this bicycle.", [["bicycle"]]],
+			["I can ride the bus!", [["ride", "to ride"], ["bus"]]],
+			["A car is much faster than a bus, you know.", [["car"], ["bus"]]],
+			["I need a balloon.", [[]]],
+			["No, I need a hot air balloon!", [[]]],
+			["10, 9, 8...", [[]]],
+			["I see him!", [[]]],
+			["7, 6...", [[]]],
+			["What is he riding?", [["riding", "to ride"]]],
+			["5, 4, 3...", [[]]],
+			["2, 1...", [[]]],
+			["And that\'s how I rode around the world...", [["rode", "to ride"]]],
+			["In seventy-nine days!", [[]]]
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["这就是我怎样在八十天骑游世界的!", [["骑游", "骑游"]]],
+			["八十天? 我可以更快!", [[]]],
+			["你可以少于八十天骑游世界? ", [["骑游", "骑游"]]],
+			["是的, 我会从驾驶这辆火车开始!", [["驾驶", "驾驶"], ["火车"]]],
+			["我将会在第79天见你!", [[]]],
+			["我不能在大海上驾驶火车.", [["驾驶", "驾驶"], ["火车"]]],
+			["你需要一艘船.", [["船"]]],
+			["我需要一艘船!", [["船"]]],
+			["你有什么我可以骑的吗?", [["骑", "骑"]]],
+			["嗯，我有这匹马...", [[]]],
+			["...和这艘火箭.", [["火箭"]]],
+			["我将使用火箭!", [["火箭"]]],
+			["驾驶飞机比驾驶火箭要好很多!", [["驾驶", "驾驶"], ["飞机"], ["火车"]]],
+			["现在我驾驶什么环游世界?", [["驾驶", "驾驶"]]],
+			["我需要你的自行车!", [["自行车"]]],
+			["骑自行车对我来说太累了.", [["自行车"]]],
+			["我可以驾驶大巴!", [["驾驶", "驾驶"], ["大巴"]]],
+			["你知道轿车比大巴要快很多.", [["轿车"], ["大巴"]]],
+			["我需要一个气球.", [[]]],
+			["不，我需要一个热气球!", [[]]],
+			["", [[]]],
+			["我看到他了!", [[]]],
+			["", [[]]],
+			["他驾驶的是什么?", [["驾驶", "驾驶"]]],
+			["", [[]]],
+			["", [[]]],
+			["这是我怎样骑游世界的...", [["骑游", "骑游"]]],
+			["用79天!", [[]]]
+										];
+	}
+
+}

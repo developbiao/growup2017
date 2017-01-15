@@ -1,0 +1,320 @@
+﻿package com.woogienglish.eslvid9
+{
+    import flash.display.MovieClip;
+    import flash.events.Event;
+    import flash.external.ExternalInterface;
+	
+	dynamic public class theVideo extends MovieClip
+	{
+		private var playTitleCall:Function;
+		private var playSoundCall:Function;
+
+		public var eslvidVPath:String = "eslvid9/charvoices/";
+		public var languageList:languages;
+
+		public function theVideo()
+		{
+			languageList = new languages();
+			addFrameScript(0, this.frame1, 71, this.frame72, 74, this.frame75, 136, this.frame137, 235, this.frame236, 357, this.frame358, 480, this.frame481, 565, this.frame566, 657, this.frame658, 658, this.frame659, 702, this.frame703, 737, this.frame738, 825, this.frame826, 826, this.frame827, 866, this.frame867, 932, this.frame933, 1020, this.frame1021, 1021, this.frame1022, 1108, this.frame1109, 1137, this.frame1138, 1223, this.frame1224, 1226, this.frame1227, 1227, this.frame1228, 1322, this.frame1323, 1395, this.frame1396, 1396, this.frame1397, 1468, this.frame1469, 1522, this.frame1523, 1607, this.frame1608, 1615, this.frame1616, 1617, this.frame1618, 1717, this.frame1718, 1755, this.frame1756, 1847, this.frame1848, 1848, this.frame1849, 1921, this.frame1922, 1927, this.frame1928, 1951, this.frame1952, 1982, this.frame1983, 2042, this.frame2043, 2130, this.frame2131, 2132, this.frame2133, 2222, this.frame2223);
+			return;
+		}
+		
+		public function setCallBack(_titleCall:Function, _soundCall:Function):void
+		{
+			playTitleCall = _titleCall;
+			playSoundCall = _soundCall;
+		}
+		
+		public function playQueuedSound(param1:int, param2:String = null):void
+		{
+			if (null != playSoundCall)
+				playSoundCall(param1, param2);
+			//			(parent as MovieClip).playQueuedSound(param1, param2);
+			return;
+		}
+		
+		public function playSubtitle(subId:int = -1):void
+		{
+			if (null != playTitleCall)
+			{
+				playTitleCall(subId);
+			}
+			//(parent as MovieClip).playSubtitle(param1, param2, param3, param4);
+			return;
+		}
+		
+		function frame1()
+		{
+			this.playSubtitle(-1);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid9/SFX/01_intro.mp3");
+			return;
+		}
+		
+		function frame72()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid9/SFX/ambient.mp3");
+			return;
+		}
+		
+		function frame75()
+		{
+			this.playSubtitle(0);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid9/noncharvoices/magicmcanyouhear.mp3");
+			return;
+		}
+		
+		function frame137()
+		{
+			this.playQueuedSound(0, "endtalk0");
+			this.playSubtitle(1);
+			return;
+		}
+		
+		function frame236()
+		{
+			this.playSubtitle(2);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid9/noncharvoices/dreamingoftheprince.mp3");
+			return;
+		}
+		
+		function frame358()
+		{
+			this.playQueuedSound(1, "endtalk1");
+			this.playSubtitle(3);
+			return;
+		}
+		
+		function frame481()
+		{
+			this.playSubtitle(4);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid9/noncharvoices/iwanttoseeface.mp3");
+			return;
+		}
+		
+		function frame566()
+		{
+			this.playQueuedSound(2, "endtalk2");
+			this.playSubtitle(5);
+			return;
+		}
+		
+		function frame658()
+		{
+			this.playSubtitle(6);
+			return;
+		}
+		
+		function frame659()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid9/noncharvoices/hisfacehasblueeyes.mp3");
+			return;
+		}
+		
+		function frame703()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid9/SFX/02_wave.mp3");
+			return;
+		}
+		
+		function frame738()
+		{
+			this.playQueuedSound(3, "endtalk3");
+			this.playSubtitle(7);
+			return;
+		}
+		
+		function frame826()
+		{
+			this.playSubtitle(8);
+			return;
+		}
+		
+		function frame827()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid9/noncharvoices/ofcoursebeautifulhair.mp3");
+			return;
+		}
+		
+		function frame867()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid9/SFX/03_hair.mp3");
+			return;
+		}
+		
+		function frame933()
+		{
+			this.playQueuedSound(4, "endtalk4");
+			this.playSubtitle(9);
+			return;
+		}
+		
+		function frame1021()
+		{
+			this.playSubtitle(10);
+			return;
+		}
+		
+		function frame1022()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid9/noncharvoices/perfectmouthlikemine.mp3");
+			return;
+		}
+		
+		function frame1109()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid9/SFX/04_teeth.mp3");
+			return;
+		}
+		
+		function frame1138()
+		{
+			this.playQueuedSound(5, "endtalk5");
+			this.playSubtitle(11);
+			return;
+		}
+		
+		function frame1224()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid9/SFX/05_muscles.mp3");
+			return;
+		}
+		
+		function frame1227()
+		{
+			this.playSubtitle(12);
+			return;
+		}
+		
+		function frame1228()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid9/noncharvoices/myprincehadbigarms.mp3");
+			return;
+		}
+		
+		function frame1323()
+		{
+			this.playQueuedSound(6, "endtalk6");
+			this.playSubtitle(13);
+			return;
+		}
+		
+		function frame1396()
+		{
+			this.playSubtitle(14);
+			return;
+		}
+		
+		function frame1397()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid9/noncharvoices/princeshandsaresoft.mp3");
+			return;
+		}
+		
+		function frame1469()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid9/SFX/06_hand.mp3");
+			return;
+		}
+		
+		function frame1523()
+		{
+			this.playQueuedSound(7, "endtalk7");
+			this.playSubtitle(15);
+			return;
+		}
+		
+		function frame1608()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame1616()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid9/SFX/07_mirror1.mp3");
+			return;
+		}
+		
+		function frame1618()
+		{
+			this.playSubtitle(16);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid9/noncharvoices/myprincehasstronglegs.mp3");
+			return;
+		}
+		
+		function frame1718()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid9/SFX/08_mirror2.mp3");
+			return;
+		}
+		
+		function frame1756()
+		{
+			this.playQueuedSound(8, "endtalk8");
+			this.playSubtitle(17);
+			return;
+		}
+		
+		function frame1848()
+		{
+			this.playSubtitle(18);
+			return;
+		}
+		
+		function frame1849()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid9/noncharvoices/showmeprince.mp3");
+			return;
+		}
+		
+		function frame1922()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame1928()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid9/SFX/09_reveal.mp3");
+			return;
+		}
+		
+		function frame1952()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid9/noncharvoices/princeisherefairmaid.mp3");
+			return;
+		}
+		
+		function frame1983()
+		{
+			this.playSubtitle(19);
+			return;
+		}
+		
+		function frame2043()
+		{
+			this.playSubtitle(20);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid9/noncharvoices/myprinceurperfect.mp3");
+			return;
+		}
+		
+		function frame2131()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame2133()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid9/SFX/10_outro.mp3");
+			return;
+		}
+		
+		function frame2223()
+		{
+			ExternalInterface.call("SwfVideoPlayComplete", "video");
+			dispatchEvent(new Event(Event.COMPLETE));
+			return;
+		}
+	}
+}

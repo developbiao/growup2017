@@ -1,0 +1,78 @@
+﻿package com.woogienglish.eslvid16
+{
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["Welcome to my new home!"],
+			["What is this room?", [["room"]]],
+			["I think it is the living room.", [["living room"]]],
+			["Then where is the couch?", [["couch"]]],
+			["Um... I use the couch to watch TV. ", [["couch"], ["watch", "to watch"], ["TV"]]],
+			["Oh! Here is the couch!", [["couch"]]],
+			["And why is the TV in the fireplace? ", [["TV", "TV"], ["fireplace"]]],
+			["This room is the kitchen.", [["room"], ["kitchen"]]],
+			["Do you have a stove for cooking? ", [["stove"], ["cooking", "to cook"]]],
+			["Yes. The stove is next to the refrigerator.", [["stove"], ["refrigerator"]]],
+			["Where is the refrigerator?", [["refrigerator"]]],
+			["Here. Next to the stove!", [["stove"]]],
+			["Why is your microwave in the refrigerator?", [["microwave"], ["refrigerator"]]],
+			["This is the bathroom.", [["bathroom"]]],
+			["The bathroom looks like the other rooms.", [["bathroom"], ["rooms", "room"]]],
+			["No. This room has a bathtub and a toilet.", [["room"], ["bathtub"], ["toilet"]]],
+			["Where is the bathtub then?", [["bathtub"]]],
+			["On the floor, of course!", [["floor"]]],
+			["Okay...", [["floor"]]],
+			["But where is the floor?", [["floor"]]],
+			["The bedroom is the last room in the house.", [["bedroom"], ["house", "house"]]],
+			["If this is a bedroom,", [["bedroom"]]],
+			["then where is your bed?", [["bedroom"]]],
+			["My bed is in the closet.", [["bed"], ["closet"]]],
+			["Your bed is in the closet? ", [["bed"], ["closet"]]],
+			["Huh?! What?! Who is there?! ", null],
+			["Is someone sleeping in your bed?", [["sleeping", "to sleep"], ["bed"]]],
+			["It is my brother Wigg-Sty! He has been missing for years!", null]
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["欢迎来到我的新家!"],
+			["这是什么房间?", [["房间"]]],
+			["我想应该是客厅吧.", [["客厅"]]],
+			["那沙发在哪里啊?", [["沙发"]]],
+			["嗯... 我看电视的时候要坐沙发. ", [["couch"], ["watch", "to watch"], ["TV"]]],
+			["噢! 沙发在这里", [["couch"]]],
+			["为什么电视在壁炉里? ", [["电视", "TV"], ["壁炉"]]],
+			["这个房间是厨房.", [["房间"], ["厨房"]]],
+			["你有做饭的炉灶吗? ", [["炉灶"], ["做饭", "to cook"]]],
+			["有. 炉灶在冰箱旁边.", [["炉灶"], ["冰箱"]]],
+			["冰箱在哪里?", [["冰箱"]]],
+			["这里. 炉灶的旁边!", [["炉灶"]]],
+			["为什么微波炉在冰箱里呢?", [["微波炉"], ["冰箱"]]],
+			["这是洗手间.", [["洗手间"]]],
+			["洗手间看起来和其他房间一样.", [["洗手间"], ["房间", "room"]]],
+			["不. 这个房间有一个浴缸和马桶.", [["房间"], ["浴缸"], ["马桶"]]],
+			["浴缸在哪儿啊?", [["浴缸"]]],
+			["当然是在地板上了!", [["地板"]]],
+			["好吧...", [["floor"]]],
+			["但是地板在哪儿啊?", [["地板"]]],
+			["卧室是房子的最后一个房间.", [["卧室"], ["房子", "house"]]],
+			["如果这是卧室的话,", [["卧室"]]],
+			["你的床在哪儿啊?", [["bedroom"]]],
+			["我的床在衣柜里.", [["床"], ["衣柜"]]],
+			["你的床在衣柜里? ", [["床"], ["衣柜"]]],
+			["啊?! 什么?! 谁在那儿?! ", null],
+			["有人睡在你的床上吗?", [["睡", "to sleep"], ["床"]]],
+			["是我的弟弟Wigg-Sty! 他都失踪好多年了!", null]
+										];
+	}
+
+}

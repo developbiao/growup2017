@@ -1,0 +1,103 @@
+﻿package com.woogienglish.eslvid35
+{
+	/**
+	 * ...
+	 * @author YeJing
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["What would you like to order today?", [["order", "to order"]]],
+			["Do you have a menu?", [["menu"]]],
+			["The menu is here. What would you like to order?", [["menu"], ["order", "to order"]]],
+			["Last time I ordered a soup and salad.", [["ordered", "to order"], ["soup"], ["salad"]]],
+			["Would you like to have soup and salad again?", [["soup"], ["salad"]]],
+			["Does it come with a sandwich?", [["sandwich"]]],
+			["Yes, if you would like a sandwich.", [["sandwich"]]],
+			["No. I have eaten a lot of soup and salads and sandwiches.", [["soup"], ["salads", "salad"], ["sandwiches", "sandwich"]]],
+			["Would you like some chicken nuggets?", [["chicken nuggets"]]],
+			["What is in the chicken nuggets?", [["chicken nuggets"]]],
+			["Chicken.", [[]]],
+			["I think I want to order something different.", [["order", "to order"]]],
+			["What would you like to order then?", [["order", "to order"]]],
+			["What food on the menu is good?", [["menu"]]],
+			["It is all good. But the hamburger is very good.", [["hamburger"]]],
+			["I will order a hamburger then.", [["order", "to order"], ["hamburger"]]],
+			["Would you like fries with that?", [["fries"]]],
+			["I don\'t want fries.", [["fries"]]],
+			["Do you want a drink with your hamburger?", [["hamburger"]]],
+			["Do you have any juice?", [["juice"]]],
+			["Yes, we have juice.", [["juice"]]],
+			["Do you have any milk?", [["milk"]]],
+			["Yes, we have milk too.", [["milk"]]],
+			["Ok, I will order a soda then.", [["soda"], ["order", "to order"]]],
+			["You want to order a hamburger and a soda then?", [["hamburger"], ["soda"], ["order", "to order"]]],
+			["No, I have eaten hamburgers all week.", [["hamburgers", "hamburger"]]],
+			["Then what would you like to order today?", [["order", "to order"]]],
+			["What else on the menu is good?", [["menu"]]],
+			["Would you like a pizza?", [["pizza"]]],
+			["Maybe not pizza...", [["pizza"]]],
+			["Do you have any desserts?", [[]]],
+			["We have some ice cream.", [["ice cream"]]],
+			["I don\'t know...", [[]]],
+			["Everything on the menu looks good.", [["menu"]]],
+			["Would you like to order everything, then?", [["order", "to order"]]],
+			["Yes! I will order all the food on your menu!", [["menu"], ["order", "to order"]]],
+			["Here is your food. Have a good day.", [["menu"]]],
+			["Thank you!", [[]]],
+			["What would you like to order today?", [["order", "to order"]]],
+			["Do you have a menu?", [["menu"]]]
+			
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["你今天想要点什么呢?", [["点", "点"]]],
+			["你有菜单吗?", [["菜单"]]],
+			["菜单在这. 你想点什么?", [["菜单"], ["点", "点"]]],
+			["上一次我点了汤和沙拉.", [["点", "点"], ["汤"], ["沙拉"]]],
+			["你想再点汤和沙拉吗?", [["汤"], ["沙拉"]]],
+			["是和三明治一起的吗?", [["三明治"]]],
+			["是的, 如果你想要一个三明治.", [["三明治"]]],
+			["不. 我已经喝了很多汤，吃了很多沙拉和三明治.", [["汤"], ["沙拉", "沙拉"], ["三明治", "三明治"]]],
+			["你要一些鸡块吗?", [["鸡块"]]],
+			["鸡块里面是什么?", [["鸡块"]]],
+			["鸡.", [[]]],
+			["我想我会点别的.", [["点", "点"]]],
+			["那么你想点什么呢?", [["点", "点"]]],
+			["菜单上什么食物好?", [["菜单"]]],
+			["所有的东西都好. 但是汉堡非常棒.", [["汉堡"]]],
+			["那么我点一个汉堡.", [["店", "店"], ["汉堡"]]],
+			["你需要配薯条吗?", [["薯条"]]],
+			["我不要薯条.", [["薯条"]]],
+			["你的汉堡需要配喝的吗?", [["汉堡"]]],
+			["你们有果汁吗?", [["果汁"]]],
+			["是的，我们有果汁.", [["果汁"]]],
+			["你们有牛奶吗?", [["牛奶"]]],
+			["是的，我们也有牛奶.", [["牛奶"]]],
+			["好的, 那么我点一个苏打水.", [["苏打水"], ["点", "点"]]],
+			["那么你要点一个汉堡和一杯苏打水?", [["汉堡"], ["苏打水"], ["点", "点"]]],
+			["不，我已经吃了一个星期汉堡了.", [["汉堡", "汉堡"]]],
+			["那么你今天想点什么呢?", [["点", "点"]]],
+			["菜单上还有别的好吃的?", [["菜单"]]],
+			["你想要披萨吗?", [["披萨"]]],
+			["不要披萨...", [["披萨"]]],
+			["你需要点心吗?", [[]]],
+			["我们有一些冰激凌.", [["冰激凌"]]],
+			["我不知道...", [[]]],
+			["菜单上的每一样东西看起来都不错.", [["菜单"]]],
+			["那么，你要点所有东西吗?", [["点", "点"]]],
+			["是的! 我要点你菜单上的所有东西!", [["菜单"], ["点", "点"]]],
+			["这是你的食物. 祝你有愉快的一天.", [["菜单"]]],
+			["谢谢!", [[]]],
+			["你今天要点什么呢?", [["点", "点"]]],
+			["你有菜单吗?", [["菜单"]]]
+										];
+	}
+
+}

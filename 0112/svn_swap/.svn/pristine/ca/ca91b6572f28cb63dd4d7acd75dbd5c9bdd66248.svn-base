@@ -1,0 +1,94 @@
+﻿package com.woogienglish.eslvid28
+{
+	/**
+	 * ...
+	 * @author YeJing
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["Do you want to eat lunch, my dear? ", [[]]],
+			["I want to eat, but out in nature.", [["nature"]]],
+			["Nature is so pretty...", [["Nature", "nature"]]],
+			["And when I look into your eyes, I see the stars and the planets...", [["planets", "planet"]]],
+			["...but this sun is too hot!", [[]]],
+			["We can eat under a tree.", [["tree"]]],
+			["That tree!", [["tree"]]],
+			["The one with all the leaves on it!", [["leaves", "leaf"]]],
+			["Woogliet, I like you more than all the sand in all the deserts...", [["sand"], ["deserts", "desert"]]],
+			["Ow!", [[]]],
+			["There is a hard rock under me! ", [["rock"]]],
+			["You can sit here and I will have the rock.", [["rock"]]],
+			["I am not sitting in that dirt!", [["dirt"]]],
+			["The grass looks softer on that hill.", [["grass"], ["hill"]]],
+			["This tree is nice, but that hill has more grass. ", [["tree"], ["hill"], ["grass"]]],
+			["I want to sit by the flowers and the bushes.", [["flowers", "flower"], ["bushes", "bush"]]],
+			["Yes, dear. Now what was I saying?", [[]]],
+			["I\'m sand or desert or something.", [["desert"], ["sand"]]],
+			["Right. When I look at you, I hear the ocean...", [["ocean"]]],
+			["Ew! A bug!", [["bug"]]],
+			["A bug?! Where?", [["bug"]]],
+			["In those plants.", [["plants", "plant"]]],
+			["A beach is better because there are less bugs.", [["beach"], ["bugs", "bug"]]],
+			["The beach is nice, but there is no beach here.", [["beach"]]],
+			["Can we eat lunch on that mountain?", [["mountain"]]],
+			["That mountain is very far.", [["mountain"]]],
+			["But it has a pretty rainbow!", [["rainbow"]]],
+			["Where is the rainbow?", [["rainbow"]]],
+			["It’s night, my dear.", [[]]],
+			["And where is the sun?", [[]]],
+			["It’s night now and the moon is in the sky.", [["moon"], ["sky"]]],
+			["Do you want to eat here or at home?", [[]]],
+			["I like our home, but nature is better.", [["nature"]]],
+			["I like seeing the moon at night.", [["moon"]]],
+			["I like the stars because they look pretty in the sky. ", [["sky"]]],
+			["And you look very pretty too.", [[]]]			
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["亲爱的，你想吃午饭吗? ", [[]]],
+			["我想，但是要在大自然里.", [["大自然"]]],
+			["大自然太美了...", [["大自然", "大自然"]]],
+			["当我看着你的双眼时,我看到了星星和行星 ...", [["行星", "planet"]]],
+			["...但是太阳太热了!", [[]]],
+			["我们可以在树下吃.", [["树"]]],
+			["那棵树!", [["树"]]],
+			["那棵有所有叶子的树!", [["叶子", "leaf"]]],
+			["Woogliet, 我对你的爱比沙漠里的沙子还要多...", [["沙子"], ["沙漠", "沙漠"]]],
+			["啊!", [[]]],
+			["我身下有一个硬石头! ", [["石头"]]],
+			["你可以坐这里，我拿掉石头.", [["石头"]]],
+			["我不要坐在泥土里!", [["泥土"]]],
+			["那座小山的草地看起来更软和.", [["草地"], ["小山"]]],
+			["这棵树很好, 但是那座小山有更多的草地. ", [["树"], ["小山"], ["草地"]]],
+			["我想坐在花和灌木边.", [["花", "flower"], ["树木", "bush"]]],
+			["好的，亲爱的. 我曾经说过什么?", [[]]],
+			["我是沙子或沙漠或任何东西.", [["沙漠"], ["沙子"]]],
+			["好的. 当我看着你, 我听到了大海...", [["大海"]]],
+			["啊! 虫子!", [["虫子"]]],
+			["一个虫子?! 在哪里?", [["虫子"]]],
+			["在这些植物里.", [["植物", "植物"]]],
+			["沙滩会更好，因为虫子更少.", [["沙滩"], ["虫子", "虫子"]]],
+			["沙滩是好, 但是这里没有沙滩.", [["沙滩"]]],
+			["我们可以在那座山上吃午饭吗?", [["山"]]],
+			["那座山非常远.", [["山"]]],
+			["但是那里有漂亮的彩虹!", [["彩虹"]]],
+			["彩虹在哪里?", [["彩虹"]]],
+			["现在是夜晚，亲爱的.", [[]]],
+			["太阳在哪里?", [[]]],
+			["现在是夜晚，月亮挂在天空上.", [["月亮"], ["天空"]]],
+			["你想在这里吃饭还是家里?", [[]]],
+			["我喜欢我们的家，但是大自然更好.", [["大自然"]]],
+			["我喜欢晚上看月亮.", [["月亮"]]],
+			["我喜欢星星，因为他们在天空上看起来美极了. ", [["天空"]]],
+			["你看起来也很美.", [[]]]			
+										];
+	}
+
+}

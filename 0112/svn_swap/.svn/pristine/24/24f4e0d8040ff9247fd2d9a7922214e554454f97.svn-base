@@ -1,0 +1,60 @@
+﻿package com.woogienglish.eslvid27
+{
+	/**
+	 * ...
+	 * @author YeJing
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["Now Player 28, your team needs you to score this goal.", [["Player", "player"], ["team"], ["score"], ["goal"]]],
+			["But I can\'t play basketball, Coach!", [["basketball"]]],
+			["I want to play sports, Dad!", [["sports", "sport"]]],
+			["Like what?", [[]]],
+			["Like baseball! ", [["baseball"]]],
+			["If you can’t hit the ball, then you can’t play baseball...", [["hit", "to hit"], ["ball"], ["baseball"]]],
+			["I can play football!", [["football"]]],
+			["You have to be able to throw a pass if you want to play football...", [["throw", "to throw"], ["pass", "to pass"], ["football"]]],
+			["Watch me play soccer!", [["soccer"]]],
+			["You can’t play soccer because you can’t kick the ball...", [["soccer"], ["kick", "to kick"], ["ball"]]],
+			["What about tennis?", [["tennis"]]],
+			["Or I can play hockey!", [["hockey"]]],
+			["I can try bowling!", [["bowling"]]],
+			["You will never play any sports! And you will never be my son!", [["sports", "sport"]]],
+			["I know you can score this goal for our team. Now here’s the ball.", [["score", "to score"], ["goal"], ["team"], ["ball"]]],
+			["Good throw, Player 28!", [["throw", "to throw"]]],
+			["I did it, Dad!", [[]]],
+			["I played and I scored!", [["scored", "to score"]]],
+			["That’s my son! The best sports player I know!", [["sports", "sport"]]]
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["现在28号队员，你的队需要你得分.", [["队员", "player"], ["队"], ["得分"], ["得分"]]],
+			["但是我不会打篮球, 教练!", [["篮球"]]],
+			["我想做运动, 爸爸!", [["运动", "sport"]]],
+			["什么运动?", [[]]],
+			["比如棒球! ", [["棒球"]]],
+			["如果你不能集中球, 那么你就不能打棒球...", [["击", "击"], ["球"], ["棒球"]]],
+			["我可以踢橄榄球!", [["足球"]]],
+			["如果你想踢橄榄球，你必须要能传球 ...", [["传球", "传球"], ["传球", "传球"], ["足球"]]],
+			["看我踢足球!", [["足球"]]],
+			["你不能踢足球，因为你不能踢到球...", [["足球"], ["踢", "踢"], ["球"]]],
+			["网球怎样?", [["网球"]]],
+			["或者我可以玩曲棍球!", [["曲棍球"]]],
+			["我可以试一试保龄球!", [["保龄球"]]],
+			["你将永远不能玩任何运动! 你将永远不是我儿子!", [["运动", "sport"]]],
+			["我知道你可以为我们队得分. 现在发球.", [["得分", "得分"], ["得分"], ["队"], ["球"]]],
+			["投的好, 28号队员!", [["投", "投"]]],
+			["我做到了，爸爸!", [[]]],
+			["我踢球而且得分了!", [["得分", "得分"]]],
+			["这就是我的儿子! 我知道的最好的运动员!", [["运动", "运动"]]]
+										];
+	}
+
+}

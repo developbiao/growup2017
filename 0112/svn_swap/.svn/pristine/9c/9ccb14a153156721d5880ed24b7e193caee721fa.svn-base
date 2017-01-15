@@ -1,0 +1,88 @@
+﻿package com.woogienglish.eslvid15
+{
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["Welcome to the School Lunch Cook-Off! ", [["Lunch", "lunch"]]],
+			["Our two chefs are Pierre Pate... ", null],
+			["And Miss Wooglia Child. ", null],
+			["Let’s begin!", null],
+			["Before I eat lunch,", [["eat", "to eat"], ["lunch"], ["like", "to like"], ["breakfast"]]],
+			["I like a good breakfast. ", [["eat", "to eat"], ["lunch"], ["like", "to like"], ["breakfast"]]],
+			["Then you will like my egg and cheese souffle with a side of potatoes and onions. ", [["egg"], ["cheese"], ["potatoes", "potato"], ["onions", "onion"]]],
+			["And what is your meal, Miss Child? ", [["meal"]]],
+			["Here is some orange juice with scrambled eggs and meat. ", [["orange"], ["juice"], ["eggs", "egg"], ["meat"]]],
+			["I like to drink orange juice at breakfast! ", [["like", "to like"], ["drink", "to drink"], ["orange"], ["juice"], ["breakfast"]]],
+			["Fruit juice is good, but my egg souffle is... ", [["Fruit", "fruit"], ["juice"], ["egg"]]],
+			["I do not like cheese. ", [["like", "to like"], ["cheese"]]],
+			["At school I like to eat lunch... ", [["like", "to like"], ["eat", "to eat"], ["lunch"]]],
+			["I like dinner at school too! ", [["like", "to like"], ["dinner"]]],
+			["What food do you have for lunch? ", [["food"], ["lunch"]]],
+			["Here is a nice salad with lettuce and corn and carrots and tomatoes. ", [["lettuce"], ["corn"], ["carrots", "carrot"], ["tomatoes", "tomato"]]],
+			["Lettuce and tomatoes for lunch? ", [["Lettuce", "lettuce"], ["tomatoes", "tomato"]]],
+			["Vegetables are very good for you! ", [["Vegetables", "vegetable"]]],
+			["No thanks!", [["food"], ["lunch"]]],
+			["And what food is in your lunch? ", [["food"], ["lunch"]]],
+			["Here is an apple. ", [["apple"]]],
+			["I love apples! ", [["love", "to love"], ["apples", "apple"]]],
+			["But a fruit is not lunch. It is a snack! ", [["fruit"], ["lunch"], ["snack"]]],
+			["I like fruit snacks! ", [["like", "to like"], ["fruit"], ["snacks", "snack"]]],
+			["And here is some chocolate milk. ", [["milk"]]],
+			["I love milk! ", [["love", "to love"], ["milk"]]],
+			["But chocolate is candy! It is not a drink! ", [["candy"], ["drink"]]],
+			["And here is a sandwich made with bread and grape jelly. ", [["bread"], ["grape"]]],
+			["That is your lunch? It is... ", [["lunch"]]],
+			["The best lunch ever! ", [["lunch"]]],
+			["Wooglia Child wins! ", null],
+			["What is this?! ", null],
+			["Oh, my banana! Who wants dessert? ", [["banana"], ["dessert"]]]
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["欢迎来到午餐厨艺大赛! ", [["午餐", "lunch"]]],
+			["我们的两位大厨是Pierre Pate... ", null],
+			["和Wooglia Child小姐. ", null],
+			["我们开始吧!", null],
+			["在吃午餐前,", [["吃", "to eat"], ["午餐"], ["like", "to like"], ["breakfast"]]],
+			["我喜欢吃一顿丰盛的早餐. ", [["吃", "to eat"], ["午餐"], ["喜欢", "to like"], ["早餐"]]],
+			["那么你应该会喜欢我的鸡蛋奶酪酥加土豆和洋葱. ", [["鸡蛋"], ["奶酪"], ["土豆", "potato"], ["洋葱", "onion"]]],
+			["你的早餐呢,Child小姐? ", [["餐"]]],
+			["这是橙汁，炒鸡蛋和炒肉. ", [["橙汁"], ["橙汁"], ["鸡蛋", "egg"], ["肉"]]],
+			["我喜欢早餐喝橙汁! ", [["喜欢", "to like"], ["喝", "to drink"], ["橙汁"], ["橙汁"], ["早餐"]]],
+			["水果汁是不错, 但是我的鸡蛋奶酪酥... ", [["水果", "fruit"], ["果汁"], ["鸡蛋"]]],
+			["我不喜欢奶酪. ", [["喜欢", "to like"], ["奶酪"]]],
+			["我喜欢在学校吃午餐... ", [["喜欢", "to like"], ["吃", "to eat"], ["午餐"]]],
+			["我也喜欢在学校吃晚餐! ", [["喜欢", "to like"], ["晚餐"]]],
+			["午餐你喜欢吃什么食物? ", [["食物"], ["午餐"]]],
+			["这里有生菜玉米胡萝卜和番茄做成的美味沙拉. ", [["生菜"], ["玉米"], ["胡萝卜", "carrot"], ["番茄", "tomato"]]],
+			["午餐吃生菜和番茄? ", [["生菜", "lettuce"], ["番茄", "tomato"]]],
+			["蔬菜吃了很有好处! ", [["蔬菜", "vegetable"]]],
+			["不，谢谢!", [["food"], ["lunch"]]],
+			["你的午餐又有什么食物呢? ", [["食物"], ["午餐"]]],
+			["给你一个苹果. ", [["苹果"]]],
+			["我喜欢苹果! ", [["喜欢", "to love"], ["苹果", "apple"]]],
+			["但是水果不是午餐. 只是小吃! ", [["水果"], ["午餐"], ["小吃"]]],
+			["我喜欢水果小吃! ", [["喜欢", "to like"], ["水果"], ["小吃", "snack"]]],
+			["这里还有巧克力牛奶. ", [["牛奶"]]],
+			["我喜欢牛奶! ", [["喜欢", "to love"], ["牛奶"]]],
+			["但是牛奶是糖类! 不是饮品! ", [["糖"], ["drink"]]],
+			["还有一个面包和葡萄酱做的三明治 ", [["面包"], ["葡萄"]]],
+			["那是你的午餐? 有点... ", [["午餐"]]],
+			["最棒的午餐! ", [["午餐"]]],
+			["Wooglia Child胜利! ", null],
+			["都是些什么呀?! ", null],
+			["哦，我的香蕉！谁想要吃甜品? ", [["香蕉"], ["甜品"]]]		
+										];
+	}
+
+}

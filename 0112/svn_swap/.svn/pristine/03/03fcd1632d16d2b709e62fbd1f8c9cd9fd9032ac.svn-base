@@ -1,0 +1,70 @@
+﻿package com.woogienglish.eslvid3
+{
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["Hello.", [["Hello", "hello"]]],
+			["My name is Wendy Way.", [["name", "name"]]],
+			["What is that?!", [["What", "what"]]],
+			["What is your name?", [["What", "what"], ["name", "name"]]],
+			["My name is Cindy Woog. I am 5 years old!", [["name", "name"]]],
+			["Nice to meet you.", null, [["Nice to meet you", "Nice to meet you."]]],
+			["My name is Wendy Way.", [["name", "name"]]],
+			["Who is that?!", [["Who", "who"]]],
+			["Hi.", [[["Hi", "hello"]]]],
+			["How are you?", null, [["How are you?", "How are you?"]]],
+			["I am fine.", null, [["I am fine", "I am fine."]]],
+			["Where are you from?", null, [["Where are you from?", "Where are you from?"]]],
+			["Where is he from?!", [["Where", "where"]]],
+			["Hello. I am CyberHero!", [["Hello", "hello"], ["CyberHero", "cyberhero"]]],
+			["CyberHero?!", [["CyberHero", "cyberhero"]]],
+			["My name is Wendy Way.", [["name", "name"]]],
+			["Nice to meet you.", null, [["Nice to meet you", "Nice to meet you."]]],
+			["How are you?", null, [["How are you", "How are you?"]]],
+			["I am fine, but, uh...", null, [["I am fine", "I am fine."]]],
+			["Where is the bathroom?", null, [["Where is the bathroom", "Where is the bathroom?"]]],
+			["Thank you!", null, [["Thank you", "thank you"]]],
+			["You\'re welcome!", null, [["You\'re welcome", "You\'re welcome."]]],
+			["Goodbye, CyberHero!", [["CyberHero", "cyberhero"]], [["Goodbye", "goodbye"]]],
+			["And thank you!", null, [["thank you", "thank you"]]]	
+		];
+											
+		public var LANGUAGE_CN:Array = [
+			["大家好.", [["大家好", "hello"]]],
+			["我的名字叫Wendy Way.", [["名字", "name"]]],
+			["那是什么?!", [["什么", "what"]]],
+			["你叫什么名字?", [["什么", "what"], ["名字", "name"]]],
+			["我的名字叫Cindy Woog. 我5岁了!", [["名字", "name"]]],
+			["很高兴认识你.", null, [["很高兴认识你", "Nice to meet you."]]],
+			["我的名字叫Wendy Way.", [["名字", "name"]]],
+			["那是谁?!", [["谁", "who"]]],
+			["嗨.", [[["嗨", "hello"]]]],
+			["你好吗?", null, [["How are you?", "How are you?"]]],
+			["我很好.", null, [["我很好", "I am fine."]]],
+			["你来自哪里?", null, [["你来自哪里?", "Where are you from?"]]],
+			["他来自哪里?!", [["Where", "where"]]],
+			["大家好. 我叫CyberHero!", [["大家哈", "hello"], ["CyberHero", "cyberhero"]]],
+			["CyberHero?!", [["CyberHero", "cyberhero"]]],
+			["我的名字叫Wendy Way.", [["name", "name"]]],
+			["很高兴认识你.", null, [["很高兴认识你", "Nice to meet you."]]],
+			["你好吗?", null, [["你好吗", "How are you?"]]],
+			["我很好, 不过, 嗯...", null, [["我很好", "I am fine."]]],
+			["洗手间在哪里啊?", null, [["洗手间在哪里啊", "Where is the bathroom?"]]],
+			["谢谢!", null, [["谢谢", "thank you"]]],
+			["不客气!", null, [["不客气", "You\'re welcome."]]],
+			["再见, CyberHero!", [["CyberHero", "cyberhero"]], [["再见", "goodbye"]]],
+			["谢谢你!", null, [["谢谢你", "thank you"]]]
+		];
+	}
+
+}

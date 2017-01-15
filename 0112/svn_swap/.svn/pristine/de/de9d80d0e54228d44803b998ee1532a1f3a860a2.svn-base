@@ -1,0 +1,68 @@
+﻿package com.woogienglish.eslvid29
+{
+	/**
+	 * ...
+	 * @author YeJing
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["Do you want to play basketball tonight?", []],
+			["I\'m bored with basketball!", []],
+			["Let\'s do an outdoor activity then!", [["outdoor"], ["activity"]]],
+			["Outdoor activities are dangerous! If we see the sun...", [["Outdoor", "outdoor"], ["activities", "activity"]]],
+			["There\'s no sun at night...", []],
+			["A new activity could be fun.", [["activity"]]],
+			["We can go skiing or snowboarding.", [["skiing"], ["snowboarding"]]],
+			["We can\'t go skiing in the summer! There is no snow!", [["skiing"]]],
+			["We will go skiing next winter then.", [["skiing"]]],
+			["Do you want to go hiking on the mountain?", [["hiking"]]],
+			["We went hiking last week.", [["hiking"]]],
+			["We can go biking.", [["biking"]]],
+			["Let\'s go skateboarding instead.", [["skateboarding"]]],
+			["I will not go skateboarding, but I will go skating with you!", [["skateboarding"], ["skating"]]],
+			["Isn\'t it good to be outdoors?", [["outdoors"]]],
+			["Yes, but..."],
+			["I think I will go running instead of skating.", [["running"], ["skating"]]],
+			["You are good at running!", [["running"]]],
+			["Do you want to go swimming?", [["swimming"]]],
+			["I don\'t know... Do you want to go swimming?", [["swimming"]]],
+			["No, I want to go surfing.", [["surfing"]]],
+			["Can we go surfing tomorrow night too?", [["surfing"]]],
+			["Yes, I could go surfing all day long!", [["surfing"]]]
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["今晚你想打篮球吗?", []],
+			["我对篮球不感兴趣!", []],
+			["那么让我们做一些户外活动!", [["户外"], ["活动"]]],
+			["户外活动很危险! 如果我们看到太阳...", [["户外", "outdoor"], ["活动", "activity"]]],
+			["晚上没有太阳...", []],
+			["一项新的活动应该很有趣.", [["活动"]]],
+			["我们可以滑雪或者单板滑雪.", [["滑雪"], ["单板滑雪"]]],
+			["夏天我们不能滑雪! 没有雪!", [["滑雪"]]],
+			["那么我们下个冬天滑雪.", [["滑雪"]]],
+			["你想去山上徒步吗?", [["徒步"]]],
+			["我们上周徒步了.", [["徒步"]]],
+			["我们可以骑自行车.", [["自行车"]]],
+			["我们去滑板吧.", [["滑板"]]],
+			["我不去滑板, 但是我会和你一起滑冰!", [["滑板"], ["滑冰"]]],
+			["户外好不好?", [["户外"]]],
+			["是的, 但是..."],
+			["我想我会跑步而不是滑冰.", [["跑步"], ["滑冰"]]],
+			["你擅长跑步!", [["跑步"]]],
+			["你想游泳吗?", [["游泳"]]],
+			["我不知道... 你想游泳吗?", [["游泳"]]],
+			["不，我想冲浪.", [["冲浪"]]],
+			["明晚我们可以也去冲浪吗?", [["冲浪"]]],
+			["是的，我可以一整天冲浪!", [["冲浪"]]]
+										];
+	}
+
+}

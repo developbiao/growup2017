@@ -1,0 +1,60 @@
+﻿package com.woogienglish.eslvid32
+{
+	/**
+	 * ...
+	 * @author YeJing
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["What happened to you today?", [[]]],
+			["Nothing different than yesterday...", [[]]],
+			["What happened yesterday?", [[]]],
+			["Yesterday, I came home from school.", [["came home", "to come home"]]],
+			["I played all afternoon with my friends.", [[]]],
+			["Then, I ate dinner with my family in the evening.", [["ate dinner", "to eat dinner"], ["Then", "then"]]],
+			["I brushed my teeth before going to bed.", [["brushed my teeth", "to brush teeth"], ["going to bed", "to go to bed"]]],
+			["Then I woke up the next morning.", [["woke up", "to wake up"], ["Then", "then"]]],
+			["Okay, what happened today then?", [["then"]]],
+			["After I woke up?", [["woke up", "to wake up"]]],
+			["Yes, what happened next?", [[]]],
+			["First, I took a shower.", [["First", "first"], ["took a shower", "to take a shower"]]],
+			["Then, I combed my hair.", [["combed", "to comb"], ["Then", "then"]]],
+			["I ate breakfast before going to school.", [["ate breakfast", "to eat breakfast"], ["going to school", "to go to school"]]],
+			["Then, I went to school.", [["Then", "then"], ["went to school", "to go to school"]]],
+			["Was that the last thing you did today?", [[]]],
+			["Yes, that was the last thing.", [[]]],
+			["I don\'t know why you look like you do...", [[]]],
+			["But will you look different tomorrow?", [[]]]
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["你今天怎么了?", [[]]],
+			["没什么和昨天不同的...", [[]]],
+			["昨天发生了什么?", [[]]],
+			["昨天, 我从学校回家.", [["回家", "回家"]]],
+			["我和朋友玩了一个下午.", [[]]],
+			["然后, 傍晚我和家人一起吃了晚饭.", [["吃了晚饭", "吃了晚饭"], ["然后", "then"]]],
+			["睡觉前我刷了牙.", [["刷了牙", "刷了牙"], ["睡觉", "睡觉"]]],
+			["然后早上醒来.", [["醒来", "醒来"], ["然后", "然后"]]],
+			["好了, 那么今天发生了什么?", [["那么"]]],
+			["我醒来之后吗?", [["醒来", "醒来"]]],
+			["是的，下面发生了什么?", [[]]],
+			["首先, 我洗澡.", [["首先", "first"], ["洗澡", "洗澡"]]],
+			["然后, 我梳头.", [["梳头", "梳头"], ["然后", "then"]]],
+			["上学前我吃了早饭.", [["吃了早饭", "吃了早饭"], ["上学", "上学"]]],
+			["然后, 我到学校.", [["然后", "然后"], ["上学", "上学"]]],
+			["那是你今天做的最后一件事吗?", [[]]],
+			["是的， 那是我做的最后一件事.", [[]]],
+			["我不知道为什么你看起来你做...", [[]]],
+			["但是明天你会看起来不一样吗?", [[]]]
+										];
+	}
+
+}

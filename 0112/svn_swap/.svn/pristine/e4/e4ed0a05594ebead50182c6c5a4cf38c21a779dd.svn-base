@@ -1,0 +1,81 @@
+﻿package com.woogienglish.eslvid31
+{
+	/**
+	 * ...
+	 * @author YeJing
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["And what is your last wish?", [["last"]]],
+			["Genie, I want today to be a holiday.", [["holiday"]]],
+			["What holiday do you want to celebrate?", [["holiday"], ["celebrate", "to celebrate"]]],
+			["What was the last holiday that we had?", [["holiday"], ["last"]]],
+			["The last holiday was New Year\'s Day!", [["last"], ["holiday"], ["New Year\'s Day"]]],
+			["And what holiday is next?", [["holiday"], ["next"]]],
+			["The next holiday is Valentine\'s Day.", [["next"], ["holiday"], ["Valentine\'s Day"]]],
+			["No, not Valentine\'s Day... What other holidays are there?", [["Valentine\'s Day"], ["holidays", "holiday"]]],
+			["You could celebrate Easter!", [["celebrate", "to celebrate"], ["Easter"]]],
+			["I got sick last Easter. Bad eggs...", [["Easter"], ["last"]]],
+			["So... no Easter?", [["Easter"]]],
+			["No, I want a different holiday Genie.", [["holiday"]]],
+			["One of the next holidays is Saint Patrick\'s Day!", [["next"], ["holidays", "holiday"], ["Saint Patrick\'s Day"]]],
+			["Not Saint Patrick\'s Day! What else?", [["Saint Patrick\'s Day"]]],
+			["Do you want to have a Christmas party?", [["Christmas"], ["party"]]],
+			["I don\'t celebrate Christmas.", [["celebrate", "to celebrate"], ["Christmas"]]],
+			["Do you celebrate Thanksgiving?", [["celebrate", "to celebrate"], ["Thanksgiving"]]],
+			["No."],
+			["What about Independence Day?", [["Independence Day"]]],
+			["No."],
+			["Do you celebrate Halloween?", [["celebrate", "to celebrate"], ["Halloween"]]],
+			["Yes, but it\'s not the holiday that I want to celebrate today.", [["holiday"], ["celebrate", "to celebrate"]]],
+			["What holiday do you want to celebrate then?", [["holiday"], ["celebrate", "to celebrate"]]],
+			["I know, my birthday!", [["birthday"]]],
+			["Do you want to have a birthday party?", [["birthday"], ["party"]]],
+			["Yes! My birthday is the best holiday of the year!", [["birthday"], ["holiday"]]],
+			["What birthday present do you want from me?", [["birthday"]]],
+			["Hmmm..."],
+			["I want three more wishes Genie!"]
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["你最后一个愿望是什么?", [["最近的"]]],
+			["Genie, 我希望今天是一个节日.", [["节日"]]],
+			["你希望庆祝什么节日?", [["节日"], ["庆祝", "庆祝"]]],
+			["我们上一个节日是什么?", [["节日"], ["上一个"]]],
+			["上一个节日是新年!", [["上一个"], ["节日"], ["新年"]]],
+			["下一个节日是什么?", [["节日"], ["下一个"]]],
+			["下一个节日是情人节.", [["下一个"], ["节日"], ["情人节"]]],
+			["不，不是情人节... 还有别的什么节日?", [["情人节"], ["节日", "节日"]]],
+			["你可以庆祝复活节!", [["庆祝", "庆祝"], ["复活节"]]],
+			["上一个复活节我生病了. 坏蛋...", [["复活节"], ["上一个"]]],
+			["那么... 不要复活节?", [["复活节"]]],
+			["不， 我要一个不同的节日 Genie.", [["节日"]]],
+			["下一个节日是圣帕特里克节!", [["下一个"], ["节日", "节日"], ["圣帕特里克节"]]],
+			["不要圣帕特里克节! 还有别的吗?", [["圣帕特里克节"]]],
+			["你想要圣诞聚会吗?", [["圣诞"], ["聚会"]]],
+			["我不庆祝圣诞节.", [["庆祝", "庆祝"], ["圣诞节"]]],
+			["你庆祝感恩节吗?", [["庆祝", "庆祝"], ["感恩节"]]],
+			["不."],
+			["独立节怎样?", [["独立节"]]],
+			["不."],
+			["你庆祝万圣节吗?", [["庆祝", "庆祝"], ["万圣节"]]],
+			["要，但是万圣节不是我今天想要庆祝的节日.", [["节日"], ["庆祝", "庆祝"]]],
+			["那么你想庆祝什么节日?", [["节日"], ["庆祝", "庆祝"]]],
+			["我知道了，我的生日!", [["生日"]]],
+			["你想要生日聚会吗?", [["生日"], ["聚会"]]],
+			["是的! 我的生日是一年中最棒的节日!", [["生日"], ["节日"]]],
+			["你想要我送你什么生日礼物?", [["生日"]]],
+			["嗯..."],
+			["我想再要三个愿望 Genie!"]
+										
+										];
+	}
+
+}

@@ -1,0 +1,173 @@
+﻿package com.woogienglish.base 
+{
+	import flash.display.Loader;
+	import flash.display.MovieClip;
+	import flash.display.Stage;
+	import flash.events.Event;
+	import flash.external.ExternalInterface;
+	import flash.net.URLRequest;
+	import flash.events.MouseEvent;
+	import flash.text.TextField;
+
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class Utilities 
+	{
+		public static const PLAY_AS_SOUND:String = "PlayAS3Sound";
+		public static const PLAY_SOUND:String = "PlaySound";
+		public static const PLAY_TIMELINE_SOUND:String = "PlayTimelineSound";
+		public static const PLAY_EVENT_SOUND:String = "PlayEventSound";
+		
+		public static const COLLECT_ANSWER_DATA:String = "CollectQAndA";
+		public static const REFRESH_MINIGAME_TIME = "RefreshTheMinigameTime";
+		public static const RESET_MINIGAME_WAIT_TIME:String = "ResetTimerWaitTime";
+		public static const CREATE_NEXT_QUESTION:String = "CreateNextQuestion";
+		public static const START_MINI_GAME:String = "StartMinigame";
+		public static const I_DONT_KNOW:String = "DontKnow";
+		
+		
+		//-------------- FOR Lesson 7 Event -------------------
+		public static const  REPLAY_COMPLETE_EVENT:String = "SoundReplayComplete";
+		public static const  VOICES_COMPLETE_EVENT:String = "VoicePlayComplete";
+		public static const  REPLAY_RECORD_EVENT:String = "RePlayRecordComplete";
+		
+		
+		private static var _instance:Utilities;
+		public function Utilities() 
+		{
+			if (_instance)
+				trace("do not intance this agian!!");
+		}
+		
+		//play sound in Unity
+		public function PlaySoundInUnity(_method:String, _soundUrl:String):void
+		{
+			ExternalInterface.call(_method, _soundUrl);
+		}
+		
+		//play sound in Unity with Callback
+		public function PlaySoundInUnityCallBack(_method:String, _soundUrl:String, _callBack:String):void
+		{
+			ExternalInterface.call(_method, _soundUrl, _callBack);
+		}
+		
+		public function PlaySoundInUnityCallBackAndId(_method:String, _soundUrl:String, playId:int, _callBack:String):void
+		{
+			ExternalInterface.call(_method, _soundUrl, playId, _callBack);
+		}
+		//collect data		
+		public function CollectQAndA(_method:String, _str:String):void
+		{
+			ExternalInterface.call(_method, _str);
+		}
+		
+		//general call unity function
+		public function CallUnity(_method:String, _str:String = ""):void
+		{
+			if(_str == "")
+				ExternalInterface.call(_method);
+			else
+				ExternalInterface.call(_method, _str);
+		}
+		
+		public static function Trace(str:String):void
+		{
+			ExternalInterface.call("Trace", str);
+		}
+		
+		//load swf and add to container.
+		public function SWFLoader(vocabcard_id:int, _container:MovieClip, _showText:Boolean = false, _enabled:Boolean = false, _gap:int = 10):Loader
+		{
+			//Utilities.Trace("SWFLoader_container:" + _container.name);
+			//trace("_container:", _container.width, _container.height);
+			var _loader:Loader = new Loader();
+			_loader.load(new URLRequest("vocabcards/vocabcard" + vocabcard_id + ".swf"));
+			if (!_enabled)
+			{
+				_loader.mouseEnabled = false;
+				_loader.mouseChildren = false;
+			}
+			
+			_loader.contentLoaderInfo.addEventListener(Event.COMPLETE, onLoaded);
+			
+			
+			function onLoaded(evt:Event):void
+			{
+				//Utilities.Trace("SWFLoader_onLoaded~~~" + vocabcard_id + "~~~1111~~~");
+				var _widRate:Number = (_container.width - _gap) / _loader.width;
+				var _heiRate:Number = (_container.height - _gap) / _loader.height;
+				if (_widRate < _heiRate)
+				{
+					_loader.scaleX = _loader.scaleY = _widRate;
+				}
+				else
+				{
+					_loader.scaleX = _loader.scaleY = _heiRate;
+				}
+				//Utilities.Trace("SWFLoader_onLoaded~~~" + vocabcard_id + "~~~2222~~~");
+				var half:int = _gap / 2;		
+				_loader.x = half + ((_container.width - _gap) - _loader.width) / 2;
+				_loader.y = half + ((_container.height - _gap) - _loader.height) / 2;
+				//Utilities.Trace("SWFLoader_onLoaded~~~" + vocabcard_id + "~~~333~~~");
+				if (!_showText)
+				{
+					var _scene:MovieClip = _loader.content as MovieClip;
+					if (TextField(_scene.txt))
+						TextField(_scene.txt).visible = false;
+				}
+				//Utilities.Trace("SWFLoader_onLoaded~~~" + vocabcard_id + "~~~4444~~~");
+				if(null != _container)
+					_container.addChild(_loader);
+				//Utilities.Trace("SWFLoader_onLoaded~~~" + vocabcard_id + "~~~5555~~~");
+			}
+			return _loader;
+		}
+		
+		public function GetTextFromXml(_xml:String):String
+		{
+			var sIndex:int = _xml.indexOf("<name>");
+			var eIndex:int;
+			var vcName:String;
+			if(sIndex != -1)
+			{
+				eIndex = _xml.indexOf("</name>");
+				if(eIndex != -1)
+				{
+					vcName = _xml.substring(sIndex+6, eIndex);
+				}
+			}
+			return vcName;	
+		}
+		
+		public function AddEventForBtn(_btn:MovieClip, _callBack:Function):void
+		{
+			if(!MovieClip(_btn).hasEventListener(MouseEvent.MOUSE_DOWN))
+			{
+				MovieClip(_btn).addEventListener(MouseEvent.MOUSE_DOWN, _callBack, false, 0, true);
+				MovieClip(_btn).addEventListener(MouseEvent.MOUSE_UP, _callBack, false, 0, true);
+				MovieClip(_btn).addEventListener(MouseEvent.MOUSE_OUT, _callBack, false, 0, true);
+			}
+		}
+		
+		public function RemoveEventForBtn(_btn:MovieClip, _callBack:Function):void
+		{
+			if(MovieClip(_btn).hasEventListener(MouseEvent.MOUSE_DOWN))
+			{
+				MovieClip(_btn).removeEventListener(MouseEvent.MOUSE_DOWN, _callBack);
+				MovieClip(_btn).removeEventListener(MouseEvent.MOUSE_UP, _callBack);
+				MovieClip(_btn).removeEventListener(MouseEvent.MOUSE_OUT, _callBack);
+			}
+		}
+		
+		public static function get Instance():Utilities
+		{
+			if (null == _instance)
+				_instance = new Utilities();
+			return _instance;
+		}
+		
+	}
+
+}

@@ -1,0 +1,102 @@
+﻿package com.woogienglish.eslvid34
+{
+	/**
+	 * ...
+	 * @author YeJing
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["We are back home, Mandy!", [[]]],
+			["Can the time machine be wrong sometimes, Doc?", [["sometimes"]]],
+			["No, I don\'t think so, why?", [[]]],
+			["I think we\'re too early...", [["early"]]],
+			["We\'re never getting home!", [["never"]]],
+			["But my time machine always works!", [["always"]]],
+			["We\'re in the early years of history Doc!", [["early"]]],
+			["Ok then, my time machine usually works.", [["usually"]]],
+			["How soon can you fix it?", [["soon"]]],
+			["I\'ll start now!", [["now"]]],
+			["Stop! Who goes there?"],
+			["Stand up, slowly...", [["slowly"]]],
+			["Quickly, Doc!", [["Quickly", "quickly"]]],
+			["Go!"],
+			["I\'ll never leave you Mandy!", [["never"]]],
+			["What is this?", [[]]],
+			["Find me tomorrow!"],
+			["Now go quickly!", [["Now", "now"], ["quickly"]]],
+			["Now then, come with me!", [["Now", "now"]]],
+			["I never go places with strangers!", [["never"]]],
+			["Quickly now girl, I\'m late.", [["Quickly", "quickly"], ["now"], ["late"]]],
+			["What are you late for?", [["late"]]],
+			["I always see the king today.", [["always"], ["king"]]],
+			["You see the king today?", [["king"]]],
+			["Like, right now?", [["now"]]],
+			["Yes!", [[]]],
+			["I\'ve never met a king before!", [["never"], ["king"]]],
+			["You are late, Sir Woogalot.", [["late"]]],
+			["The girl walks slowly my king.", [["slowly"], ["king"]]],
+			["Sometimes I do!", [["Sometimes", "sometimes"]]],
+			["No talking! Merwig, I always like your help.", [["always"]]],
+			["You liked it yesterday, but will you like it tomorrow my king?", [["king"]]],
+			["Always. Now what do I do with this girl?", [["Always", "always"], ["Now", "now"]]],
+			["Today she goes home... in my time machine!"],
+			["What?", [[]]],
+			["You\'re early, Doc!", [["early"]]],
+			["Better now than never!", [["now"], ["never"]]],
+			["Look, I\'m home now!", [["now"]]],
+			["I told you, Mandy!"],
+			["My time machine always works.", [["always"]]]
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["我们回家了, Mandy!", [[]]],
+			["博士,时间机器有时候会出错吗 Doc?", [["有时"]]],
+			["不, 我认为不会, 怎么了?", [[]]],
+			["我想我们在以前...", [["以前"]]],
+			["我们从来没有到家!", [["从来没"]]],
+			["但是我的时间机器一直都工作的!", [["一直"]]],
+			["博士，我们现在回到了以前!", [["以前"]]],
+			["好吧, 我的时间机器通常是工作的.", [["通常"]]],
+			["你需要多久能修好它?", [["多久"]]],
+			["我现在开始!", [["现在"]]],
+			["停! 谁去那里了?"],
+			["站起来, 慢慢地...", [["慢慢地"]]],
+			["赶快, 博士!", [["赶快", "quickly"]]],
+			["快走!"],
+			["我绝不会丢下你的 Mandy!", [["绝不"]]],
+			["这个是什么?", [[]]],
+			["明天来找我!"],
+			["现在赶快走!", [["现在", "now"], ["赶快"]]],
+			["那么现在, 跟我走!", [["现在", "now"]]],
+			["我绝不和陌生人去别的地方!", [["绝不"]]],
+			["女孩赶快, 我迟到了.", [["赶快", "quickly"], ["现在"], ["迟到"]]],
+			["你什么迟到了?", [["迟到"]]],
+			["今天我总是会去见国王.", [["总是"], ["国王"]]],
+			["你今天要见国王?", [["国王"]]],
+			["比如, 现在?", [["现在"]]],
+			["是的!", [[]]],
+			["我以前从来没见过国王!", [["从来没"], ["国王"]]],
+			["你迟到了, Woogalot先生.", [["迟到"]]],
+			["这个女孩走的太慢了，我的国王.", [["慢"], ["国王"]]],
+			["有时我是这样的!", [["有时", "sometimes"]]],
+			["别说话! Merwig, 我一直喜欢你的帮助", [["一直"]]],
+			["昨天你喜欢, 但是明天你会喜欢吗?我的国王", [["国王"]]],
+			["一直. 现在我应该怎么处理这个女孩?", [["一直", "always"], ["现在", "now"]]],
+			["今天她回家... 坐我的时间机器!"],
+			["什么?", [[]]],
+			["你早到了, 博士!", [["早"]]],
+			["现在总比没有好!", [["现在"], ["没有"]]],
+			["看，我现在到家了!", [["现在"]]],
+			["我告诉过你, Mandy!"],
+			["我的时间机器总是工作的.", [["总是"]]]
+										];
+	}
+
+}

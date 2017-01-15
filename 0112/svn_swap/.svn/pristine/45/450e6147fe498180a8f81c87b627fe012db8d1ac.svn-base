@@ -1,0 +1,68 @@
+﻿package com.woogienglish.eslvid13
+{
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["So you\'re my new assistant... Sunny?", null],
+			["That\'s my name!", null],
+			["Strangewoog and Sunny! Together we will take over Woogi World!", null],
+			["Muahahaha!", null],
+			["Do you know math, Sunny?", [["know", "to know"], ["math"]]],
+			["I know numbers!", [["know", "to know"], ["numbers", "number"]]],
+			["Good! We will start with... MY GRAPH!", [["GRAPH", "graph"]]],
+			["This is a graph?", [["graph"]]],
+			["I have a different job for you, Sunny.", [["different"]]],
+			["Add those for me.", [["Add", "to add"]]],
+			["Which numbers?", [["numbers", "number"], ["Number", "number"]]],
+			["Number 1 and number 3?", [["numbers", "number"], ["Number", "number"]]],
+			["No! Add number 1 and number 2!", [["Add", "to add"], ["number", "number"]]],
+			["We do not add odd numbers, Sunny.", [["add", "to add"], ["odd"], ["numbers", "number"]]],
+			["I know!", [["know", "to know"], ["add", "to add"], [" even", "even"], ["numbers", "number"]]],
+			["We add even numbers!", [["know", "to know"], ["add", "to add"], [" even", "even"], ["numbers", "number"]]],
+			["No, Sunny! That is more than...", [["more than", "more"]]],
+			["My lab...", null],
+			["Math is hard!", [["Math", "math"]]],
+			["My evil plan...", null],
+			["What if I subtract these?", [["subtract", "to subtract"]]],
+			["No! Subtraction is...", [["Subtraction", "to subtract"]]],
+			["Eh. What is the difference now?", [["difference"]]]
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["你是我的新助理... 你叫Sunny?", null],
+			["那是我的名字!", null],
+			["Strangewoog和Sunny! 我们一起将掌控整个woogi世界!", null],
+			["Muahahaha!", null],
+			["你知道数学吗, Sunny?", [["知道", "to know"], ["数学"]]],
+			["我知道数字!", [["知道", "to know"], ["数字", "number"]]],
+			["很好! 我们从... 我的图表开始!", [["图表", "graph"]]],
+			["这是一个图表?", [["图表"]]],
+			["我给你换个不同的事情做, Sunny.", [["不同的"]]],
+			["把这些加起来.", [["加", "to add"]]],
+			["哪些数字?", [["数字", "number"], ["数字", "number"]]],
+			["数字1和数字3?", [["数字", "number"], ["数字", "number"]]],
+			["不! 加数字1数字2!", [["加", "to add"], ["数字", "number"]]],
+			["我们不加奇数, Sunny.", [["加", "to add"], ["偶"], ["数", "number"]]],
+			["我知道!", [["知道", "to know"], ["add", "to add"], [" even", "even"], ["numbers", "number"]]],
+			["我们加偶数!", [["know", "to know"], ["add", "to add"], [" even", "even"], ["numbers", "number"]]],
+			["不, Sunny! 那会更...", [["更", "more"]]],
+			["我的实验室...", null],
+			["数学真难!", [["Math", "math"]]],
+			["我的邪恶计划...", null],
+			["如果我把这个相减呢?", [["减", "to subtract"]]],
+			["不! 减法会...", [["减法", "to subtract"]]],
+			["嗯. 现在又有什么区别?", [["区别"]]]
+										];
+	}
+
+}

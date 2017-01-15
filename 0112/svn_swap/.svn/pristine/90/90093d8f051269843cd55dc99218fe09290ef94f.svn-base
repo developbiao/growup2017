@@ -1,0 +1,98 @@
+﻿package com.woogienglish.eslvid11
+{
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["Welcome aboard, Captain!", null],
+			["Good day.", [["How", "how"]]],
+			["How are you? ", [["How", "how"]]],
+			["I am very excited to be here, Captain.", [["excited"]]],
+			["Good.", null],
+			["What are the names of these people?", null],
+			["That is Steve and Hannah and Marty and...", null],
+			["I am bored with those names!", [["bored"]]],
+			["I am surprised, Captain!", [["surprised"]]],
+			["These people need pirate names!", null],
+			["Ah, pirate names. Yes, Captain!", null],
+			["Who is this person?", null],
+			["This is Steve.", null],
+			["How do you feel, Steve?", [["feel", "to feel"]]],
+			["I feel sad... So sad...", [["feel", "to feel"], ["sad"]]],
+			["Good to hear!", [["Sad", "sad"]]],
+			["You are now Sad Steve!", [["Sad", "sad"]]],
+			["I feel even more sad now...", [["feel", "to feel"], ["sad"]]],
+			["Who is this person? ", null],
+			["Her name is Hannah.", null],
+			["How do you feel, Hannah?", [["How", "how"], ["feel", "to feel"]]],
+			["I am so happy to help!", [["happy"]]],
+			["Then your name is Happy Hannah!", [["Happy", "happy"]]],
+			["Yay!", null],
+			["This is Marty, Captain.", [["open your books"], ["page", "page/pages"]]],
+			["How are you, Marty?", [["How", "how"]]],
+			["Mad! Mad at you! Mad at him!", [["Mad", "mad"]]],
+			["That’s nice.", [["Mad", "mad"]]],
+			["You are now Mad Marty!", [["Mad", "mad"]]],
+			["I am mad at my new name too!", [["mad"]]],
+			["This is Tina. She sleeps a lot.", null],
+			["Then she is Tired Tina!", [["Tired", "tired"]]],
+			["Does any person still need a name?", null],
+			["Just one person, Captain.", null],
+			["Who is this person?", null],
+			["You. What is your pirate name?", null],
+			["They call me Captain Confused.", [["Confused", "confused"]]],
+			["I am not surprised, Captain. Arrrr....", [["surprised"]]]
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["欢迎, 船长!", null],
+			["嗨!", [["How", "how"]]],
+			["你好吗? ", [["How", "how"]]],
+			["能加入这里我很兴奋, 船长.", [["兴奋"]]],
+			["很好.", null],
+			["这些人的名字叫什么?", null],
+			["那是Steve Hannah 和 Marty 还有...", null],
+			["这些名字好无聊!", [["无聊"]]],
+			["我很惊讶,船长!", [["惊讶"]]],
+			["这些人需要海盗名字!", null],
+			["啊, 海盗名字. 是的, 船长!", null],
+			["这个人是谁?", null],
+			["这是Steve.", null],
+			["你觉得怎么样, Steve?", [["觉得", "to feel"]]],
+			["我觉得很伤心... 好伤心...", [["觉得", "to feel"], ["伤心"]]],
+			["太好了!", [["Sad", "sad"]]],
+			["你现在叫伤心Steve!", [["伤心", "sad"]]],
+			["我觉得更伤心了...", [["觉得", "to feel"], ["伤心"]]],
+			["这个人是谁? ", null],
+			["她的名字叫Hannah.", null],
+			["你觉得怎么样, Hannah?", [["怎么样", "how"], ["觉得", "to feel"]]],
+			["我觉得帮助人很快乐!", [["快乐"]]],
+			["那么你的名字就叫快乐Hannah!", [["快乐", "happy"]]],
+			["耶!", null],
+			["那是Marty, 船长.", [["open your books"], ["page", "page/pages"]]],
+			["你好吗, Marty?", [["How", "how"]]],
+			["生气! 生你的气! 生他的气!", [["生气", "mad"]]],
+			["不错.", [["Mad", "mad"]]],
+			["你就叫生气的Marty!", [["生气", "mad"]]],
+			["我对我的名字也生气!", [["生气"]]],
+			["这是Tina. 她老是睡觉.", null],
+			["那她就叫疲倦的Tina!", [["疲倦的", "tired"]]],
+			["还有没有人需要新名字?", null],
+			["只有一个, 船长.", null],
+			["这个人是谁?", null],
+			["你. 你的海盗名字叫什么?", null],
+			["他们叫我迷糊船长.", [["迷糊", "confused"]]],
+			["我一点也不惊讶, 船长. 啊....", [["surprised"]]]	
+										];
+	}
+
+}

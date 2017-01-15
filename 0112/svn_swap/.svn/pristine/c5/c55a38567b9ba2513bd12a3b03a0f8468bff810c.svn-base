@@ -1,0 +1,80 @@
+﻿package com.woogienglish.eslvid4
+{
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["Hello, Jay?", null],
+			["Who is that?", [["that"]]],
+			["I need your help, Jay!", null],
+			["This computer talks?", [["This", "this"]]],
+			["My name is Bumble B.", [["B.", "B"]]],
+			["Bumble B?", [[" B", "B"]]],
+			["I need the power of the alphabet, Jay.", [["alphabet", "alphabet"]]],
+			["I know the alphabet!", [["alphabet", "alphabet"]]],
+			["Say the letters of the alphabet! Please!", [["letters", "letter"], ["alphabet", "alphabet"]]],
+			["A B C D E F G...", [["A", "A"], ["B", "B"], ["C", "C"], ["D", "D"], ["E", "E"], ["F", "F"], ["G", "G"]]],
+			["I need more letters!", [["letters", "letter"]]],
+			["H I J K L M N O P...", [["H", "H"], ["I", "I"], ["J", "J"], ["K", "K"], ["L", "L"], ["M", "M"], ["N", "N"], ["O", "O"], ["P", "P"]]],
+			["The rest of the letters, Jay!", [["letters", "letter"]]],
+			["Q R S T U V...", [["Q", "Q"], ["R", "R"], ["S", "S"], ["T", "T"], ["U", "U"], ["V", "V"]]],
+			["Almost there!", null],
+			["W X Y Z.", [["W", "W"], ["X", "X"], ["Y", "Y"], ["Z", "Z"]]],
+			["That\'s it!", [["That", "that"]]],
+			["You are an alphabet letter.", [["alphabet", "alphabet"], ["letter", "letter"]]],
+			["I am an Alphabot from the planet Consonant.", [["Consonant", "consonant"]]],
+			["Consonant?", [["Consonant", "consonant"]]],
+			["Yes, and I need your help to stop Vowel-tron.", [["Vowel", "vowel"]]],
+			["Who is Vowel-tron?", [["Vowel", "vowel"]]],
+			["I am Vowel-tron.", [["Vowel", "vowel"]]],
+			["Come here, Jay!", null],
+			["R.C.! D-fensor! Fren-Z! Get them!", [["R", "R"], ["C", "C"], ["D", "D"], ["Z", "Z"]]],
+			["No letters of the alphabet can stop me! Ha ha...", [["letters", "letter"], ["alphabet", "alphabet"]]],
+			["Oh, yeah?", null],
+			["Go back to Consonant, Vowel-tron!", [["Consonant", "consonant"], ["Vowel", "vowel"]]],
+			["R!!!!!!!!!!!!!!!!!!!!", [["R", "R"]]]
+		];
+											
+		public var LANGUAGE_CN:Array = [ 
+			["你好, Jay?", null],
+			["谁在那里?", [["那里"]]],
+			["我需要你的帮助, Jay!", null],
+			["这个电脑会说话?", [["这个", "this"]]],
+			["我的名字叫Bumble B.", [["B.", "B"]]],
+			["Bumble B?", [[" B", "B"]]],
+			["我需要字母表的力量, Jay.", [["字母", "alphabet"]]],
+			["我知道字母表!", [["字母", "alphabet"]]],
+			["请你把字母表里的字母说一遍!", [["字母", "letter"], ["字母表", "alphabet"]]],
+			["A B C D E F G...", [["A", "A"], ["B", "B"], ["C", "C"], ["D", "D"], ["E", "E"], ["F", "F"], ["G", "G"]]],
+			["我需要更多字母!", [["字母", "letter"]]],
+			["H I J K L M N O P...", [["H", "H"], ["I", "I"], ["J", "J"], ["K", "K"], ["L", "L"], ["M", "M"], ["N", "N"], ["O", "O"], ["P", "P"]]],
+			["剩下的字母, Jay!", [["字母", "letter"]]],
+			["Q R S T U V...", [["Q", "Q"], ["R", "R"], ["S", "S"], ["T", "T"], ["U", "U"], ["V", "V"]]],
+			["快完成了!", null],
+			["W X Y Z.", [["W", "W"], ["X", "X"], ["Y", "Y"], ["Z", "Z"]]],
+			["可以了!", [["That", "that"]]],
+			["你是字母表里的一个字母.", [["字母表", "alphabet"], ["字母", "letter"]]],
+			["我是来自辅音星球的字母机器人.", [["辅音", "consonant"]]],
+			["辅音星球?", [["辅音星球", "consonant"]]],
+			["是的, 我需要你帮助我去阻止Vowel-tron.", [["Vowel", "vowel"]]],
+			["谁是Vowel-tron?", [["Vowel", "vowel"]]],
+			["我是Vowel-tron.", [["Vowel", "vowel"]]],
+			["过来, Jay!", null],
+			["R.C.! D-fensor! Fren-Z! 抓住他们!", [["R", "R"], ["C", "C"], ["D", "D"], ["Z", "Z"]]],
+			["没有字母可以阻止我! Ha ha...", [["字母", "letter"], ["alphabet", "alphabet"]]],
+			["Oh, 是吗?", null],
+			["回你的辅音星球吧, Vowel-tron!", [["辅音", "consonant"], ["Vowel", "vowel"]]],
+			["R!!!!!!!!!!!!!!!!!!!!", [["R", "R"]]]
+		];
+	}
+
+}

@@ -1,0 +1,68 @@
+﻿package com.woogienglish.eslvid1 
+{
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [	["What do I do now?", [["do", "to do"]]],
+											["Do you need help? ", [["help", "to help"]]],
+											["No, I can do it. ", [["No", "no"], ["do", "to do"]]],
+											["Do you have a microphone? ", [["microphone"]]],
+											["Yes. Here is my microphone. ", [["Yes", "yes"], ["microphone"]]],
+											["OK. Click the Record button. ", [["OK"], ["Record", "to record"], ["button"]]],
+											["Is this the Record button? ", [["Record", "to record"], ["button"]]],
+											["No, but that button does help. ", [["No", "no"], ["button"], ["help", "to help"]]],
+											["Hi! I am HelperWoog. How can I help you? ", [["help", "to help"]]],
+											["We need to practice English words. ", [["practice"]]],
+											["These words have no pictures!"],
+											["You have a movie to play. ", [["movie"], ["play", "to play"]]],
+											["Click the Play button. ", [["Play", "to play"], ["button"]]],
+											["It plays something? ", [["plays", "to play"]]],
+											["Yes, it plays a movie. ", [["Yes", "yes"], ["plays", "to play"], ["movie"]]],
+											["You record words in the movie with your microphone. ", [["record", "to record"], ["movie"], ["microphone"]]],
+											["Gooble Gobble!"],
+											["Then what do I do? ", [["do", "to do"]]],
+											["Click the Keep button. ", [["Keep", "to keep"], ["button"]]],
+											["Do you know what to do now? ", [["do", "to do"]]],
+											["Yes, I do! ", [["Yes", "yes"], ["do", "to do"]]],
+											["OK! Click the HelperWoog button if you need more help. ", [["OK"], ["button"], ["help", "to help"]]], 
+											["So I click the Cancel button now? ", [["Cancel", "to cancel"], ["button"]]],
+											["No, Cancel starts it over!", [["No", "no"], [" Cancel", "to cancel"]]],
+											["You need lots of help, don't you? ", [["help", "to help"]]]];
+											
+		public var LANGUAGE_CN:Array = [  ["现在做什么?", [["做", "to do"]]],
+											["你需要帮助吗? ", [["帮助", "to help"]]],
+											["不用，我能做到. ", [["不用", "no"], ["做", "to do"]]],
+											["你有麦克风吗? ", [["麦克风"]]],
+											["是的，这里有一个麦克风 ", [["是的", "yes"], ["麦克风"]]],
+											["好，点击录音按钮. ", [["好"], ["录音", "to record"], ["按钮"]]],
+											["这是录音按钮吗？ ", [["录音", "to record"], ["按钮"]]],
+											["不是，不过那个按钮有帮助. ", [["不", "no"], ["按钮"], ["帮助", "to help"]]],
+											["嗨！我是HelperWoog. 我能怎么帮助你呢? ", [["帮助", "to help"]]],
+											["我们需要练习英语单词. ", [["练习"]]],
+											["这些单词都没有图片!"],
+											["你需要播放一个电影. ", [["电影"], ["播放", "to play"]]],
+											["点击播放按钮. ", [["播放", "to play"], ["按钮"]]],
+											["会播放什么吗? ", [["播放", "to play"]]],
+											["是的，会播放电影. ", [["是的", "yes"], ["播放", "to play"], ["电影"]]],
+											["你用麦克风在电影里录音 ", [["录音", "to record"], ["电影"], ["麦克风"]]],
+											["Gooble Gobble!"],
+											["然后我做什么呢? ", [["做", "to do"]]],
+											["点击保存按钮. ", [["保存", "to keep"], ["按钮"]]],
+											["你知道该做什么吗? ", [["做", "to do"]]],
+											["是的，我知道! ", [["是的", "yes"], ["知道", "to do"]]],
+											["好的！如果你需要帮助就点击HelperWoog按钮 ", [["好的"], ["按钮"], ["帮助", "to help"]]], 
+											["所以现在我要点取消按钮吗？", [["取消", "to cancel"], ["按钮"]]],
+											["不，取消按钮是重新开始!", [["不", "no"], [" 取消", "to cancel"]]],
+											["你确实需要很多帮助，是吧？ ", [["帮助", "to help"]]]];
+	}
+
+}

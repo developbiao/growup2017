@@ -1,0 +1,807 @@
+﻿package com.woogienglish.eslvid20
+{
+    import flash.display.MovieClip;
+    import flash.events.Event;
+    import flash.external.ExternalInterface;
+	
+	dynamic public class theVideo extends MovieClip
+	{
+		private var playTitleCall:Function;
+		private var playSoundCall:Function;
+
+		public var eslvidVPath:String = "eslvid20/charvoices/";
+		public var languageList:languages;
+
+		public function theVideo()
+		{
+			languageList = new languages();
+			addFrameScript(0, this.frame1, 57, this.frame58, 100, this.frame101, 209, this.frame210, 224, this.frame225, 272, this.frame273, 285, this.frame286, 404, this.frame405, 413, this.frame414, 492, this.frame493, 495, this.frame496, 602, this.frame603, 669, this.frame670, 759, this.frame760, 764, this.frame765, 866, this.frame867, 878, this.frame879, 895, this.frame896, 922, this.frame923, 935, this.frame936, 979, this.frame980, 1050, this.frame1051, 1066, this.frame1067, 1111, this.frame1112, 1160, this.frame1161, 1178, this.frame1179, 1221, this.frame1222, 1228, this.frame1229, 1235, this.frame1236, 1295, this.frame1296, 1313, this.frame1314, 1416, this.frame1417, 1422, this.frame1423, 1485, this.frame1486, 1498, this.frame1499, 1545, this.frame1546, 1546, this.frame1547, 1587, this.frame1588, 1596, this.frame1597, 1655, this.frame1656, 1685, this.frame1686, 1696, this.frame1697, 1807, this.frame1808, 1818, this.frame1819, 1907, this.frame1908, 1917, this.frame1918, 1932, this.frame1933, 1973, this.frame1974, 1974, this.frame1975, 1987, this.frame1988, 2096, this.frame2097, 2105, this.frame2106, 2148, this.frame2149, 2159, this.frame2160, 2316, this.frame2317, 2325, this.frame2326, 2370, this.frame2371, 2382, this.frame2383, 2409, this.frame2410, 2420, this.frame2421, 2451, this.frame2452, 2453, this.frame2454, 2494, this.frame2495, 2506, this.frame2507, 2580, this.frame2581, 2590, this.frame2591, 2610, this.frame2611, 2698, this.frame2699, 2709, this.frame2710, 2757, this.frame2758, 2763, this.frame2764, 2794, this.frame2795, 2822, this.frame2823, 2839, this.frame2840, 2966, this.frame2967, 2969, this.frame2970, 2997, this.frame2998, 3031, this.frame3032, 3052, this.frame3053, 3153, this.frame3154, 3231, this.frame3232, 3290, this.frame3291, 3307, this.frame3308, 3397, this.frame3398, 3402, this.frame3403, 3412, this.frame3413, 3451, this.frame3452, 3484, this.frame3485, 3636, this.frame3637, 3641, this.frame3642, 3719, this.frame3720, 3727, this.frame3728, 3787, this.frame3788, 3788, this.frame3789, 3895, this.frame3896, 3899, this.frame3900, 3940, this.frame3941, 3954, this.frame3955, 4050, this.frame4051, 4061, this.frame4062, 4169, this.frame4170, 4214, this.frame4215, 4256, this.frame4257, 4382, this.frame4383, 4433, this.frame4434, 4438, this.frame4439, 4475, this.frame4476, 4489, this.frame4490, 4524, this.frame4525, 4529, this.frame4530, 4629, this.frame4630, 4641, this.frame4642, 4707, this.frame4708, 4708, this.frame4709, 4727, this.frame4728, 4879, this.frame4880, 5072, this.frame5073);
+			return;
+		}
+		
+		public function setCallBack(_titleCall:Function, _soundCall:Function):void
+		{
+			playTitleCall = _titleCall;
+			playSoundCall = _soundCall;
+
+		}
+		
+		public function playQueuedSound(param1:int, param2:String = null):void
+		{
+			if (null != playSoundCall)
+				playSoundCall(param1, param2);
+			//			(parent as MovieClip).playQueuedSound(param1, param2);
+			return;
+		}
+		
+		public function playSubtitle(subId:int = -1):void
+		{
+			if (null != playTitleCall)
+			{
+				playTitleCall(subId);
+			}				
+			//(parent as MovieClip).playSubtitle(param1, param2, param3, param4);
+			return;
+		}
+		
+		function frame1()
+		{
+			this.playSubtitle(-1);
+			gotoAndPlay(0);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/music01_intro.mp3");
+			return;
+		}
+		
+		function frame58()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/sfx01_screen.mp3");
+			return;
+		}
+		
+		function frame101()
+		{
+			this.playSubtitle(0);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/noncharvoices/wf_01.mp3");
+			return;
+		}
+		
+		function frame210()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame225()
+		{
+			this.playQueuedSound(0, "endtalk0");
+			this.playSubtitle(1);
+			return;
+		}
+		
+		function frame273()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame286()
+		{
+			this.playSubtitle(2);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/noncharvoices/wf_02.mp3");
+			return;
+		}
+		
+		function frame405()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame414()
+		{
+			this.playQueuedSound(1, "endtalk1");
+			this.playSubtitle(3);
+			return;
+		}
+		
+		function frame493()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame496()
+		{
+			this.playSubtitle(4);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/noncharvoices/wf_03.mp3");
+			return;
+		}
+		
+		function frame603()
+		{
+			this.playSubtitle(-1);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/music02_laugh.mp3");
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/noncharvoices/wf_laugh_01.mp3");
+			return;
+		}
+		
+		function frame670()
+		{
+			this.playQueuedSound(2, "endtalk2");
+			this.playSubtitle(5);
+			return;
+		}
+		
+		function frame760()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame765()
+		{
+			this.playSubtitle(6);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/noncharvoices/wf_04.mp3");
+			return;
+		}
+		
+		function frame867()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame879()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/sfx02_switchdoor.mp3");
+			return;
+		}
+		
+		function frame896()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/music03_trapdoor.mp3");
+			return;
+		}
+		
+		function frame923()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame936()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/sfx03_land.mp3");
+			return;
+		}
+		
+		function frame980()
+		{
+			this.playQueuedSound(3, "endtalk3");
+			this.playSubtitle(7);
+			return;
+		}
+		
+		function frame1051()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame1067()
+		{
+			this.playSubtitle(8);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/noncharvoices/wf_05.mp3");
+			return;
+		}
+		
+		function frame1112()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/sfx04_clouds.mp3");
+			return;
+		}
+		
+		function frame1161()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame1179()
+		{
+			this.playQueuedSound(4, "endtalk4");
+			this.playSubtitle(9);
+			return;
+		}
+		
+		function frame1222()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame1229()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/sfx05_wind.mp3");
+			return;
+		}
+		
+		function frame1236()
+		{
+			this.playSubtitle(10);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/noncharvoices/wf_06.mp3");
+			return;
+		}
+		
+		function frame1296()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame1314()
+		{
+			this.playQueuedSound(5, "endtalk5");
+			this.playSubtitle(11);
+			return;
+		}
+		
+		function frame1417()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame1423()
+		{
+			this.playSubtitle(12);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/noncharvoices/wf_07.mp3");
+			return;
+		}
+		
+		function frame1486()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame1499()
+		{
+			this.playQueuedSound(6, "endtalk6");
+			this.playSubtitle(13);
+			return;
+		}
+		
+		function frame1546()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame1547()
+		{
+			this.playQueuedSound(7, "endtalk7");
+			this.playSubtitle(14);
+			return;
+		}
+		
+		function frame1588()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame1597()
+		{
+			this.playSubtitle(15);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/noncharvoices/wf_08.mp3");
+			return;
+		}
+		
+		function frame1656()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/sfx06_knob.mp3");
+			return;
+		}
+		
+		function frame1686()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame1697()
+		{
+			this.playQueuedSound(8, "endtalk8");
+			this.playSubtitle(16);
+			return;
+		}
+		
+		function frame1808()
+		{
+			this.playSubtitle(-1);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/sfx07_snow.mp3");
+			return;
+		}
+		
+		function frame1819()
+		{
+			this.playSubtitle(17);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/noncharvoices/wf_09.mp3");
+			return;
+		}
+		
+		function frame1908()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame1918()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/noncharvoices/wf_laugh_03.mp3");
+			return;
+		}
+		
+		function frame1933()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/sfx08_blink.mp3");
+			return;
+		}
+		
+		function frame1974()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame1975()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/sfx09_shake.mp3");
+			return;
+		}
+		
+		function frame1988()
+		{
+			this.playQueuedSound(9, "endtalk9");
+			this.playSubtitle(18);
+			return;
+		}
+		
+		function frame2097()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame2106()
+		{
+			this.playSubtitle(19);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/noncharvoices/wf_10.mp3");
+			return;
+		}
+		
+		function frame2149()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame2160()
+		{
+			this.playQueuedSound(10, "endtalk10");
+			this.playSubtitle(20);
+			return;
+		}
+		
+		function frame2317()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame2326()
+		{
+			this.playSubtitle(21);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/noncharvoices/wf_11.mp3");
+			return;
+		}
+		
+		function frame2371()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/sfx10_lever.mp3");
+			return;
+		}
+		
+		function frame2383()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/amb1_drizzle.mp3");
+			return;
+		}
+		
+		function frame2410()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame2421()
+		{
+			this.playQueuedSound(11, "endtalk11");
+			this.playSubtitle(22);
+			return;
+		}
+		
+		function frame2452()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame2454()
+		{
+			this.playQueuedSound(12, "endtalk12");
+			this.playSubtitle(23);
+			return;
+		}
+		
+		function frame2495()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame2507()
+		{
+			this.playSubtitle(24);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/noncharvoices/wf_12.mp3");
+			return;
+		}
+		
+		function frame2581()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame2591()
+		{
+			this.playSubtitle(-1);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/amb2_rain.mp3");
+			return;
+		}
+		
+		function frame2611()
+		{
+			this.playSubtitle(25);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/noncharvoices/wf_13.mp3");
+			return;
+		}
+		
+		function frame2699()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame2710()
+		{
+			this.playQueuedSound(13, "endtalk13");
+			this.playSubtitle(26);
+			return;
+		}
+		
+		function frame2758()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame2764()
+		{
+			this.playSubtitle(27);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/noncharvoices/wf_14.mp3");
+			return;
+		}
+		
+		function frame2795()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/sfx11_flowers.mp3");
+			return;
+		}
+		
+		function frame2823()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame2840()
+		{
+			this.playQueuedSound(14, "endtalk14");
+			this.playSubtitle(28);
+			return;
+		}
+		
+		function frame2967()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame2970()
+		{
+			this.playSubtitle(29);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/noncharvoices/wf_15.mp3");
+			return;
+		}
+		
+		function frame2998()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/music04_sun.mp3");
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/sfx12_sun.mp3");
+			return;
+		}
+		
+		function frame3032()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame3053()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/sfx13_sizzleslurp.mp3");
+			return;
+		}
+		
+		function frame3154()
+		{
+			this.playSubtitle(30);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/noncharvoices/wf_16.mp3");
+			return;
+		}
+		
+		function frame3232()
+		{
+			this.playSubtitle(-1);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/noncharvoices/wf_laugh_02.mp3");
+			return;
+		}
+		
+		function frame3291()
+		{
+			this.playSubtitle(-1);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/amb3_sizzle.mp3");
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/sfx14_collapse.mp3");
+			return;
+		}
+		
+		function frame3308()
+		{
+			this.playQueuedSound(15, "endtalk15");
+			this.playSubtitle(31);
+			return;
+		}
+		
+		function frame3398()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame3403()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/sfx15_sungrow.mp3");
+			return;
+		}
+		
+		function frame3413()
+		{
+			this.playSubtitle(32);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/noncharvoices/wf_17.mp3");
+			return;
+		}
+		
+		function frame3452()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame3485()
+		{
+			this.playQueuedSound(16, "endtalk16");
+			this.playSubtitle(33);
+			return;
+		}
+		
+		function frame3637()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame3642()
+		{
+			this.playSubtitle(34);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/noncharvoices/wf_18.mp3");
+			return;
+		}
+		
+		function frame3720()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame3728()
+		{
+			this.playQueuedSound(17, "endtalk17");
+			this.playSubtitle(35);
+			return;
+		}
+		
+		function frame3788()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame3789()
+		{
+			this.playQueuedSound(18, "endtalk18");
+			this.playSubtitle(36);
+			return;
+		}
+		
+		function frame3896()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame3900()
+		{
+			this.playSubtitle(-1);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/music05_climax.mp3");
+			return;
+		}
+		
+		function frame3941()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/sfx16_beam.mp3");
+			return;
+		}
+		
+		function frame3955()
+		{
+			this.playQueuedSound(19, "endtalk19");
+			this.playSubtitle(37);
+			return;
+		}
+		
+		function frame4051()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame4062()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/sfx17_burnboom.mp3");
+			return;
+		}
+		
+		function frame4170()
+		{
+			this.playSubtitle(38);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/noncharvoices/wf_19.mp3");
+			return;
+		}
+		
+		function frame4215()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame4257()
+		{
+			this.playQueuedSound(20, "endtalk20");
+			this.playSubtitle(39);
+			return;
+		}
+		
+		function frame4383()
+		{
+			this.playSubtitle(-1);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/sfx18_boom2.mp3");
+			return;
+		}
+		
+		function frame4434()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/amb4_crackle.mp3");
+			return;
+		}
+		
+		function frame4439()
+		{
+			this.playSubtitle(40);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/noncharvoices/wf_20.mp3");
+			return;
+		}
+		
+		function frame4476()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame4490()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/sfx19_screen.mp3");
+			return;
+		}
+		
+		function frame4525()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame4530()
+		{
+			this.playQueuedSound(21, "endtalk21");
+			this.playSubtitle(41);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/music06_outro.mp3");
+			return;
+		}
+		
+		function frame4630()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame4642()
+		{
+			this.playQueuedSound(22, "endtalk22");
+			this.playSubtitle(42);
+			return;
+		}
+		
+		function frame4708()
+		{
+			this.playSubtitle(-1);
+			return;
+		}
+		
+		function frame4709()
+		{
+			this.playSubtitle(-1);
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/sfx20_jump.mp3");
+			return;
+		}
+		
+		function frame4728()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/amb5_jet.mp3");
+			return;
+		}
+		
+		function frame4880()
+		{
+			ExternalInterface.call("PlayTimelineSound", "eslvids/eslvid20/Sound/sfx21_boom3.mp3");
+			return;
+		}
+		
+		function frame5073()
+		{
+			ExternalInterface.call("SwfVideoPlayComplete", "video");
+			dispatchEvent(new Event(Event.COMPLETE));
+			return;
+		}
+	}
+}

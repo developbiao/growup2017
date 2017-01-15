@@ -1,0 +1,72 @@
+﻿package com.woogienglish.eslvid5
+{
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["Hello everybody! Today we are “Countin’ to the Oldies!”", null],
+			["What are we counting?", [["counting", "to count"]]],
+			["Numbers, silly!", [["Numbers", "number"]]],
+			["What numbers?", [["numbers", "number"]]],
+			["Today we count to 20!", [["20", "twenty"], ["count", "to count"]]],
+			["Okay. Count to 20!", [["20", "twenty"], ["Count", "to count"]]],
+			["Count with me!", [["Count", "to count"]]],
+			["10! 3! 7! 12! 2! 18!", [["10", "ten"], ["3", "three"], ["7", "seven"], [" 12", "twelve"], [" 2", "two"], [" 18", "eighteen"]]],
+			["What are you counting?", [["counting", "to count"]]],
+			["We are counting to 20!", [["20", "twenty"], ["counting", "to count"]]],
+			["Where is the number 1?", [["number", "number"], ["1", "one"]]],
+			["How do you count to 20?", [["20", "twenty"], ["count", "to count"]]],
+			["Count with me to 20!", [["20", "twenty"], ["Count", "to count"]]],
+			["1! 2! 3! 4! 5!", [["1", "one"], ["2", "two"], ["3", "three"], ["4", "four"], ["5", "five"]]],
+			["6! 7! 8! 9! 10!", [["6", "six"], ["7", "seven"], ["8", "eight"], ["9", "nine"], ["10", "ten"]]],
+			["1! 17! 8! 7!", [["1", "one"], [" 17", "seventeen"], [" 8", "eight"], [" 7", "seven"]]],
+			["The numbers are wrong...", [["numbers", "number"]]],
+			["What?! How do I count them then?", [["count", "to count"]]],
+			["11! 12! 13! 14! 15!", [["11", "eleven"], ["12", "twelve"], ["13", "thirteen"], ["14", "fourteen"], ["15", "fifteen"]]],
+			["Say goodbye to letters! Numbers are magical!", [["Numbers", "number"]]],
+			["16! 17! 18! 19!", [["16", "sixteen"], ["17", "seventeen"], ["18", "eighteen"], ["19", "nineteen"]]],
+			["3! 12! 20!", [["3", "three"], ["12", "twelve"], ["20", "twenty"]]],
+			["We did 20!", [["20", "twenty"]]],
+			["If you count that.", [["count", "to count"]]],
+			["Good work everybody! Give each other high... 5’s!", [["5", "five"]]]
+		];
+											
+		public var LANGUAGE_CN:Array = [
+			["大家好! 我们今天来数数!”", null],
+			["我们数什么?", [["数", "to count"]]],
+			["数字啊, 笨笨!", [["Numbers", "number"]]],
+			["什么数字?", [["numbers", "number"]]],
+			["今天我们数到20!", [["20", "twenty"], ["数", "to count"]]],
+			["好. 数到20!", [["20", "twenty"], ["数", "to count"]]],
+			["跟我一起数!", [["Count", "to count"]]],
+			["10! 3! 7! 12! 2! 18!", [["10", "ten"], ["3", "three"], ["7", "seven"], [" 12", "twelve"], [" 2", "two"], [" 18", "eighteen"]]],
+			["你在数些什么啊?", [["数", "to count"]]],
+			["我们在数数到20啊!", [["20", "twenty"], ["数", "to count"]]],
+			["数字1在哪儿?", [["数字", "number"], ["1", "one"]]],
+			["你怎么数到20?", [["20", "twenty"], ["数", "to count"]]],
+			["跟我一起数到20!", [["20", "twenty"], ["数", "to count"]]],
+			["1! 2! 3! 4! 5!", [["1", "one"], ["2", "two"], ["3", "three"], ["4", "four"], ["5", "five"]]],
+			["6! 7! 8! 9! 10!", [["6", "six"], ["7", "seven"], ["8", "eight"], ["9", "nine"], ["10", "ten"]]],
+			["1! 17! 8! 7!", [["1", "one"], [" 17", "seventeen"], [" 8", "eight"], [" 7", "seven"]]],
+			["数字错了...", [["数字", "number"]]],
+			["什么?! 那我应该怎么数?", [["count", "to count"]]],
+			["11! 12! 13! 14! 15!", [["11", "eleven"], ["12", "twelve"], ["13", "thirteen"], ["14", "fourteen"], ["15", "fifteen"]]],
+			["向字母说拜拜! 数字太神奇啦!", [["数字", "number"]]],
+			["16! 17! 18! 19!", [["16", "sixteen"], ["17", "seventeen"], ["18", "eighteen"], ["19", "nineteen"]]],
+			["3! 12! 20!", [["3", "three"], ["12", "twelve"], ["20", "twenty"]]],
+			["我们数到20了!", [["20", "twenty"]]],
+			["如果你那样数的话.", [["数", "to count"]]],
+			["大家辛苦了! 我们来击掌!", [["5", "five"]]]
+		];
+	}
+
+}

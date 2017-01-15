@@ -1,0 +1,74 @@
+﻿package com.woogienglish.eslvid26
+{
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["And now... We present to you... the Eighth Wonder of the World... Woogi Kong!", [[]]],
+			["Walk, monkey!", [["Walk", "to walk"]]],
+			["Are you able to walk now?", [["walk", "to walk"]], [["Are you able to", "to be able to"]]],
+			["Can you run for us, monkey?", [["run", "to run"]]],
+			["Get back, you beast!", [[]]],
+			["Come here, monkey!", [[]]],
+			["Can he jump? ", [["jump", "to jump"]]],
+			["Yes, he can jump.", [["jump", "to jump"]]],
+			["Jump, monkey!", [["Jump", "to jump"]]],
+			["A small jump!", [["jump", "to jump"]]],
+			["Look at that!", [[]]],
+			["Yes, he can walk.", [["walk", "to walk"]]],
+			["Yes, he can run.", [["run", "to run"]]],
+			["Yes, he can jump.", [["jump", "to jump"]]],
+			["And yes, he can hop!", [["hop", "to hop"]]],
+			["Can he skip?", [["skip", "to skip"]]],
+			["I don\'t know.", [[]]],
+			["Monkey, are you able to skip?", [["skip", "to skip"]], [["are you able to", "to be able to"]]],
+			["He\'s climbing the wall!", [["climbing", "to climb"]]],
+			["He cannot skip,", [["skip", "to skip"]]],
+			["but he is able to climb!", [["climb", "to climb"]], [["is able to", "to be able to"]]],
+			["Come here, monkey!", [[]]],
+			["Stop climbing", [["climbing", "to climb"]]],
+			["and come here!", [[]]],
+			["He can fly?", [["fly", "to fly"]]],
+			["The monkey can fly!", [["fly", "to fly"]]]
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["现在... 我们向你展示... 世界第八大奇迹... Woogi Kong!", [[]]],
+			["走, 猴子!", [["走", "走"]]],
+			["你现在可以走吗?", [["走", "走"]], [["你可以吗", "可以"]]],
+			["你能为我们跑一下吗，猴子?", [["跑", "跑"]]],
+			["回来, 你这野兽!", [[]]],
+			["过来, 猴子!", [[]]],
+			["他可以跳吗? ", [["跳", "跳"]]],
+			["是的，他可以跳.", [["跳", "跳"]]],
+			["跳, 猴子!", [["跳", "跳"]]],
+			["来个小跳!", [["跳", "跳"]]],
+			["看那!", [[]]],
+			["是的，他可以行走.", [["行走", "行走"]]],
+			["是的，他可以跑.", [["跑", "跑"]]],
+			["是的，他可以跳.", [["跳", "跳"]]],
+			["是的，他可以跳来跳去!", [["跳来跳去", "跳来跳去"]]],
+			["他可以跳跃吗?", [["跳跃", "跳跃"]]],
+			["我不知道.", [[]]],
+			["猴子, 你可以跳跃吗?", [["跳跃", "跳跃"]], [["你可以吗", "可以"]]],
+			["他在攀爬墙!", [["攀爬", "攀爬"]]],
+			["他不能跳跃,", [["跳跃", "跳跃"]]],
+			["但是他可以攀爬!", [["攀爬", "攀爬"]], [["可以", "可以"]]],
+			["过来, 猴子!", [[]]],
+			["停止攀爬", [["攀爬", "攀爬"]]],
+			["过来!", [[]]],
+			["他可以飞吗?", [["飞", "飞"]]],
+			["猴子可以飞!", [["飞", "飞"]]]
+										];
+	}
+
+}

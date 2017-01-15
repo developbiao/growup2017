@@ -1,0 +1,80 @@
+﻿package com.woogienglish.eslvid12
+{
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["I want to buy this pair of socks, please.", [["want", "to want"], ["buy", "to buy"]]],
+			["Very good. Those socks cost 20 dollars.", [["cost", "to cost"], ["dollars", "dollar"]]],
+			["20 dollars?!", [["dollars", "dollar"]]],
+			["Mmmmm.... Yes, sir. 20 dollars.", [["dollars", "dollar"]]],
+			["The price is 10 dollars.", [["price"], ["dollars", "dollar"]]],
+			["Correct, sir. It costs 10 dollars -- for each sock.", [["costs", "to cost"], ["dollars", "dollar"]]],
+			["I do not want 1 sock...", [["want", "to want"]]],
+			["I want 2 socks!", [["want", "to want"]]],
+			["Then the price is 20 dollars, sir.", [["price"], ["dollars", "dollar"]]],
+			["That price is too expensive!", [["price"], ["expensive"]]],
+			["How much money do you have?", [["How much", "how much"], ["money"]]],
+			["I have a 5 dollar bill and some coins.", [["dollar"], ["bill"], ["coins", "coin"]]],
+			["Do you have quarters?", [["quarters", "quarter"]]],
+			["I have 6 quarters.", [["quarters", "quarter"]]],
+			["And do you have dimes?", [["dimes", "dime"]]],
+			["I have 5 dimes.", [["dimes", "dime"]]],
+			["Is that all your money?", [["money"]]],
+			["Yes. This is all my money.", [["money"]]],
+			["Then you do not have 20 dollars! Good day, sir!", [["dollars", "dollar"]]],
+			["Milton!", null],
+			["Mr. Chump! I... uh... I...", null],
+			["Milton... You’re fired!", null],
+			["How can I help you?", null],
+			["I want to buy these socks.", [["want", "to want"], ["buy", "to buy"]]],
+			["How much money do you have?", [["How much", "how much"], ["money"]]],
+			["I have 7 dollars in bills and coins.", [["dollars", "dollar"], ["bills", "bill"], ["coins", "coin"]]],
+			["Good! This pair of socks costs 7 dollars.", [["costs", "to cost"], ["dollars", "dollar"]]],
+			["Why is the price so cheap?", [["price"], ["cheap"]]],
+			["Because these socks are on sale!"]
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["我想要买这双袜子,麻烦你.", [["想要", "to want"], ["买", "to buy"]]],
+			["很好. 这双袜子的花费是20美元.", [["花费", "to cost"], ["美元", "dollar"]]],
+			["20美元?!", [["美元", "dollar"]]],
+			["嗯.... 是的, 先生. 20美元.", [["美元", "dollar"]]],
+			["价格写的是10美元.", [["价格"], ["美元", "dollar"]]],
+			["对, 先生. 需要花费10美元 -- 一只.", [["花费", "to cost"], ["美元", "dollar"]]],
+			["我不想要一只袜子...", [["想要", "to want"]]],
+			["我想要两只袜子!", [["想要", "to want"]]],
+			["那么价格就是20美元, 先生.", [["价格"], ["美元", "dollar"]]],
+			["这个价格太贵了!", [["价格"], ["贵"]]],
+			["你有多少钱?", [["多少", "how much"], ["钱"]]],
+			["我有一张5美元的纸币和一些硬币.", [["美元"], ["纸币"], ["硬币", "coin"]]],
+			["你有25美分的吗?", [["25美分", "quarter"]]],
+			["我有6个25美分.", [["25美分", "quarter"]]],
+			["你有10美分的吗?", [["10美分", "dime"]]],
+			["我有5个10美分.", [["10美分", "dime"]]],
+			["这是你所有的钱?", [["钱"]]],
+			["是的. 这是我所有的钱.", [["钱"]]],
+			["也就是说你没有20美元! 再见, 先生!", [["美元", "dollar"]]],
+			["Milton!", null],
+			["Chump先生! 我... 嗯... 我...", null],
+			["Milton... 你被开除了!", null],
+			["您需要什么?", null],
+			["我想要买一双袜子.", [["想要", "to want"], ["买", "to buy"]]],
+			["你有多少钱?", [["多少", "how much"], ["钱"]]],
+			["我的纸币和硬币一共有7美元.", [["美元", "dollar"], ["纸币", "bill"], ["硬币", "coin"]]],
+			["很好! 这双袜子只需要花费7美元.", [["花费", "to cost"], ["美元", "dollar"]]],
+			["为什么价格这么便宜?", [["价格"], ["便宜"]]],
+			["因为这双袜子降价优惠!"]
+										];
+	}
+
+}

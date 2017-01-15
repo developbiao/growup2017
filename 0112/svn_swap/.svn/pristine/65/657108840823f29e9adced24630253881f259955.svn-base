@@ -1,0 +1,64 @@
+﻿package com.woogienglish.eslvid17
+{
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["There are lots of animals at the zoo today! ", [["animals", "animal"], ["zoo"]]],
+			["Yes, son. What is that?", null],
+			["It is an elephant!", [["elephant", "elephant"]]],
+			["He looks hungry!", null],
+			["Do elephants eat dogs?", [["elephants", "elephant"], ["dogs", "dog"]]],
+			["No, son. They do not eat dogs.", [["dogs", "dog"]]],
+			["Good!", [["dog", "dog"], ["zoo"]]],
+			["Then why is the dog at the zoo?", [["dog", "dog"], ["zoo"]]],
+			["I don\'t know, but he has sheep with him today.", [["sheep"]]],
+			["I want to see the monkeys!", [["monkeys", "monkey"]]],
+			["Why monkeys?", [["monkeys", "monkey"]]],
+			["Because monkeys are my favorite animal!", [["monkeys", "monkey"], ["animal", "animal"]]],
+			["Get your hands off me, you dirty apes!", [["record", "to record"], ["movie"], ["microphone"]]],
+			["What is your favorite animal, Dad?", [["animal", "animal"]]],
+			["My favorite animal is the kangaroo.", [["animal", "animal"], ["kangaroo", "kangaroo"]]],
+			["Kangaroos are boring!", [["Kangaroos", "kangaroo"]]],
+			["What about lions and tigers and bears?", [["lions", "lion"], ["tigers", "tiger"], ["bears", "bear"]]],
+			["Oh, my! They eat Woogies!", null],
+			["They cannot eat us at the zoo!", [["zoo"]]],
+			["You\'re right, son. We are always safe at the zoo...", [["zoo"]]],
+			["The zoo is my favorite place to live!", [["zoo"]]]
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["今天动物园里有好多动物! ", [["动物", "animal"], ["动物园"]]],
+			["是的, 儿子. 那是什么?", null],
+			["那是大象!", [["大象", "elephant"]]],
+			["他看起来饿了!", null],
+			["大象吃狗狗吗?", [["大象", "elephant"], ["狗狗", "dog"]]],
+			["不, 儿子. 他们不吃狗狗.", [["狗狗", "dog"]]],
+			["太好了!", [["dog", "dog"], ["zoo"]]],
+			["那为什么狗狗会在动物园呢?", [["狗狗", "dog"], ["动物园"]]],
+			["我不知道, 但是今天有一群绵羊和他一起.", [["绵羊"]]],
+			["我想看猴子!", [["猴子", "monkey"]]],
+			["为什么是猴子?", [["猴子", "monkey"]]],
+			["因为猴子是我最喜欢的动物!", [["猴子", "monkey"], ["动物", "animal"]]],
+			["把你的手放开, 脏猴子!", [["record", "to record"], ["movie"], ["microphone"]]],
+			["你最喜欢的动物是什么, 爸爸?", [["动物", "animal"]]],
+			["我最喜欢的动物是袋鼠.", [["动物", "animal"], ["袋鼠", "kangaroo"]]],
+			["袋鼠太无聊了!", [["袋鼠", "kangaroo"]]],
+			["狮子，老虎和熊呢?", [["狮子", "lion"], ["老虎", "tiger"], ["熊", "bear"]]],
+			["噢, 天哪! 他们要吃woogi!", null],
+			["他们在动物园里没办法吃我们!", [["动物园"]]],
+			["是的, 儿子. 我们在动物园里永远都是安全的...", [["动物园"]]],
+			["我最喜欢住在动物园了!", [["动物园"]]]
+										];
+	}
+
+}

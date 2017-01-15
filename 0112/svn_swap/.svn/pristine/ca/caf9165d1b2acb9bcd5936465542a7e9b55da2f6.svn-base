@@ -1,0 +1,84 @@
+﻿package com.woogienglish.eslvid25
+{
+	/**
+	 * ...
+	 * @author Dongyihui
+	 */
+	public class languages 
+	{
+		
+		public function languages() 
+		{
+			
+		}
+		
+		public var LANGUAGE_EN:Array = [
+			["Hello!", [[]]],
+			["So you need a job?", [["job"]]],
+			["Yes, I need a job.", [["job"]]],
+			["Okay, let me see what jobs we have for you.", [["jobs", "job"]]],
+			["Are you a doctor?", [["doctor"]]],
+			["What is a doctor?", [["doctor"]]],
+			["A doctor cares for patients.", [["doctor"]]],
+			["Maybe there is a better job for you.", [["job"]]],
+			["Do you want to fight fires?", [["fight", "to fight"], ["tomatoes", "tomato"]]],
+			["Like a firefighter?", [["firefighter"]]],
+			["Yes, a firefighter is a good job.", [["firefighter"], ["job"]]],
+			["Do you want to play sports?", [[]]],
+			["Yes, I like sports.", [[]]],
+			["Then here is a job as an athlete.", [["job"], ["athlete"]]],
+			["Do you want to be a teacher?", [["teacher"]]],
+			["What is a teacher?", [["teacher"]]],
+			["You teach students.", [["teach", "to teach"]]],
+			["Can you enforce laws?", [["enforce", "to enforce"]]],
+			["Like a police officer?", [["police officer"]]],
+			["Yes, a police officer enforces laws.", [["police officer"], ["enforces", "to enforce"]]],
+			["What about being a pilot?", [["pilot"]]],
+			["A pilot. Maybe...", [["pilot"]]],
+			["Can you fly planes?", [["fly", "to fly"]]],
+			["This is the last job I have for you.", [["job"]]],
+			["What is it?", [[]]],
+			["A chef.", [["chef"]]],
+			["What does a chef do?", [["chef"]]],
+			["A chef makes food.", [["chef"]]],
+			["Can you do that?", [[]]],
+			["Did I do a good job?", [["job"]]],
+			["Yes, you did a very good job!", [["job"]]]
+										];
+											
+		public var LANGUAGE_CN:Array = [
+			["你好!", [[]]],
+			["你在找工作吗?", [["工作"]]],
+			["是的，我需要工作.", [["工作"]]],
+			["好的, 让我看看我们有什么工作可以给你的.", [["工作", "job"]]],
+			["你是医生吗?", [["医生"]]],
+			["什么样的医生?", [["医生"]]],
+			["照看病人的医生.", [["医生"]]],
+			["也许有一个更适合你的工作.", [["工作"]]],
+			["你想灭火吗?", [["灭", "灭"], ["tomatoes", "tomato"]]],
+			["像一个消防员?", [["消防员"]]],
+			["是的，消防员是一份好的工作.", [["消防员"], ["工作"]]],
+			["你想运动吗?", [[]]],
+			["是的，我喜欢运动.", [[]]],
+			["那么这里有一份运动员的工作.", [["工作"], ["运动员"]]],
+			["你想成为一名老师吗?", [["老师"]]],
+			["什么样的老师?", [["老师"]]],
+			["你去教学生.", [["教", "教"]]],
+			["你能执行法律吗?", [["执行", "执行"]]],
+			["像警察一样吗?", [["警察"]]],
+			["是的，一个执行法律的警察.", [["警察"], ["执行", "执行"]]],
+			["飞行员怎样?", [["飞行员"]]],
+			["一个飞行员. 可能...", [["飞行员"]]],
+			["你能驾驶飞机吗?", [["驾驶", "驾驶"]]],
+			["这是最后一个我可以为你提供的工作.", [["工作"]]],
+			["是什么?", [[]]],
+			["厨师.", [["厨师"]]],
+			["厨师做什么?", [["厨师"]]],
+			["厨师做食物.", [["厨师"]]],
+			["你可以做吗?", [[]]],
+			["我的工作做得好吗?", [["工作"]]],
+			["是的，你做的很好!", [["工作"]]]
+										];
+	}
+
+}
