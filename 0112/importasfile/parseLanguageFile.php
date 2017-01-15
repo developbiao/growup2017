@@ -124,3 +124,4 @@ foreach (scan($folder) as $file_path)
 }
 printf("============ Parse Completed =========\n");
 
+
