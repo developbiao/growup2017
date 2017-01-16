@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS directive Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="../lib/js/jquery.js"></script>
+    <script type="text/javascript" src="../lib/js/angular.min.js"></script>
+    <script type="text/javascript" src="../lib/js/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="./helloworld.js"></script>
+    <script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .active{
+            color:red;
+            font-weight:bold;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container" data-ng-app="myApp">
+    <h3>AngularJS ui-router</h3>
+    <a ui-sref="hello" ui-sref-active="active">Hello</a>
+    <a ui-sref="about" ui-sref-active="active">About</a>
+    <ui-view></ui-view>
+</div>
+</body>
+</html>
