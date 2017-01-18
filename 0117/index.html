@@ -8,23 +8,27 @@
     <script type="text/javascript" src="../lib/js/jquery.js"></script>
     <script type="text/javascript" src="../lib/js/angular.min.js"></script>
     <script type="text/javascript" src="../lib/js/angular-ui-router.min.js"></script>
-    <script type="text/javascript" src="./helloworld.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
     <script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
     <style type="text/css">
-        .active{
-            color:red;
-            font-weight:bold;
-        }
-
+        .navbar{border-radius:0;}
     </style>
 </head>
-<body>
-<!--  https://ui-router.github.io/ng1/tutorial/helloworld -->
+<body data-ng-app="routerApp">
+<!-- NAVIGATION -->
+<nav class="nav navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="#">AngularUI Router</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref="about">About</a></li>
+    </ul>
+</nav>
+<!-- MAIN CONTENT -->
 <div class="container" data-ng-app="myApp">
-    <h3>AngularJS ui-router</h3>
-    <a ui-sref="hello" ui-sref-active="active">Hello</a>
-    <a ui-sref="about" ui-sref-active="active">About</a>
-    <ui-view></ui-view>
+    <!-- ========== THIS IS WHERE WE WILL INJECT OUR CONTENT ========== -->
+    <div ui-view></div>
 </div>
 </body>
 </html>
