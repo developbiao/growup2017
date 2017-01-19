@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS directive Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="../lib/js/jquery.js"></script>
+    <script type="text/javascript" src="../lib/js/angular.min.js"></script>
+    <script type="text/javascript" src="../lib/js/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+    <script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .navbar{border-radius:0;}
+    </style>
+</head>
+<body data-ng-app="routerApp">
+<!-- NAVIGATION -->
+<nav class="nav navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="#">AngularUI Router</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref="music">Music</a></li>
+        <li><a ui-sref="about">About</a></li>
+    </ul>
+</nav>
+<!-- MAIN CONTENT -->
+<div class="container" data-ng-app="myApp">
+    <!-- ========== THIS IS WHERE WE WILL INJECT OUR CONTENT ========== -->
+    <div ui-view></div>
+</div>
+</body>
+</html>
