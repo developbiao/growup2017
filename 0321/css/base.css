@@ -1,0 +1,53 @@
+/* reset css */
+*,
+::before,
+::after{
+	/*选择到所有的标签*/
+	margin:0;
+	padding:0;
+
+	/*清除移动端默认的点击高亮的效果*/
+	-webkit-tap-highlight-color:transparent;
+
+	/*设置所有的都是以边框开始计算宽度，百分比*/
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 14px;
+	font-family: "Microsoft YaHei", "san-serif"; /*设置默认字体*/
+	color:#333;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+input{
+	border: none;
+	outline: none;
+	-webkit-appearance: none; /*清除移动端默认的表单样式*/
+
+}
+
+
+.f_left{
+	float: left;
+
+}
+.f_right{
+	float: right;
+
+}
+.clearfix::before,
+.clearfix::after{
+	content: "";
+	height: 0;
+	line-height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+
+
+
