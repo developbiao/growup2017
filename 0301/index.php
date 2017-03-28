@@ -1,6 +1,7 @@
 <?php
 header('Content-Type:text/html; charset=utf-8');
 
+// 测试php push 反向ajax
 set_time_limit(0); //设置php脚本执行不超时
 ob_start();
 $pad = str_repeat(' ', 4000);

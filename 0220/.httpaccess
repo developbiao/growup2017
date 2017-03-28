@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} .*\.(jpg|jpeg|gif|png) [NC]
+RewriteRule .* http://www.google.com
