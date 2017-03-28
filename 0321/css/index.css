@@ -1,0 +1,136 @@
+/*主体盒子*/
+.jd_layout{
+	width:100%;
+	max-width:640px; /*设计图的原因，不然它放的太大失真*/
+	min-width:300px; /*为了更好的布局*/
+	margin:0 auto;
+}
+
+/*头部搜索*/
+.jd_header{
+	position:fixed; /*是以window 最外层的容器计算*/
+	left:0;
+	top:0;
+	height:40px;
+	width:100%;
+	z-index: 1000;
+}
+
+.jd_header > .jd_header_box{
+	width:100%;
+	max-width:640px; 
+	min-width:300px; 
+	margin:0 auto;
+	background:rgba(201,21,35,0.85);
+	height:40px;
+	position:relative;
+}
+
+.jd_header > .jd_header_box .icon_logo{
+	width:60px;
+	height:36px;
+	position:absolute;
+	background-size:200px 200px;
+	background-position:0 -103px;
+	top:0;
+	left:10px;
+}
+
+.jd_header > .jd_header_box > .login{
+	width: 50px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center; 
+	color: #fff;
+	position:absolute;
+	right: 0;
+	top: 0;
+	font-size: 15px;
+}
+
+.jd_header > .jd_header_box > form{
+	width: 100%;
+	padding-left: 75px;
+	padding-right: 50px;
+	height:40px;
+	position:relative;
+}
+
+.jd_header > .jd_header_box > form > input{
+	width: 100%;
+	height: 30px;
+	border-radius: 15px;
+	margin-top: 5px;
+	padding-left: 30px;
+
+}
+
+.jd_header > .jd_header_box > form > .icon_search{
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	background-position: -60px -109px;
+	top: 10px;
+	left: 85px;
+}
+
+/*轮播图*/
+.jd_banner{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.jd_banner > ul:first-child{
+	width: 1000%;
+	transform: translateX(-10%);
+	-webkit-transform: translate(-10%); /*尽可能的兼容webkit内核*/
+
+}
+.jd_banner ul:first-child > li{
+	float:left;
+	width: 10%; /*屏幕的宽度*/
+} 
+.jd_banner ul:first-child > li > a{
+	width:100%;
+	display:block;
+}
+.jd_banner ul:first-child > li > a > img{
+	width:100%;
+	/*
+	解决文本基线对齐问题
+	font-size: 0;
+	display: block
+	vertial-align: middle
+	*/
+	display:block;
+}
+
+.jd_banner > ul:last-child{
+	width: 118px;
+	height: 6px;
+	position: absolute;
+	bottom: 6px;
+	left: 50%;
+	margin-left: -59px /*居中:高度的一半向左移*/
+
+}
+
+.jd_banner > ul:last-child > li{
+	width: 6px;
+	height: 6px;
+	float: left;
+	border-radius: 3px;
+	border: 1px solid #fff;
+	margin-left: 10px;
+}
+.jd_banner > ul:last-child > li.now{
+	background: #fff;
+}
+.jd_banner > ul:last-child > li:nth-child(1){
+	margin-left:0;
+}
+
+
+
+
+

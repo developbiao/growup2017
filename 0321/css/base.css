@@ -15,12 +15,20 @@
 
 body{
 	font-size: 14px;
-	font-family: "Microsoft YaHei", "san-serif"; /*设置默认字体*/
-	color:#333;
+	font-family: "Microsoft YaHei", sans-serif; /*设置默认字体*/
+	color: #333;
 }
 
+a{
+	color: #333;
+	text-decoration: none;
+}
 a:hover{
 	text-decoration: none;
+}
+
+ul, ol{
+	list-style:none;
 }
 
 input{
@@ -47,6 +55,11 @@ input{
 	display: block;
 	visibility: hidden;
 	clear: both;
+}
+
+[class^="icon_"]{
+	background: url("../images/sprites.png") no-repeat;
+	background-size: 200px 200px;	
 }
 
 
