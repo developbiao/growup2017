@@ -1,3 +1,6 @@
+body{
+	background-color:#f5f5f5;
+}
 /*主体盒子*/
 .jd_layout{
 	width:100%;
@@ -87,8 +90,8 @@
 
 }
 .jd_banner ul:first-child > li{
-	float:left;
 	width: 10%; /*屏幕的宽度*/
+	float: left;
 } 
 .jd_banner ul:first-child > li > a{
 	width:100%;
@@ -127,10 +130,76 @@
 	background: #fff;
 }
 .jd_banner > ul:last-child > li:nth-child(1){
-	margin-left:0;
+	margin-left: 0;
 }
 
+/*分类导航模块*/
+.jd_nav{
+	width: 100%;
+	background: #fff;
+	border-bottom: 1px solid #e0e0e0;
+}
+.jd_nav > ul{
+	width: 100%;
+	padding: 10px 0;
+}
 
+.jd_nav > ul > li{
+	width: 25%;
+	float: left;
+}
 
+.jd_nav > ul > li > a{
+	display: block;
+}
+.jd_nav > ul > li > a > img{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+.jd_nav > ul > li > a > p{
+	text-align: center;
+	color: #666;
+	font-size: 12px;
+	padding: 6px 0;
+}
+
+/*商品主盒子*/
+.jd_product{
+   padding: 0 5px;
+}
+.jd_product > .product_box{
+    width: 100%;
+    min-height: 300px;
+    background: #fff;
+    margin-top: 10px;
+    box-shadow: 0 0 1px #e0e0e0;
+}
+.jd_product > .product_box > .product_box_tit{
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.jd_product > .product_box > .product_box_tit .no_border{
+    border-bottom: none;
+}
+.jd_product > .product_box > .product_box_tit > h3{
+    font-weight: normal;
+    font-size: 15px;
+    padding-left: 20px;
+    position: relative;
+    color: #666;
+}
+
+.jd_product > .product_box > .product_box_tit > h3::before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 3px;
+    height: 12px;
+    background: #d8505c;
+}
 
 
