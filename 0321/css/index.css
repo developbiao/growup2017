@@ -171,7 +171,6 @@ body{
 }
 .jd_product > .product_box{
     width: 100%;
-    min-height: 300px;
     background: #fff;
     margin-top: 10px;
     box-shadow: 0 0 1px #e0e0e0;
@@ -202,4 +201,91 @@ body{
     background: #d8505c;
 }
 
+/*掌上秒杀 second kill*/
+.jd_sk{
+}
+.jd_sk .sk_icon{
+	background: url("../images/seckill-icon.png") no-repeat;
+	background-size: 16px 20px;
+	width: 16px;
+	height: 20px;
+	float: left;
+	margin-top: 6px;
+}
+.jd_sk .sk_name{
+	color: #d8505c;
+	font-size: 15px;
+	flot: left;
+}
+.jd_sk .sk_time{
+	float: left;
+	margin-top: 8px;
+}
+.jd_sk .sk_time > span{
+	float: left;
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+    text-align: center;
+	background: #000;
+	color: #fff;
+	margin-left: 3px;
+}
+.jd_sk .sk_time > span:nth-child(3n){
+	background: #fff;
+	color: #333;
+	width: 5px;
+}
+.jd_sk .product_box_con > ul{
+	width: 100%;
+	font-size: 12px;
+	padding: 10px 0;
+}
+.jd_sk .product_box_con > ul > li{
+	width: 33.333%;
+	float: left;
+	text-align: center;
+}
+.jd_sk .product_box_con > ul > li > a{
+	display: block;
+	width: 100%;
+	border-right: 1px solid #e0e0e0;
+}
+.jd_sk .product_box_con > ul > li:last-child > a{
+	border-right: 0;
+}
+.jd_sk .product_box_con > ul > li > a > img{
+	width: 64%;
+	display: block;
+	margin: 0 auto;
+}
+/*
+E:first-of-type 选择E同类型的同级的 第一个元素
+E:last_of-tye 选择E同类型的同级的 最后一个元素
+E:nth-of-type 选择E同类型的同级的 第n个元素
+*/
+.jd_sk .product_box_con > ul > li >p:last-of-type{
+	text-decoration: line-through;
+	color: #666;
+	padding-top: 10px;
+}
 
+/*组全样式*/
+.w_50{
+	width: 50%;
+	display: block;
+}
+.w_50 > img{
+	display: block;
+	width: 100%;
+}
+
+.b_left{
+    border-left: 1px solid #e0e0e0;
+}
+.b_right{
+	border-right: 1px solid #e0e0e0;
+}
+.b_bottom{
+    border-bottom: 1px solid #e0e0e0;
+}
