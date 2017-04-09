@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<title>index</title>
+<style type="text/css">
+body{
+	margin: 0;
+	padding: 0;
+}
+form{
+	max-width: 640px;
+	width: 100%;
+	margin:36px auto 0;
+	font-size: 16px;
+}
+
+form > fieldset > label{
+	display: block;
+	margin: 30px 0;
+
+}
+
+form > fieldset> label > input {
+	height: 30px;
+	width: 100%;
+	display:block;
+	margin-top: 10px;
+}
+
+</style>
+</head>
+<body>
+	<h3>表单元素</h3>
+	<form action="demo-form.php" method="get">
+	<fieldset>
+		<legend>表单元素</legend>
+		<label>
+			<input list="browsers" name="browsers" />
+			<datalist id="browsers">
+				<option value="Internet Explorer">
+				<option value="Firefox">
+				<option value="safari">
+				<option value="chrome">
+			</datalist>
+						</label>
+						<label>
+			<input type="submit" value="提交" />
+		</label>
+	</fieldset>
+	</form>
+</body>
+</html>
