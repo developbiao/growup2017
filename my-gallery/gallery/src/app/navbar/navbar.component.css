@@ -1,0 +1,30 @@
+nav{
+    font-family: 'Lato', sans-serif;
+    background-color: #424242;
+}
+
+.logo{
+    color: #fff;
+    font-family: 'cabin', sans-serif;
+    font-size: 1.5em;
+}
+
+.navbar-brand log{
+    color: #fff;
+}
+
+.my_title{
+    color: #fff;
+}
+
+ul.nav a{
+
+}
+
+ul.nav a:hover{
+
+}
+
+.active>a{
+    background-color: #616161;
+}
