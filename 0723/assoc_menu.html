@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en" data-ng-app="liangdong">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<title>index</title>
+</head>
+<body data-ng-controller="myCtrl">
+	<h3>AngularJS 联动菜单</h3>
+	<form action="">
+		<select data-ng-model="pid" data-ng-change="city()">
+			<option value="{{$index}}" data-ng-repeat="pro in pros">{{pro}}</option>
+		</select>
+		<select data-ng-model="city">
+			<option value="{{$index}}" data-ng-repeat="city in citys">{{city}}</option>
+		</select>
+	</form>
+</body>
+<script type="text/javascript" src="../lib/js/angular.min.js"></script>
+<script type="text/javascript">
+(function (){
+	var app = angular.module('liangdong', []);
+	app.controller('myCtrl', function ($scope){
+		var maps = [
+			['朝阳', '海淀', '昌平'],
+			['石棉', '卢山', '天全']
+		];
+
+		$scope.pros = ['北京', '雅安'];
+		$scope.citys = [];
+
+		$scope.city = function (){
+			$scope.citys = maps[this.pid];
+			console.log($scope.citys);
+		};
+
+	});
+
+})();
+
+</script>
+</html>
