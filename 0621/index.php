@@ -1,7 +1,3 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: gongbiao
- * Date: 6/21/17
- * Time: 23:32
- */
+header('Content-Type:text/html; charset=utf-8');
+echo "<h3>I'm coming!</h3>";

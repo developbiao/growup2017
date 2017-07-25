@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Vue Test</title>
 </head>
 <body>
-$END$
+<div id="app">
+    <h3>{{ message }}</h3>
+</div>
+<div id="app-2">
+   <span v-bind:title="message">
+      Hover your mouse over me for a few seconds
+       to see my dynamically bound title!
+   </span>
+</div>
+<script src="https://unpkg.com/vue"></script>
+<script type="text/javascript">
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue!'
+        }
+    });
+
+    var app = new Vue({
+        el: '#app-2',
+        data: {
+            message: 'You loaded this page on ' + new Date()
+        }
+    });
+</script>
 </body>
 </html>
