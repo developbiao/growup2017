@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<title>index</title>
+<style type="text/css">
+	.parent{
+		background: #474747;
+	}
+	.child1{
+		width: 500px;
+		height: 500px;
+		background-color:lightgreen;
+		margin: 0 auto;
+		float: left;
+
+	}
+	.clear{
+		clear: both;
+	}
+
+	/*BFC清除浮动*/
+	.clearfix:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+	.clearfix {
+		*zoom: 1;
+	}
+</style>
+</head>
+<body>
+	<div class="parent clearfix">
+	<h3>workspace is already!</h3>
+		<div class="child1"></div>
+		<p>美女1</p>
+		<p>美女2</p>
+		<p>美女3</p>
+	</div>
+</body>
+</html>
