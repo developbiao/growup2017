@@ -17,6 +17,10 @@ class ArticleController extends Controller
        return view('admin/article/create');
     }
 
+    public function edit($id){
+        return view('admin/article/edit')->withArticle(Article::find($id));
+    }
+
     public function store(Request $request){
         $this->validate($request, [
             'title' => 'required|unique:articles|max:255',
@@ -45,7 +49,7 @@ class ArticleController extends Controller
         $article->title = $request->get('title');
         $article->body = $request->get('body');
 
-        if($article-save()){
+        if($article->save()){
            return redirect('admin/article');
         } else{
             return redirect() ->back()->withInput()->withErrors('更新失败!');
