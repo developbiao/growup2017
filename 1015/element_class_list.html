@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<title>index</title>
+<style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+		background-color: #F7F7F7;
+	}
+
+	.tabs{
+		width: 400px;
+		margin: 20px auto;
+		background: #FFF;
+		border: 1px solid #C0DCC0;
+	}
+
+	.tabs nav{
+		height: 40px;
+		text-align: center;
+		line-height: 40px;
+		overflow: hidden;
+		background-color: #C0DCC0;
+		display: flex;
+	}
+
+	nav a {
+		display: block;
+		width: 100px;
+		border-right: 1px solid #FFF;
+		color: #000;
+		text-decoration: none;
+	}
+
+	nav a:last-child{
+		border-right: 0 none;
+
+	}
+
+	nav a.active{
+		background-color: #9BAF9B;
+	}
+
+	.cont {
+		overflow: hidden;
+	}
+
+	.cont ol {
+		line-height: 30px;
+	}
+</style>
+</head>
+<body>
+	<h3>Element class list</h3>
+	<div class=tabs>
+		<nav>
+			<a href="javascript:;">国内新闻</a>
+			<a href="javascript:;" class="active">国际新闻</a>
+			<a href="javascript:;">体育新闻</a>
+			<a href="javascript:;">娱乐新闻</a>
+		</nav>
+	</div>
+	<script type="text/javascript">
+		var navs = document.querySelectorAll('nav a');
+		for(var i=0; i<navs.length; i++){
+			// 绑定click事件
+			navs[i].onclick = function (){
+				var active = document.querySelector('.active');
+				active.classList.remove('active');
+				this.classList.add('active');
+
+				//console.log(this.classList.contains('active'));
+			};
+
+		}
+
+	</script>
+</body>
+</html>

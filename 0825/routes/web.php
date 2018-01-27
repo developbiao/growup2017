@@ -20,7 +20,12 @@ Route::get('/now', function (){
 	return '为彪哥报时:' . date('Y-m-d H:i:s');
 });
 
+
 Route::group(['middleware' => 'auth', 'namespace' => 'Admin', 'prefix' => 'admin'], function (){
     Route::get('/', 'HomeController@index');
     Route::resource('/article', 'ArticleController');
 });
+
+Route::get('article/{id}', 'ArticelController@show');
+
+Route::post('comment', 'CommentController@store');

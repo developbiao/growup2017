@@ -4,19 +4,26 @@
 <meta http-equiv="content-type" content="text/html" charset="utf-8" />
 <title>index</title>
 <style type="text/css">
-/*浮动最初的设计是为了实现文字环绕*/
-button{
-	width: 200px;
-	height: 50px;
-	float: left;
-}
+	div:first-line{
+		color: #cd0000;
+	}
+	div:first-letter{
+		font-size:22pt;
+
+	}
+	p[lang|="en"]{
+		background-color: #cd0000;
+	}
 </style>
 </head>
 <body>
-	<div class="parent clearfix">
+	<div>
+		<p>One more thing</p>
 		<h3>workspace is already!</h3>
-		<button>Button1</button>111<button>Button2</button>222<button>Button3</button>333
-		<button>Button4</button>
+		<p lang="cn-ch">aaaaaa</p>
+		<p>bbbbbb</p>
+		<p lang="en-us">ccccc</p>
+		<p lang="en-jk">just fun!</p>
 	</div>
 </body>
 </html>
